@@ -297,7 +297,7 @@ const pages = [
   {
     slug: 'how-to-water-start-kitesurf',
     title: 'How To Water Start Kitesurfing',
-    videoEmbed: 'XJt9r_y4M6k',
+    videoEmbed: 's1R18S48J1E',
     content: `
       <h2 className="font-serif text-4xl mb-6 mt-12">The Make-or-Break Move</h2>
       <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
@@ -320,7 +320,7 @@ const pages = [
   {
     slug: 'how-to-control-kite',
     title: 'How To Control A Kitesurfing Kite',
-    videoEmbed: 'K8aJ4eP28O8',
+    videoEmbed: 'yW6hV7r_L2Y',
     content: `
       <h2 className="font-serif text-4xl mb-6 mt-12">The Wind Window</h2>
       <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
@@ -336,7 +336,7 @@ const pages = [
   {
     slug: 'kitesurf-body-drag',
     title: 'Kitesurf Body Dragging: The Essential Skill',
-    videoEmbed: 'g3wT6w-KkLw',
+    videoEmbed: 'D-wT83C-h6g',
     content: `
       <h2 className="font-serif text-4xl mb-6 mt-12">Why We Body Drag</h2>
       <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
@@ -352,7 +352,7 @@ const pages = [
   {
     slug: 'kitesurf-first-ride',
     title: 'Your First Kitesurf Ride: Staying Up',
-    videoEmbed: 'V-L_8R7h4yU',
+    videoEmbed: 'F0f54J663Y8',
     content: `
       <h2 className="font-serif text-4xl mb-6 mt-12">Sustaining The Glide</h2>
       <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
@@ -368,7 +368,7 @@ const pages = [
   {
     slug: 'wingfoil-beginner-guide',
     title: 'Wingfoil Beginner Guide: Taking Flight',
-    videoEmbed: 'z_5z3c_F-r0',
+    videoEmbed: 't-6zYl3L9nQ',
     content: `
       <h2 className="font-serif text-4xl mb-6 mt-12">The Magic of Foiling</h2>
       <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">

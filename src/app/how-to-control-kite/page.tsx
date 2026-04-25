@@ -60,7 +60,7 @@ export default function GuidePage() {
               
                 <div className="my-16 aspect-video w-full rounded-2xl overflow-hidden border border-[#171717]/10 bg-[#171717]">
                    <iframe 
-                      src="https://www.youtube.com/embed/K8aJ4eP28O8" 
+                      src="https://www.youtube.com/embed/yW6hV7r_L2Y" 
                       title="YouTube video player" 
                       frameBorder="0" 
                       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
