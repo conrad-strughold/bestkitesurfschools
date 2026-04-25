@@ -85,7 +85,7 @@ export default function Home() {
                   <span className="pb-1">Book Lessons</span>
                   <span className="absolute bottom-0 left-0 w-full h-[1px] bg-[#1A365D] transform origin-left scale-x-0 transition-transform duration-500 group-hover:scale-x-100"></span>
                 </a>
-                <Link href="/portugal/kitesurf-school" className="relative group text-[#171717]/60 text-sm tracking-[0.1em] uppercase font-light">
+                <Link href="/kitesurf-portugal" className="relative group text-[#171717]/60 text-sm tracking-[0.1em] uppercase font-light">
                   <span className="pb-1">Read The Review</span>
                   <span className="absolute bottom-0 left-0 w-full h-[1px] bg-[#171717] transform origin-left scale-x-0 transition-transform duration-500 group-hover:scale-x-100"></span>
                 </Link>
@@ -111,9 +111,9 @@ export default function Home() {
                     <h5 className="text-xs font-light uppercase tracking-[0.15em] mb-8 text-white/40">Portugal Guides</h5>
                     <ul className="space-y-4 text-sm font-light text-white/80">
                        <li><Link href="/best-kitesurf-schools-portugal" className="hover:text-white transition-colors relative group"><span className="pb-1">Top Schools</span><span className="absolute bottom-0 left-0 w-0 h-px bg-white transition-all group-hover:w-full"></span></Link></li>
-                       <li><Link href="/portugal/kitesurf-school" className="hover:text-white transition-colors relative group"><span className="pb-1">Kite Portugal</span><span className="absolute bottom-0 left-0 w-0 h-px bg-white transition-all group-hover:w-full"></span></Link></li>
-                       <li><Link href="/portugal/moledo" className="hover:text-white transition-colors relative group"><span className="pb-1">Moledo Guide</span><span className="absolute bottom-0 left-0 w-0 h-px bg-white transition-all group-hover:w-full"></span></Link></li>
-                       <li><Link href="/wingfoil-portugal" className="hover:text-white transition-colors relative group"><span className="pb-1">Wingfoil Tips</span><span className="absolute bottom-0 left-0 w-0 h-px bg-white transition-all group-hover:w-full"></span></Link></li>
+                       <li><Link href="/kitesurf-portugal" className="hover:text-white transition-colors relative group"><span className="pb-1">Kite Portugal</span><span className="absolute bottom-0 left-0 w-0 h-px bg-white transition-all group-hover:w-full"></span></Link></li>
+                       <li><Link href="/kitesurf-moledo" className="hover:text-white transition-colors relative group"><span className="pb-1">Moledo Guide</span><span className="absolute bottom-0 left-0 w-0 h-px bg-white transition-all group-hover:w-full"></span></Link></li>
+                       <li><Link href="/wingfoil-beginner-guide" className="hover:text-white transition-colors relative group"><span className="pb-1">Wingfoil Tips</span><span className="absolute bottom-0 left-0 w-0 h-px bg-white transition-all group-hover:w-full"></span></Link></li>
                     </ul>
                  </div>
                  <div>
