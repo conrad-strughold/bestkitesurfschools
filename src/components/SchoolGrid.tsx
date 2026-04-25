@@ -12,7 +12,7 @@ export function SchoolGrid({ standardSchools }: { standardSchools: School[] }) {
       : standardSchools.filter((s) => s.region === filter);
 
   const filters = [
-    { id: "all", label: "All Locations" },
+    { id: "all", label: "Global" },
     { id: "europe", label: "Europe" },
     { id: "americas", label: "Americas" },
     { id: "asia-pacific", label: "Asia & Pacific" },
@@ -20,82 +20,81 @@ export function SchoolGrid({ standardSchools }: { standardSchools: School[] }) {
   ];
 
   return (
-    <section id="locations" className="pt-16 pb-24 px-6 md:px-12 max-w-7xl mx-auto scroll-mt-24">
-      <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
-        <div>
-          <h2 className="font-serif text-4xl md:text-5xl font-bold mb-5 text-white">Global Directory</h2>
-          <p className="text-zinc-400 max-w-2xl text-lg font-light leading-relaxed">
-            Discover hand-picked kite centers across every major continent, rigorously vetted for exceptional instruction, distinct geography, and premier amenities.
-          </p>
+    <section id="locations" className="w-full pt-32 pb-40 px-6 md:px-16 lg:px-24 bg-[#FDFBF7]">
+      <div className="max-w-[1400px] mx-auto scroll-mt-24">
+        
+        {/* Header & Filters */}
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-24 gap-8">
+          <div className="max-w-2xl">
+            <h2 className="font-serif text-5xl md:text-7xl text-[#171717] leading-none tracking-tight mb-8">
+              The Directory
+            </h2>
+            <p className="text-[#171717]/60 text-lg md:text-xl font-light leading-relaxed">
+              An uncompromised selection. Exquisite locations, elite instruction, and authentic watersport heritage.
+            </p>
+          </div>
+          
+          <div className="flex flex-wrap gap-6 pt-4">
+            {filters.map((f) => (
+              <button
+                key={f.id}
+                onClick={() => setFilter(f.id)}
+                className={`relative text-xs uppercase tracking-[0.15em] font-light pb-1 group transition-colors ${
+                  filter === f.id
+                    ? "text-[#1A365D] font-medium"
+                    : "text-[#171717]/50 hover:text-[#171717]"
+                }`}
+              >
+                {f.label}
+                <span className={`absolute bottom-0 left-0 h-[1px] bg-current transition-all duration-500 ${filter === f.id ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
+              </button>
+            ))}
+          </div>
         </div>
-      </div>
 
-      <div className="flex space-x-3 overflow-x-auto pb-6 mb-10 no-scrollbar">
-        {filters.map((f) => (
-          <button
-            key={f.id}
-            onClick={() => setFilter(f.id)}
-            className={`whitespace-nowrap px-6 py-2 rounded-full border text-sm font-medium transition-all ${
-              filter === f.id
-                ? "bg-white text-black border-white shadow-[0_0_15px_rgba(255,255,255,0.2)]"
-                : "border-zinc-800 text-zinc-400 hover:text-white hover:border-zinc-500 hover:bg-zinc-800/50"
-            }`}
-          >
-            {f.label}
-          </button>
-        ))}
-      </div>
+        {/* Editorial List (No Cards, No Grid) */}
+        <div className="border-t border-[#171717]/10">
+          {filteredSchools.length === 0 ? (
+            <div className="py-32 text-[#171717]/40 font-serif text-3xl italic">
+              No results discovered.
+            </div>
+          ) : (
+            filteredSchools.map((school) => (
+              <article
+                key={school.id}
+                className="group relative flex flex-col md:flex-row md:items-center justify-between py-12 md:py-16 border-b border-[#171717]/10 school-item-hover"
+              >
+                {/* Info Column */}
+                <div className="md:w-5/12 flex flex-col pr-8 mb-6 md:mb-0">
+                  <div className="text-[10px] uppercase tracking-[0.2em] text-[#171717]/40 font-medium mb-4">
+                    {school.city}, {school.country}
+                  </div>
+                  <Link href={`/schools/${school.id}`} className="font-serif text-3xl md:text-4xl text-[#171717] hover:text-[#1A365D] transition-colors leading-[1.1]">
+                    {school.name}
+                  </Link>
+                </div>
 
-      {filteredSchools.length === 0 ? (
-        <div className="text-center py-32 bg-zinc-900/50 rounded-2xl border border-zinc-800">
-          <p className="text-2xl text-zinc-600 font-serif mb-2">No schools found.</p>
-          <p className="text-zinc-600 text-sm">Try selecting a different region.</p>
-        </div>
-      ) : (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {filteredSchools.map((school) => (
-            <article
-              key={school.id}
-              className="bg-zinc-900 rounded-xl overflow-hidden school-card-hover border border-zinc-800 p-6 md:p-8 flex flex-col"
-            >
-              <div className="flex justify-between items-start mb-3 gap-3">
-                <Link href={`/schools/${school.id}`} className="hover:text-brand transition-colors text-white">
-                  <h3 className="font-serif text-xl font-bold pr-2 leading-snug">{school.name}</h3>
-                </Link>
-              </div>
+                {/* Description Column */}
+                <div className="md:w-5/12 text-sm md:text-base text-[#171717]/60 font-light leading-relaxed pr-8 mb-8 md:mb-0">
+                  {school.description}
+                </div>
 
-              <div className="flex items-center text-[10px] text-zinc-500 mb-4 font-bold tracking-widest uppercase">
-                <span className="mr-1.5 opacity-70">📍</span> {school.city}, {school.country}
-              </div>
-
-              <p className="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow font-light">
-                {school.description}
-              </p>
-
-              <div className="flex flex-wrap gap-2 mb-6">
-                {school.tags.map((tag) => (
-                  <span
-                     key={tag}
-                     className="bg-zinc-800 text-zinc-400 text-[10px] px-2.5 py-1 rounded border border-zinc-700 font-medium uppercase tracking-wider"
+                {/* Micro Info & CTA Column */}
+                <div className="md:w-2/12 flex md:justify-end items-center md:items-end flex-col">
+                  <Link
+                    href={`/schools/${school.id}`}
+                    className="relative text-xs uppercase tracking-[0.1em] text-[#171717] font-medium inline-block overflow-hidden pb-1"
                   >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-
-              <div className="pt-4 border-t border-zinc-800 flex justify-between items-center text-xs text-zinc-500 mt-auto font-medium">
-                <div className="truncate max-w-[55%] text-zinc-400 mr-2">{school.pricing}</div>
-                <Link
-                  href={`/schools/${school.id}`}
-                  className="text-white hover:text-brand font-bold transition-colors"
-                >
-                  Details &rarr;
-                </Link>
-              </div>
-            </article>
-          ))}
+                    View Details
+                    <span className="absolute bottom-0 left-0 w-full h-[1px] bg-[#171717] hover-line-target"></span>
+                  </Link>
+                </div>
+              </article>
+            ))
+          )}
         </div>
-      )}
+
+      </div>
     </section>
   );
 }

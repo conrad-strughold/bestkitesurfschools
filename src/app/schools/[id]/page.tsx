@@ -26,145 +26,131 @@ export default async function SchoolPage({
     <>
       <Navigation />
       
-      {/* Hero Section */}
-      <header className="relative h-[65svh] w-full flex flex-col justify-end overflow-hidden pb-16 px-6 md:px-12 border-b border-zinc-900">
+      {/* Editorial Hero */}
+      <header className="relative h-[90svh] w-full flex items-end pb-24 px-6 md:px-16 lg:px-24 bg-[#171717]">
         <div className="absolute inset-0 z-0">
           <Image
             src={school.image || "/images/hero.png"}
             alt={school.name}
             fill
-            className="object-cover opacity-60"
+            className="object-cover opacity-80 mix-blend-overlay"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/80 to-zinc-950/20"></div>
+          <div className="absolute inset-0 bg-black/40"></div>
         </div>
 
-        <div className="relative z-10 max-w-5xl mx-auto w-full">
-          <div className="mb-4 flex items-center space-x-2 text-brand text-xs font-bold tracking-widest uppercase">
-            <Link href="/" className="hover:text-white transition-colors">Directory</Link>
-            <span className="text-zinc-600">/</span>
-            <span className="text-zinc-400">{school.region.replace("-", " ")}</span>
+        <div className="relative z-10 w-full max-w-[1400px] mx-auto flex flex-col md:flex-row md:items-end justify-between gap-12">
+          <div className="max-w-4xl">
+            <div className="mb-8 flex items-center space-x-3 text-white text-[10px] tracking-[0.2em] uppercase font-medium">
+              <Link href="/#locations" className="hover:opacity-60 transition-opacity">Directory</Link>
+              <span className="opacity-40">/</span>
+              <span className="opacity-80">{school.country}</span>
+            </div>
+            <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl text-white leading-[0.9] tracking-tight mb-8">
+              {school.name}
+            </h1>
+            <div className="text-white/60 text-lg md:text-xl font-light tracking-wide uppercase">
+              {school.city}, {school.country}
+            </div>
           </div>
-          <h1 className="font-serif text-5xl md:text-7xl text-white font-bold leading-tight mb-6 tracking-tight drop-shadow-2xl">
-            {school.name}
-          </h1>
-          <div className="flex items-center text-zinc-300 text-lg md:text-xl font-light tracking-wide">
-            <span className="mr-2 opacity-80">📍</span> {school.city}, {school.country}
+          
+          <div className="md:w-64 pb-2">
+            <a
+              href={school.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative text-white text-xs tracking-[0.15em] uppercase font-medium group inline-flex items-center"
+            >
+              <span className="pb-1 border-b border-white/30 group-hover:border-white transition-colors">Visit Official Website</span>
+              <svg className="w-4 h-4 ml-3 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+            </a>
           </div>
         </div>
       </header>
 
-      <main className="relative z-20 bg-zinc-950 text-zinc-100 py-16 px-6 md:px-12">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-16">
-          
-          {/* Main Content Column */}
-          <div className="lg:col-span-2">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold mb-6 text-white">The Experience</h2>
-            <div className="w-12 h-1 bg-brand mb-8"></div>
+      <main className="relative z-20 bg-[#FDFBF7] text-[#171717]">
+        {/* Layout Shift: Text left, info right */}
+        <div className="w-full px-6 md:px-16 lg:px-24 py-32 max-w-[1600px] mx-auto">
+          <div className="flex flex-col lg:flex-row gap-24">
             
-            <p className="text-lg text-zinc-400 leading-relaxed font-light mb-8 whitespace-pre-wrap">
-              {school.longDescription || school.description}
-            </p>
+            {/* Editorial Content */}
+            <div className="lg:w-3/5">
+              <p className="text-xl md:text-3xl text-[#171717] leading-relaxed font-light mb-16 tracking-tight">
+                {school.description}
+              </p>
+              
+              <div className="w-full h-px bg-[#171717]/10 mb-16"></div>
+              
+              <h2 className="font-serif text-4xl mb-8">The Philosophy</h2>
+              <p className="text-base md:text-lg text-[#171717]/70 leading-[1.8] font-light mb-16 whitespace-pre-wrap">
+                {school.longDescription || "A dedication to the purity of the sport and an uncompromising relationship with the local elements."}
+              </p>
 
-            <h3 className="font-serif text-2xl font-bold mb-5 mt-12 text-white">Specialties & Vibe</h3>
-            <div className="flex flex-wrap gap-3 mb-8">
-              {school.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="bg-zinc-900 text-zinc-300 text-sm px-4 py-2 rounded-lg border border-zinc-800 font-medium uppercase tracking-wide shadow-sm"
-                >
-                  {tag}
-                </span>
-              ))}
+              {school.gallery && school.gallery.length > 0 && (
+                <div className="mt-24">
+                  <div className="w-full h-px bg-[#171717]/10 mb-12"></div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    {school.gallery.map((img, i) => (
+                      <div key={i} className="relative h-80 md:h-[500px]">
+                        <Image src={img} alt={`${school.name} view ${i}`} fill className="object-cover" />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
 
-            {school.gallery && school.gallery.length > 0 && (
-              <>
-                <h3 className="font-serif text-2xl font-bold mb-5 mt-12 text-white">Gallery</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  {school.gallery.map((img, i) => (
-                    <div key={i} className="relative h-48 sm:h-64 rounded-xl overflow-hidden border border-zinc-800">
-                      <Image src={img} alt={`${school.name} view ${i}`} fill className="object-cover hover:scale-105 transition-transform duration-700" />
+            {/* Sidebar Data */}
+            <aside className="lg:w-2/5">
+              <div className="sticky top-32">
+                
+                <div className="border-t border-[#171717]/10 pt-12 mb-16">
+                  <h3 className="text-xs font-medium uppercase tracking-[0.2em] mb-8 text-[#171717]/50">Essential Detail</h3>
+                  
+                  <div className="space-y-8">
+                    <div className="flex flex-col">
+                      <span className="text-[10px] tracking-[0.1em] uppercase text-[#171717]/40 mb-2">Season</span>
+                      <span className="font-serif text-2xl text-[#1A365D]">{school.season}</span>
                     </div>
-                  ))}
-                </div>
-              </>
-            )}
-          </div>
+                    
+                    <div className="flex flex-col">
+                      <span className="text-[10px] tracking-[0.1em] uppercase text-[#171717]/40 mb-2">Investment</span>
+                      <span className="font-serif text-2xl">{school.pricing}</span>
+                    </div>
 
-          {/* Sidebar */}
-          <aside className="space-y-8">
-            <div className="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 shadow-xl">
-              <h3 className="font-serif text-2xl font-bold mb-6 text-white">Quick Facts</h3>
-              
-              <div className="space-y-5 mb-8">
-                <div>
-                  <p className="text-xs text-zinc-500 font-bold uppercase tracking-widest mb-1">Season</p>
-                  <p className="font-medium text-zinc-200">{school.season}</p>
+                    <div className="flex flex-col">
+                      <span className="text-[10px] tracking-[0.1em] uppercase text-[#171717]/40 mb-2">Direct Contact</span>
+                      <a href={`mailto:${school.contact}`} className="font-serif text-xl hover:text-[#319795] transition-colors">{school.contact}</a>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-xs text-zinc-500 font-bold uppercase tracking-widest mb-1">Pricing Guide</p>
-                  <p className="font-medium text-zinc-200">{school.pricing}</p>
-                </div>
-                {school.certification && (
-                  <div>
-                    <p className="text-xs text-zinc-500 font-bold uppercase tracking-widest mb-1">Certification</p>
-                    <p className="font-medium text-zinc-200">{school.certification}</p>
+
+                {school.tags.length > 0 && (
+                  <div className="border-t border-[#171717]/10 pt-12 mb-16">
+                    <h3 className="text-xs font-medium uppercase tracking-[0.2em] mb-8 text-[#171717]/50">Characteristics</h3>
+                    <div className="flex flex-col space-y-4">
+                      {school.tags.map((tag) => (
+                        <span key={tag} className="font-light text-[#171717]/80 flex items-center">
+                          <span className="w-6 h-px bg-[#171717]/20 mr-4"></span>
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 )}
+                
               </div>
+            </aside>
 
-              <a
-                href={school.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block text-center w-full bg-white hover:bg-zinc-200 text-black font-semibold py-4 rounded-xl transition-all duration-300 shadow-md mb-4"
-              >
-                Visit Official Website
-              </a>
-              <a
-                href={`mailto:${school.contact}`}
-                className="block text-center w-full bg-transparent border border-zinc-700 text-white hover:bg-zinc-800 font-semibold py-3.5 rounded-xl transition-all duration-300"
-              >
-                Contact School
-              </a>
-            </div>
-
-            {school.equipment && (
-              <div className="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 shadow-xl">
-                <h3 className="font-serif text-xl font-bold mb-4 text-white">Equipment Vault</h3>
-                <ul className="space-y-3">
-                  {school.equipment.map((eq, i) => (
-                    <li key={i} className="flex items-center text-sm font-medium text-zinc-400">
-                      <span className="w-1.5 h-1.5 rounded-full bg-brand mr-3"></span>
-                      {eq}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-
-            {school.amenities && (
-              <div className="bg-zinc-900 p-8 rounded-2xl border border-zinc-800 shadow-xl">
-                <h3 className="font-serif text-xl font-bold mb-4 text-white">Amenities</h3>
-                <ul className="space-y-3">
-                  {school.amenities.map((am, i) => (
-                    <li key={i} className="flex items-center text-sm font-medium text-zinc-400">
-                      <span className="w-1.5 h-1.5 rounded-full bg-brand mr-3"></span>
-                      {am}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
-            
-          </aside>
+          </div>
         </div>
       </main>
       
-      <footer className="bg-black text-zinc-100 py-12 px-6 md:px-12 border-t border-zinc-900 text-center text-sm">
-        <Link href="/" className="inline-block mb-4 text-zinc-500 hover:text-white transition-colors">&larr; Back to Directory</Link>
-        <p className="text-zinc-700">&copy; 2026 BestKitesurfSchools.com</p>
+      <footer className="w-full bg-[#171717] text-[#FDFBF7] py-20 px-6 md:px-16 text-center">
+        <Link href="/#locations" className="inline-flex flex-col items-center group relative">
+          <span className="text-xs tracking-[0.15em] uppercase font-light pb-2">Return to Directory</span>
+          <span className="w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
+        </Link>
       </footer>
     </>
   );

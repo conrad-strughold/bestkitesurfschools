@@ -11,15 +11,14 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  const featuredSchools = schools.filter((s) => s.featured);
-  const standardSchools = schools.filter((s) => !s.featured && s.id !== "north-wind");
+  const standardSchools = schools.filter((s) => s.id !== "north-wind");
 
   return (
     <>
       <Navigation />
       
-      {/* Hero Section */}
-      <header className="relative h-[100svh] w-full flex items-center justify-center overflow-hidden">
+      {/* Hero Section - Edge to Edge */}
+      <header className="relative w-full h-[100svh] flex items-center bg-[#171717]">
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/hero.png"
@@ -28,109 +27,107 @@ export default function Home() {
             className="object-cover opacity-80"
             priority
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-zinc-950/80 via-zinc-950/50 to-zinc-950"></div>
+          <div className="absolute inset-0 bg-black/30"></div>
         </div>
 
-        <div className="relative z-10 text-center px-6 max-w-5xl mx-auto mt-12 animate-in fade-in slide-in-from-bottom-8 duration-1000">
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white font-bold leading-tight mb-8 tracking-tight drop-shadow-2xl">
-            The World's Best <br />
-            <span className="italic font-light">Kitesurf Schools</span>
+        <div className="relative z-10 w-full px-6 md:px-16 lg:px-24 max-w-[1600px] mx-auto animate-in fade-in duration-1000 mt-20">
+          <p className="text-white text-xs tracking-[0.2em] uppercase font-light mb-6">
+            The Definitive Global Directory
+          </p>
+          <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl text-white leading-[0.95] tracking-tight max-w-5xl mb-12">
+            The World's Best Kitesurf Schools.
           </h1>
-          <div className="flex flex-col items-center justify-center mb-12">
-            <div className="w-16 h-px bg-brand mb-6"></div>
-            <p className="text-zinc-300 text-lg md:text-xl font-light tracking-wide max-w-xl">
-              Curated. Verified. Trusted by riders worldwide. Uncover the absolute pinnacle of kitesurf education.
-            </p>
-          </div>
-          <div>
-            <Link
-              href="#featured-spotlight"
-              className="inline-block bg-white text-zinc-950 font-semibold px-10 py-4 rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.1)] hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] hover:scale-105 active:scale-95"
-            >
-              Explore Directory
-            </Link>
-          </div>
+          <Link
+            href="#locations"
+            className="inline-flex items-center text-white text-sm tracking-[0.1em] uppercase font-light group"
+          >
+            <span className="relative pb-1">
+              Explore The Collection
+              <span className="absolute bottom-0 left-0 w-full h-px bg-white transform origin-right scale-x-100 transition-transform duration-500 group-hover:scale-x-0"></span>
+            </span>
+            <svg className="w-4 h-4 ml-4 transform transition-transform duration-500 group-hover:translate-x-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+          </Link>
         </div>
       </header>
 
-      <main className="relative z-20 bg-zinc-950 text-zinc-100">
+      <main className="relative z-20">
         
-        {/* Deep Spotlight Section (Conversion feature) */}
-        <section id="featured-spotlight" className="pt-24 pb-16 px-6 md:px-12 max-w-6xl mx-auto scroll-mt-20">
-           <div className="bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden flex flex-col md:flex-row group">
-             <div className="md:w-1/2 relative h-80 md:h-auto overflow-hidden">
-                <Image src="/images/kitesurf-moledo-portugal.jpg" alt="North Wind Kitesurf & Wingfoil School" fill className="object-cover transition-transform duration-1000 group-hover:scale-105" />
-                <div className="absolute top-6 left-6 bg-brand text-white text-[10px] font-bold px-4 py-2 rounded-full uppercase tracking-widest shadow-lg">
-                  Spotlight 2026
-                </div>
-             </div>
-             <div className="md:w-1/2 p-10 md:p-14 flex flex-col justify-center">
-                <h3 className="font-serif text-3xl md:text-4xl font-bold text-white mb-4">North Wind Kitesurf & Wingfoil School</h3>
-                <p className="text-zinc-400 font-light leading-relaxed mb-6">
-                  Featured as our <Link href="/best-kitesurf-schools-portugal" className="text-brand hover:underline">top rated school in Portugal</Link>, North Wind offers an unmatched boutique experience. Positioned on the uncrowded northern coast in Moledo, they capitalize on fiercely reliable thermal winds. Avoid the crowded southern beaches and experience true tailored progression.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 mt-auto">
-                  <a href="https://northwindkiteportugal.com" target="_blank" rel="noopener noreferrer" className="bg-white text-black px-8 py-3 rounded-xl font-bold text-center hover:bg-zinc-200 transition-colors shadow-md">
-                    Book Lessons
-                  </a>
-                  <Link href="/portugal/kitesurf-school" className="bg-transparent border border-zinc-700 text-zinc-300 px-8 py-3 rounded-xl font-bold text-center hover:bg-zinc-800 hover:text-white transition-colors">
-                    Read The Review
-                  </Link>
-                </div>
-             </div>
-           </div>
+        {/* Editor's Featured Pick - Asymmetrical Split Section */}
+        <section id="featured-spotlight" className="w-full flex flex-col lg:flex-row min-h-[90svh] scroll-mt-20">
+          {/* Image Side (Left) */}
+          <div className="w-full lg:w-1/2 relative h-[60svh] lg:h-auto">
+            <Image 
+              src="/images/kitesurf-moledo-portugal.jpg" 
+              alt="North Wind Kitesurf & Wingfoil School" 
+              fill 
+              className="object-cover" 
+            />
+          </div>
+          
+          {/* Content Side (Right) */}
+          <div className="w-full lg:w-1/2 flex items-center p-12 md:p-24 lg:p-32 bg-[#FDFBF7]">
+            <div className="max-w-xl">
+              <span className="text-[#1A365D] text-xs font-light uppercase tracking-[0.15em] block mb-8">
+                Featured Location
+              </span>
+              <h2 className="font-serif text-5xl md:text-6xl text-[#171717] leading-tight mb-8">
+                North Wind <br/>Kitesurf & Wingfoil
+              </h2>
+              <div className="flex items-center text-sm text-[#171717]/60 uppercase tracking-widest font-light mb-10">
+                Moledo, Portugal
+              </div>
+              <p className="text-[#171717]/80 text-lg md:text-xl font-light leading-relaxed mb-12">
+                Highlighted as our <Link href="/best-kitesurf-schools-portugal" className="underline hover:text-[#319795] transition-colors">top rated school in Portugal</Link>, North Wind offers an unmatched boutique experience. Capitalizing on fiercely reliable thermal winds off the uncrowded northern coast, they embody the absolute pinnacle of high-end, tailored progression.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-8 items-start">
+                <a href="https://northwindkiteportugal.com" target="_blank" rel="noopener noreferrer" className="relative group text-[#171717] text-sm tracking-[0.1em] uppercase font-medium">
+                  <span className="pb-1">Book Lessons</span>
+                  <span className="absolute bottom-0 left-0 w-full h-[1px] bg-[#1A365D] transform origin-left scale-x-0 transition-transform duration-500 group-hover:scale-x-100"></span>
+                </a>
+                <Link href="/portugal/kitesurf-school" className="relative group text-[#171717]/60 text-sm tracking-[0.1em] uppercase font-light">
+                  <span className="pb-1">Read The Review</span>
+                  <span className="absolute bottom-0 left-0 w-full h-[1px] bg-[#171717] transform origin-left scale-x-0 transition-transform duration-500 group-hover:scale-x-100"></span>
+                </Link>
+              </div>
+            </div>
+          </div>
         </section>
 
-        {/* Global Directory Section Component */}
+        {/* Global Directory Grid Component */}
         <SchoolGrid standardSchools={standardSchools} />
         
-        {/* SEO Internal Link Footer Expansion */}
-        <section className="border-t border-zinc-900 bg-black pt-20 pb-10 px-6 md:px-12">
-           <div className="max-w-5xl mx-auto">
-              <h4 className="font-serif text-2xl font-bold text-white mb-6">Regional Guides & Deep Dives</h4>
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                 <div>
-                    <h5 className="text-brand text-xs font-bold uppercase tracking-widest mb-3">Portugal Masterclass</h5>
-                    <ul className="space-y-2 text-sm text-zinc-500 font-light">
-                       <li><Link href="/best-kitesurf-schools-portugal" className="hover:text-white transition-colors">The Best Kitesurf Schools in Portugal</Link></li>
-                       <li><Link href="/portugal/kitesurf-school" className="hover:text-white transition-colors">Ultimate Guide to Kitesurf School Portugal</Link></li>
-                       <li><Link href="/portugal/moledo" className="hover:text-white transition-colors">Moledo Kitesurf Spot Guide</Link></li>
-                       <li><Link href="/wingfoil-portugal" className="hover:text-white transition-colors">Wingfoil Portugal Directory</Link></li>
-                    </ul>
+        {/* Editorial Footer Navigation */}
+        <section className="w-full pt-32 pb-20 px-6 md:px-16 lg:px-24 bg-[#171717] text-[#FDFBF7]">
+           <div className="max-w-[1400px] mx-auto border-t border-white/20 pt-16">
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-12 lg:gap-24">
+                 <div className="md:col-span-2">
+                    <h3 className="font-serif text-4xl mb-6">BestKitesurfSchools.</h3>
+                    <p className="text-white/50 font-light max-w-sm leading-relaxed">
+                      A curated editorial deep dive into the world's most elite watersport academies. Uncompromising standards.
+                    </p>
                  </div>
-                 {/* Placeholders for future programmatic expansion */}
                  <div>
-                    <h5 className="text-zinc-600 text-xs font-bold uppercase tracking-widest mb-3">Americas</h5>
-                    <ul className="space-y-2 text-sm text-zinc-600 font-light">
-                       <li className="cursor-not-allowed">Best Schools in Dominican Republic</li>
-                       <li className="cursor-not-allowed">Hatteras Sound Riding Guide</li>
-                       <li className="cursor-not-allowed">Brazil Trade Winds Mastery</li>
+                    <h5 className="text-xs font-light uppercase tracking-[0.15em] mb-8 text-white/40">Portugal Guides</h5>
+                    <ul className="space-y-4 text-sm font-light text-white/80">
+                       <li><Link href="/best-kitesurf-schools-portugal" className="hover:text-white transition-colors relative group"><span className="pb-1">Top Schools</span><span className="absolute bottom-0 left-0 w-0 h-px bg-white transition-all group-hover:w-full"></span></Link></li>
+                       <li><Link href="/portugal/kitesurf-school" className="hover:text-white transition-colors relative group"><span className="pb-1">Kite Portugal</span><span className="absolute bottom-0 left-0 w-0 h-px bg-white transition-all group-hover:w-full"></span></Link></li>
+                       <li><Link href="/portugal/moledo" className="hover:text-white transition-colors relative group"><span className="pb-1">Moledo Guide</span><span className="absolute bottom-0 left-0 w-0 h-px bg-white transition-all group-hover:w-full"></span></Link></li>
+                       <li><Link href="/wingfoil-portugal" className="hover:text-white transition-colors relative group"><span className="pb-1">Wingfoil Tips</span><span className="absolute bottom-0 left-0 w-0 h-px bg-white transition-all group-hover:w-full"></span></Link></li>
                     </ul>
                  </div>
                  <div>
-                    <h5 className="text-zinc-600 text-xs font-bold uppercase tracking-widest mb-3">Africa & Middle East</h5>
-                    <ul className="space-y-2 text-sm text-zinc-600 font-light">
-                       <li className="cursor-not-allowed">Dakhla Lagoon Reviews</li>
-                       <li className="cursor-not-allowed">Egypt Red Sea Kitesurfing</li>
-                       <li className="cursor-not-allowed">Cape Town Big Air Strategy</li>
+                    <h5 className="text-xs font-light uppercase tracking-[0.15em] mb-8 text-white/40">Global</h5>
+                    <ul className="space-y-4 text-sm font-light text-white/80">
+                       <li><span className="opacity-50 cursor-not-allowed">Americas</span></li>
+                       <li><span className="opacity-50 cursor-not-allowed">Africa</span></li>
+                       <li><span className="opacity-50 cursor-not-allowed">Asia</span></li>
                     </ul>
                  </div>
               </div>
            </div>
         </section>
-
       </main>
-
-      <footer className="bg-black text-zinc-100 pb-16 px-6 md:px-12 border-t border-zinc-900">
-        <div className="max-w-7xl mx-auto text-center pt-16">
-          <h3 className="font-serif text-3xl font-bold mb-2">BestKitesurfSchools</h3>
-          <p className="text-zinc-500 text-sm tracking-wide">The World's Finest Instruction</p>
-          <div className="mt-16 pt-8 border-t border-zinc-900 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-zinc-600">
-            <p>&copy; 2026 BestKitesurfSchools.com. All rights reserved.</p>
-            <p className="italic">Not affiliated with any individual school. Independently researched.</p>
-          </div>
-        </div>
-      </footer>
     </>
   );
 }

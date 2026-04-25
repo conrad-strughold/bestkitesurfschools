@@ -17,62 +17,61 @@ export function Navigation() {
   return (
     <>
       <nav
-        className={`fixed w-full z-50 transition-all duration-300 px-6 md:px-12 ${
+        className={`fixed w-full z-50 transition-all duration-500 px-6 md:px-16 ${
           scrolled || menuOpen
-            ? "glass-nav text-navy py-4"
-            : "text-sand py-6 border-b border-transparent"
+            ? "glass-nav py-5"
+            : "text-white py-8 border-b border-transparent bg-transparent"
         }`}
       >
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
+        <div className="max-w-[1400px] mx-auto flex justify-between items-center">
           <Link
             href="/"
-            className="font-serif text-2xl md:text-3xl font-bold tracking-tight z-50 group"
+            className="font-serif text-2xl tracking-[0.05em] z-50 group hover:opacity-70 transition-opacity"
           >
-            BestKitesurf<span className="text-accent group-hover:opacity-80 transition-opacity">Schools</span>
+            BestKitesurfSchools
           </Link>
 
-          <div className="hidden md:flex space-x-10 text-sm font-medium tracking-wide">
-            <Link href="/" className="hover:text-accent transition-colors">
-              Home
+          <div className="hidden md:flex space-x-12 text-xs uppercase tracking-[0.15em] font-light">
+            <Link href="/" className="relative group">
+              <span className="pb-1">Home</span>
+              <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-current transition-all duration-300 group-hover:w-full"></span>
             </Link>
-            <Link href="/#locations" className="hover:text-accent transition-colors">
-              Locations
+            <Link href="/#locations" className="relative group">
+              <span className="pb-1">Locations</span>
+              <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-current transition-all duration-300 group-hover:w-full"></span>
             </Link>
           </div>
 
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden z-50 focus:outline-none text-current transition-colors hover:text-accent"
+            className="md:hidden z-50 focus:outline-none text-current transition-colors hover:opacity-50"
           >
-            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="1.5"
-                d={menuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
-              ></path>
-            </svg>
+            <div className="flex flex-col space-y-1.5 w-6">
+              <span className={`h-px bg-current transition-all ${menuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
+              <span className={`h-px bg-current transition-all ${menuOpen ? 'opacity-0' : ''}`}></span>
+              <span className={`h-px bg-current transition-all ${menuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
+            </div>
           </button>
         </div>
       </nav>
 
       {/* Mobile Menu */}
       <div
-        className={`fixed inset-0 bg-sand z-40 flex flex-col justify-center items-center space-y-8 transition-opacity duration-300 md:hidden text-navy ${
+        className={`fixed inset-0 bg-[#FDFBF7] z-40 flex flex-col justify-center items-center space-y-12 transition-opacity duration-500 md:hidden text-[#171717] ${
           menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
       >
         <Link
           href="/"
           onClick={() => setMenuOpen(false)}
-          className="text-4xl font-serif hover:text-accent transition-colors"
+          className="text-5xl font-serif hover:opacity-50 transition-opacity tracking-tight"
         >
           Home
         </Link>
         <Link
           href="/#locations"
           onClick={() => setMenuOpen(false)}
-          className="text-4xl font-serif hover:text-accent transition-colors"
+          className="text-5xl font-serif hover:opacity-50 transition-opacity tracking-tight"
         >
           Locations
         </Link>
