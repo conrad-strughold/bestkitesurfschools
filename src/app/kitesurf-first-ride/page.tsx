@@ -7,6 +7,19 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Your First Kitesurf Ride: Staying Up | Best Kitesurf Schools",
   description: "Comprehensive guide to your first kitesurf ride: staying up.",
+  openGraph: {
+    title: "Your First Kitesurf Ride: Staying Up",
+    description: "Read our comprehensive guide to your first kitesurf ride: staying up on BestKitesurfSchools.",
+    url: "https://bestkitesurfschools.com/kitesurf-first-ride",
+    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "Your First Kitesurf Ride: Staying Up" }],
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Your First Kitesurf Ride: Staying Up | Best Kitesurf Schools",
+    description: "Read our comprehensive guide to your first kitesurf ride: staying up.",
+    images: ["https://bestkitesurfschools.com/images/hero.png"],
+  }
 };
 
 export default function GuidePage() {

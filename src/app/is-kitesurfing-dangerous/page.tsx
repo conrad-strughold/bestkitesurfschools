@@ -7,6 +7,19 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Is Kitesurfing Dangerous? | Best Kitesurf Schools",
   description: "Comprehensive guide to is kitesurfing dangerous?.",
+  openGraph: {
+    title: "Is Kitesurfing Dangerous?",
+    description: "Read our comprehensive guide to is kitesurfing dangerous? on BestKitesurfSchools.",
+    url: "https://bestkitesurfschools.com/is-kitesurfing-dangerous",
+    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "Is Kitesurfing Dangerous?" }],
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Is Kitesurfing Dangerous? | Best Kitesurf Schools",
+    description: "Read our comprehensive guide to is kitesurfing dangerous?.",
+    images: ["https://bestkitesurfschools.com/images/hero.png"],
+  }
 };
 
 export default function GuidePage() {

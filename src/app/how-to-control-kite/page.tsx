@@ -7,6 +7,19 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "How To Control A Kitesurfing Kite | Best Kitesurf Schools",
   description: "Comprehensive guide to how to control a kitesurfing kite.",
+  openGraph: {
+    title: "How To Control A Kitesurfing Kite",
+    description: "Read our comprehensive guide to how to control a kitesurfing kite on BestKitesurfSchools.",
+    url: "https://bestkitesurfschools.com/how-to-control-kite",
+    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "How To Control A Kitesurfing Kite" }],
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "How To Control A Kitesurfing Kite | Best Kitesurf Schools",
+    description: "Read our comprehensive guide to how to control a kitesurfing kite.",
+    images: ["https://bestkitesurfschools.com/images/hero.png"],
+  }
 };
 
 export default function GuidePage() {

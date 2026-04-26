@@ -5,19 +5,19 @@ import { Navigation } from "@/components/Navigation";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "The Best Wind Apps For Kitesurfing | Best Kitesurf Schools",
-  description: "Comprehensive guide to the best wind apps for kitesurfing.",
+  title: "Do You Need To Be Strong To Kitesurf? | Best Kitesurf Schools",
+  description: "Comprehensive guide to do you need to be strong to kitesurf?.",
   openGraph: {
-    title: "The Best Wind Apps For Kitesurfing",
-    description: "Read our comprehensive guide to the best wind apps for kitesurfing on BestKitesurfSchools.",
-    url: "https://bestkitesurfschools.com/best-wind-apps-kitesurfing",
-    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "The Best Wind Apps For Kitesurfing" }],
+    title: "Do You Need To Be Strong To Kitesurf?",
+    description: "Read our comprehensive guide to do you need to be strong to kitesurf? on BestKitesurfSchools.",
+    url: "https://bestkitesurfschools.com/kitesurf-fitness-requirements",
+    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "Do You Need To Be Strong To Kitesurf?" }],
     type: "article",
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Best Wind Apps For Kitesurfing | Best Kitesurf Schools",
-    description: "Read our comprehensive guide to the best wind apps for kitesurfing.",
+    title: "Do You Need To Be Strong To Kitesurf? | Best Kitesurf Schools",
+    description: "Read our comprehensive guide to do you need to be strong to kitesurf?.",
     images: ["https://bestkitesurfschools.com/images/hero.png"],
   }
 };
@@ -33,7 +33,7 @@ export default function GuidePage() {
           <div className="absolute inset-0 bg-[#171717]"></div>
           <Image
             src="/images/hero.png"
-            alt="The Best Wind Apps For Kitesurfing"
+            alt="Do You Need To Be Strong To Kitesurf?"
             fill
             className="object-cover opacity-50 mix-blend-overlay grayscale"
             priority
@@ -47,7 +47,7 @@ export default function GuidePage() {
             <span className="opacity-80">Knowledge Hub</span>
           </div>
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-[0.9] tracking-tight mb-8">
-            The Best Wind Apps For Kitesurfing
+            Do You Need To Be Strong To Kitesurf?
           </h1>
         </div>
       </header>
@@ -59,19 +59,18 @@ export default function GuidePage() {
             {/* Main Content Column */}
             <div className="lg:w-2/3 editorial-content">
               
-      <h2 className="font-serif text-4xl mb-6 mt-12">The Industry Standards</h2>
+      <h2 className="font-serif text-4xl mb-6 mt-12">The Biggest Misconception</h2>
       <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
-        <strong>Windguru:</strong> The absolute gold standard for surfers and kiters. It offers deeply detailed tabular data. <br/><br/>
-        <strong>Windy:</strong> Incredible visual forecasting using particle animation. Perfect for understanding sweeping weather systems.
+        "I don't have the upper body strength for that." It is the most common phrase heard on the beach by spectators, and it is entirely false.
       </p>
 
-      <h2 className="font-serif text-4xl mb-6 mt-12">How Beginners Interpret Wind</h2>
+      <h2 className="font-serif text-4xl mb-6 mt-12">Harnessing The Elements</h2>
       <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
-        Don't just look at the raw speed. Look at the gust factor (the difference between base speed and peak gusts). If base wind is 15 knots but gusts are 30 knots, it is unsafe for a beginner. 
+        Unlike wakeboarding where the pull goes directly through your arms and back, in kitesurfing, 95% of the kite's force is directed straight to your center of gravity via the seat or waist harness.
       </p>
-
+      
       <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
-        Note that apps often underestimate local thermal winds. For example, in <Link href="/kitesurf-moledo" className="underline hover:text-[#319795]">northern Portugal</Link>, you can often add 5-8 knots to the forecast due to the geographical funneling effect in the summer.
+        You steer the bar purely with your fingertips. If your arms are burning, you are holding the bar far too tightly or using outdated, non-depower equipment. Core strength and leg endurance (specifically the quads) are much more vital than upper body muscle.
       </p>
     
               

@@ -7,6 +7,19 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Wingfoil Beginner Guide: Taking Flight | Best Kitesurf Schools",
   description: "Comprehensive guide to wingfoil beginner guide: taking flight.",
+  openGraph: {
+    title: "Wingfoil Beginner Guide: Taking Flight",
+    description: "Read our comprehensive guide to wingfoil beginner guide: taking flight on BestKitesurfSchools.",
+    url: "https://bestkitesurfschools.com/wingfoil-beginner-guide",
+    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "Wingfoil Beginner Guide: Taking Flight" }],
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Wingfoil Beginner Guide: Taking Flight | Best Kitesurf Schools",
+    description: "Read our comprehensive guide to wingfoil beginner guide: taking flight.",
+    images: ["https://bestkitesurfschools.com/images/hero.png"],
+  }
 };
 
 export default function GuidePage() {

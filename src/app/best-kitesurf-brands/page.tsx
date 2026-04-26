@@ -7,6 +7,19 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Best Kitesurf Brands & Gear Selection | Best Kitesurf Schools",
   description: "Comprehensive guide to best kitesurf brands & gear selection.",
+  openGraph: {
+    title: "Best Kitesurf Brands & Gear Selection",
+    description: "Read our comprehensive guide to best kitesurf brands & gear selection on BestKitesurfSchools.",
+    url: "https://bestkitesurfschools.com/best-kitesurf-brands",
+    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "Best Kitesurf Brands & Gear Selection" }],
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Best Kitesurf Brands & Gear Selection | Best Kitesurf Schools",
+    description: "Read our comprehensive guide to best kitesurf brands & gear selection.",
+    images: ["https://bestkitesurfschools.com/images/hero.png"],
+  }
 };
 
 export default function GuidePage() {

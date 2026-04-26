@@ -7,6 +7,19 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Kitesurf Body Dragging: The Essential Skill | Best Kitesurf Schools",
   description: "Comprehensive guide to kitesurf body dragging: the essential skill.",
+  openGraph: {
+    title: "Kitesurf Body Dragging: The Essential Skill",
+    description: "Read our comprehensive guide to kitesurf body dragging: the essential skill on BestKitesurfSchools.",
+    url: "https://bestkitesurfschools.com/kitesurf-body-drag",
+    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "Kitesurf Body Dragging: The Essential Skill" }],
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kitesurf Body Dragging: The Essential Skill | Best Kitesurf Schools",
+    description: "Read our comprehensive guide to kitesurf body dragging: the essential skill.",
+    images: ["https://bestkitesurfschools.com/images/hero.png"],
+  }
 };
 
 export default function GuidePage() {

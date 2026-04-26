@@ -5,19 +5,19 @@ import { Navigation } from "@/components/Navigation";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "The Best Wind Apps For Kitesurfing | Best Kitesurf Schools",
-  description: "Comprehensive guide to the best wind apps for kitesurfing.",
+  title: "How Much Does It Cost To Learn Kitesurfing? | Best Kitesurf Schools",
+  description: "Comprehensive guide to how much does it cost to learn kitesurfing?.",
   openGraph: {
-    title: "The Best Wind Apps For Kitesurfing",
-    description: "Read our comprehensive guide to the best wind apps for kitesurfing on BestKitesurfSchools.",
-    url: "https://bestkitesurfschools.com/best-wind-apps-kitesurfing",
-    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "The Best Wind Apps For Kitesurfing" }],
+    title: "How Much Does It Cost To Learn Kitesurfing?",
+    description: "Read our comprehensive guide to how much does it cost to learn kitesurfing? on BestKitesurfSchools.",
+    url: "https://bestkitesurfschools.com/kitesurfing-cost-guide",
+    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "How Much Does It Cost To Learn Kitesurfing?" }],
     type: "article",
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Best Wind Apps For Kitesurfing | Best Kitesurf Schools",
-    description: "Read our comprehensive guide to the best wind apps for kitesurfing.",
+    title: "How Much Does It Cost To Learn Kitesurfing? | Best Kitesurf Schools",
+    description: "Read our comprehensive guide to how much does it cost to learn kitesurfing?.",
     images: ["https://bestkitesurfschools.com/images/hero.png"],
   }
 };
@@ -33,7 +33,7 @@ export default function GuidePage() {
           <div className="absolute inset-0 bg-[#171717]"></div>
           <Image
             src="/images/hero.png"
-            alt="The Best Wind Apps For Kitesurfing"
+            alt="How Much Does It Cost To Learn Kitesurfing?"
             fill
             className="object-cover opacity-50 mix-blend-overlay grayscale"
             priority
@@ -47,7 +47,7 @@ export default function GuidePage() {
             <span className="opacity-80">Knowledge Hub</span>
           </div>
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-[0.9] tracking-tight mb-8">
-            The Best Wind Apps For Kitesurfing
+            How Much Does It Cost To Learn Kitesurfing?
           </h1>
         </div>
       </header>
@@ -59,19 +59,19 @@ export default function GuidePage() {
             {/* Main Content Column */}
             <div className="lg:w-2/3 editorial-content">
               
-      <h2 className="font-serif text-4xl mb-6 mt-12">The Industry Standards</h2>
+      <h2 className="font-serif text-4xl mb-6 mt-12">The Initial Investment</h2>
       <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
-        <strong>Windguru:</strong> The absolute gold standard for surfers and kiters. It offers deeply detailed tabular data. <br/><br/>
-        <strong>Windy:</strong> Incredible visual forecasting using particle animation. Perfect for understanding sweeping weather systems.
+        Kitesports require precision equipment. Trying to cut corners financially on instruction or gear usually results in broken equipment or serious injury.
       </p>
 
-      <h2 className="font-serif text-4xl mb-6 mt-12">How Beginners Interpret Wind</h2>
+      <h2 className="font-serif text-4xl mb-6 mt-12">The Cost of Lessons</h2>
       <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
-        Don't just look at the raw speed. Look at the gust factor (the difference between base speed and peak gusts). If base wind is 15 knots but gusts are 30 knots, it is unsafe for a beginner. 
+        A standard beginner pipeline (approx. 10–12 hours) will cost between $600 and $900 depending on the location. Reputable European schools, like <Link href="/kitesurf-moledo" className="underline hover:text-[#319795]">North Wind in Moledo</Link>, offer premium, small-group instruction that provides an exceptional return on investment by speeding up progression.
       </p>
 
+      <h2 className="font-serif text-4xl mb-6 mt-12">Buying Gear</h2>
       <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
-        Note that apps often underestimate local thermal winds. For example, in <Link href="/kitesurf-moledo" className="underline hover:text-[#319795]">northern Portugal</Link>, you can often add 5-8 knots to the forecast due to the geographical funneling effect in the summer.
+        Once independent, buying a kite, bar, board, and harness new will range from $2,500 to $4,000. Many riders prefer to purchase second-hand gear from the previous season, cutting this cost down to roughly $1,500.
       </p>
     
               

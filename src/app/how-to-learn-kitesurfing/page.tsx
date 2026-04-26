@@ -7,6 +7,19 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "How To Learn Kitesurfing | Best Kitesurf Schools",
   description: "Comprehensive guide to how to learn kitesurfing.",
+  openGraph: {
+    title: "How To Learn Kitesurfing",
+    description: "Read our comprehensive guide to how to learn kitesurfing on BestKitesurfSchools.",
+    url: "https://bestkitesurfschools.com/how-to-learn-kitesurfing",
+    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "How To Learn Kitesurfing" }],
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "How To Learn Kitesurfing | Best Kitesurf Schools",
+    description: "Read our comprehensive guide to how to learn kitesurfing.",
+    images: ["https://bestkitesurfschools.com/images/hero.png"],
+  }
 };
 
 export default function GuidePage() {

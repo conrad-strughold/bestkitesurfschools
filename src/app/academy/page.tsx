@@ -91,6 +91,9 @@ export default function AcademyIndex() {
                   <div className="flex flex-col space-y-4">
                      <Link href="/kitesurfing-for-beginners" className="text-sm font-medium uppercase tracking-[0.1em] hover:text-[#1A365D] transition-colors border-b border-[#171717]/10 pb-2 inline-block max-w-sm">→ Kitesurfing For Beginners</Link>
                      <Link href="/how-to-learn-kitesurfing" className="text-sm font-medium uppercase tracking-[0.1em] hover:text-[#1A365D] transition-colors border-b border-[#171717]/10 pb-2 inline-block max-w-sm">→ Realistic Learning Timelines</Link>
+                     <Link href="/common-kitesurfing-mistakes" className="text-sm font-medium uppercase tracking-[0.1em] hover:text-[#1A365D] transition-colors border-b border-[#171717]/10 pb-2 inline-block max-w-sm">→ Top 5 Beginner Mistakes</Link>
+                     <Link href="/kitesurfing-cost-guide" className="text-sm font-medium uppercase tracking-[0.1em] hover:text-[#1A365D] transition-colors border-b border-[#171717]/10 pb-2 inline-block max-w-sm">→ The Cost of Gear & Lessons</Link>
+                     <Link href="/kitesurf-fitness-requirements" className="text-sm font-medium uppercase tracking-[0.1em] hover:text-[#1A365D] transition-colors border-b border-[#171717]/10 pb-2 inline-block max-w-sm">→ Do You Need To Be Strong?</Link>
                      <Link href="/is-kitesurfing-dangerous" className="text-sm font-medium uppercase tracking-[0.1em] hover:text-[#1A365D] transition-colors border-b border-[#171717]/10 pb-2 inline-block max-w-sm">→ Is Kitesurfing Dangerous?</Link>
                   </div>
                </div>

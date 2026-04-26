@@ -16,7 +16,32 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Best Kitesurf Schools | The World's Finest Instruction",
-  description: "A curated directory of the world's best kitesurfing schools.",
+  description: "A curated directory of the world's best kitesurfing schools. Discover premier centers globally and unlock progression secrets.",
+  openGraph: {
+    title: "Best Kitesurf Schools",
+    description: "A curated directory of the world's best kitesurfing schools.",
+    url: "https://bestkitesurfschools.com",
+    siteName: "BestKitesurfSchools",
+    images: [
+      {
+        url: "https://bestkitesurfschools.com/images/hero.png",
+        width: 1200,
+        height: 630,
+        alt: "Best Kitesurf Schools Preview",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Best Kitesurf Schools",
+    description: "A curated directory of the world's best kitesurfing schools.",
+    images: ["https://bestkitesurfschools.com/images/hero.png"],
+  },
+  icons: {
+    icon: "/icon.svg",
+  },
 };
 
 export default function RootLayout({

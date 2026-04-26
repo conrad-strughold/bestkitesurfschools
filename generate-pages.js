@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const generatePage = (title, content, videoEmbed = null) => `
+const generatePage = (slug, title, content, videoEmbed = null) => `
 import Image from "next/image";
 import Link from "next/link";
 import { Navigation } from "@/components/Navigation";
@@ -10,6 +10,19 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "${title} | Best Kitesurf Schools",
   description: "Comprehensive guide to ${title.toLowerCase()}.",
+  openGraph: {
+    title: "${title}",
+    description: "Read our comprehensive guide to ${title.toLowerCase()} on BestKitesurfSchools.",
+    url: "https://bestkitesurfschools.com/${slug}",
+    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "${title}" }],
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "${title} | Best Kitesurf Schools",
+    description: "Read our comprehensive guide to ${title.toLowerCase()}.",
+    images: ["https://bestkitesurfschools.com/images/hero.png"],
+  }
 };
 
 export default function GuidePage() {
@@ -380,6 +393,70 @@ const pages = [
         Beginners start on very large, voluminous boards. The first goal is simply 'taxiing' on your knees, holding the wing up to catch the wind. Once steady, you stand. As you build speed, the hydrofoil generates lift, pulling the board entirely out of the water. <Link href="/kitesurf-portugal" className="underline hover:text-[#319795]">Portugal</Link> is currently the epicenter for wingfoil learning in Europe!
       </p>
     `
+  },
+  {
+    slug: 'common-kitesurfing-mistakes',
+    title: 'Top 5 Common Kitesurfing Mistakes Beginners Make',
+    content: `
+      <h2 className="font-serif text-4xl mb-6 mt-12">The Traps of Progression</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        Learning to kitesurf is an incredibly rewarding journey, but it is easy to pick up bad habits. Recognizing these early can shave days off your learning curve.
+      </p>
+
+      <ul className="space-y-6 mb-8 mt-4">
+        <li className="flex flex-col">
+           <span className="text-[#1A365D] font-serif text-2xl mb-2">1. Pulling The Bar In A Panic</span>
+           <p className="text-[#171717]/80 font-light leading-[1.8]">The ultimate beginner instinct: if you lose balance, you grab the bar and pull. In kitesurfing, pulling the bar <em>increases</em> power. You must train yourself to "push away" when in trouble.</p>
+        </li>
+        <li className="flex flex-col">
+           <span className="text-[#1A365D] font-serif text-2xl mb-2">2. Staring At The Kite</span>
+           <p className="text-[#171717]/80 font-light leading-[1.8]">Looking up at the kite alters your body weight, pulling you off the back of the board. You need to feel the kite blindly and look where you want to go.</p>
+        </li>
+        <li className="flex flex-col">
+           <span className="text-[#1A365D] font-serif text-2xl mb-2">3. The Poo Stance</span>
+           <p className="text-[#171717]/80 font-light leading-[1.8]">Sitting back as if on an invisible chair stops you from edging against the wind. Throw your hips forward and lock your straight front leg to ride efficiently.</p>
+        </li>
+      </ul>
+    `
+  },
+  {
+    slug: 'kitesurfing-cost-guide',
+    title: 'How Much Does It Cost To Learn Kitesurfing?',
+    content: `
+      <h2 className="font-serif text-4xl mb-6 mt-12">The Initial Investment</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        Kitesports require precision equipment. Trying to cut corners financially on instruction or gear usually results in broken equipment or serious injury.
+      </p>
+
+      <h2 className="font-serif text-4xl mb-6 mt-12">The Cost of Lessons</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        A standard beginner pipeline (approx. 10–12 hours) will cost between $600 and $900 depending on the location. Reputable European schools, like <Link href="/kitesurf-moledo" className="underline hover:text-[#319795]">North Wind in Moledo</Link>, offer premium, small-group instruction that provides an exceptional return on investment by speeding up progression.
+      </p>
+
+      <h2 className="font-serif text-4xl mb-6 mt-12">Buying Gear</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        Once independent, buying a kite, bar, board, and harness new will range from $2,500 to $4,000. Many riders prefer to purchase second-hand gear from the previous season, cutting this cost down to roughly $1,500.
+      </p>
+    `
+  },
+  {
+    slug: 'kitesurf-fitness-requirements',
+    title: 'Do You Need To Be Strong To Kitesurf?',
+    content: `
+      <h2 className="font-serif text-4xl mb-6 mt-12">The Biggest Misconception</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        "I don't have the upper body strength for that." It is the most common phrase heard on the beach by spectators, and it is entirely false.
+      </p>
+
+      <h2 className="font-serif text-4xl mb-6 mt-12">Harnessing The Elements</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        Unlike wakeboarding where the pull goes directly through your arms and back, in kitesurfing, 95% of the kite's force is directed straight to your center of gravity via the seat or waist harness.
+      </p>
+      
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        You steer the bar purely with your fingertips. If your arms are burning, you are holding the bar far too tightly or using outdated, non-depower equipment. Core strength and leg endurance (specifically the quads) are much more vital than upper body muscle.
+      </p>
+    `
   }
 ];
 
@@ -389,6 +466,6 @@ pages.forEach(page => {
       fs.mkdirSync(dirPath, { recursive: true });
   }
   const filePath = path.join(dirPath, 'page.tsx');
-  fs.writeFileSync(filePath, generatePage(page.title, page.content, page.videoEmbed));
+  fs.writeFileSync(filePath, generatePage(page.slug, page.title, page.content, page.videoEmbed));
   console.log('Generated: ' + filePath);
 });

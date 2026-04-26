@@ -7,6 +7,19 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Kitesurf Wind Guide: Reading The Elements | Best Kitesurf Schools",
   description: "Comprehensive guide to kitesurf wind guide: reading the elements.",
+  openGraph: {
+    title: "Kitesurf Wind Guide: Reading The Elements",
+    description: "Read our comprehensive guide to kitesurf wind guide: reading the elements on BestKitesurfSchools.",
+    url: "https://bestkitesurfschools.com/kitesurf-wind-guide",
+    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "Kitesurf Wind Guide: Reading The Elements" }],
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kitesurf Wind Guide: Reading The Elements | Best Kitesurf Schools",
+    description: "Read our comprehensive guide to kitesurf wind guide: reading the elements.",
+    images: ["https://bestkitesurfschools.com/images/hero.png"],
+  }
 };
 
 export default function GuidePage() {

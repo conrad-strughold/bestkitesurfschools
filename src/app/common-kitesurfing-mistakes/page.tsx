@@ -5,19 +5,19 @@ import { Navigation } from "@/components/Navigation";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "The Best Wind Apps For Kitesurfing | Best Kitesurf Schools",
-  description: "Comprehensive guide to the best wind apps for kitesurfing.",
+  title: "Top 5 Common Kitesurfing Mistakes Beginners Make | Best Kitesurf Schools",
+  description: "Comprehensive guide to top 5 common kitesurfing mistakes beginners make.",
   openGraph: {
-    title: "The Best Wind Apps For Kitesurfing",
-    description: "Read our comprehensive guide to the best wind apps for kitesurfing on BestKitesurfSchools.",
-    url: "https://bestkitesurfschools.com/best-wind-apps-kitesurfing",
-    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "The Best Wind Apps For Kitesurfing" }],
+    title: "Top 5 Common Kitesurfing Mistakes Beginners Make",
+    description: "Read our comprehensive guide to top 5 common kitesurfing mistakes beginners make on BestKitesurfSchools.",
+    url: "https://bestkitesurfschools.com/common-kitesurfing-mistakes",
+    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "Top 5 Common Kitesurfing Mistakes Beginners Make" }],
     type: "article",
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Best Wind Apps For Kitesurfing | Best Kitesurf Schools",
-    description: "Read our comprehensive guide to the best wind apps for kitesurfing.",
+    title: "Top 5 Common Kitesurfing Mistakes Beginners Make | Best Kitesurf Schools",
+    description: "Read our comprehensive guide to top 5 common kitesurfing mistakes beginners make.",
     images: ["https://bestkitesurfschools.com/images/hero.png"],
   }
 };
@@ -33,7 +33,7 @@ export default function GuidePage() {
           <div className="absolute inset-0 bg-[#171717]"></div>
           <Image
             src="/images/hero.png"
-            alt="The Best Wind Apps For Kitesurfing"
+            alt="Top 5 Common Kitesurfing Mistakes Beginners Make"
             fill
             className="object-cover opacity-50 mix-blend-overlay grayscale"
             priority
@@ -47,7 +47,7 @@ export default function GuidePage() {
             <span className="opacity-80">Knowledge Hub</span>
           </div>
           <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-[0.9] tracking-tight mb-8">
-            The Best Wind Apps For Kitesurfing
+            Top 5 Common Kitesurfing Mistakes Beginners Make
           </h1>
         </div>
       </header>
@@ -59,20 +59,25 @@ export default function GuidePage() {
             {/* Main Content Column */}
             <div className="lg:w-2/3 editorial-content">
               
-      <h2 className="font-serif text-4xl mb-6 mt-12">The Industry Standards</h2>
+      <h2 className="font-serif text-4xl mb-6 mt-12">The Traps of Progression</h2>
       <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
-        <strong>Windguru:</strong> The absolute gold standard for surfers and kiters. It offers deeply detailed tabular data. <br/><br/>
-        <strong>Windy:</strong> Incredible visual forecasting using particle animation. Perfect for understanding sweeping weather systems.
+        Learning to kitesurf is an incredibly rewarding journey, but it is easy to pick up bad habits. Recognizing these early can shave days off your learning curve.
       </p>
 
-      <h2 className="font-serif text-4xl mb-6 mt-12">How Beginners Interpret Wind</h2>
-      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
-        Don't just look at the raw speed. Look at the gust factor (the difference between base speed and peak gusts). If base wind is 15 knots but gusts are 30 knots, it is unsafe for a beginner. 
-      </p>
-
-      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
-        Note that apps often underestimate local thermal winds. For example, in <Link href="/kitesurf-moledo" className="underline hover:text-[#319795]">northern Portugal</Link>, you can often add 5-8 knots to the forecast due to the geographical funneling effect in the summer.
-      </p>
+      <ul className="space-y-6 mb-8 mt-4">
+        <li className="flex flex-col">
+           <span className="text-[#1A365D] font-serif text-2xl mb-2">1. Pulling The Bar In A Panic</span>
+           <p className="text-[#171717]/80 font-light leading-[1.8]">The ultimate beginner instinct: if you lose balance, you grab the bar and pull. In kitesurfing, pulling the bar <em>increases</em> power. You must train yourself to "push away" when in trouble.</p>
+        </li>
+        <li className="flex flex-col">
+           <span className="text-[#1A365D] font-serif text-2xl mb-2">2. Staring At The Kite</span>
+           <p className="text-[#171717]/80 font-light leading-[1.8]">Looking up at the kite alters your body weight, pulling you off the back of the board. You need to feel the kite blindly and look where you want to go.</p>
+        </li>
+        <li className="flex flex-col">
+           <span className="text-[#1A365D] font-serif text-2xl mb-2">3. The Poo Stance</span>
+           <p className="text-[#171717]/80 font-light leading-[1.8]">Sitting back as if on an invisible chair stops you from edging against the wind. Throw your hips forward and lock your straight front leg to ride efficiently.</p>
+        </li>
+      </ul>
     
               
               

@@ -7,6 +7,19 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Kitesurf Portugal: The Ultimate Destination | Best Kitesurf Schools",
   description: "Comprehensive guide to kitesurf portugal: the ultimate destination.",
+  openGraph: {
+    title: "Kitesurf Portugal: The Ultimate Destination",
+    description: "Read our comprehensive guide to kitesurf portugal: the ultimate destination on BestKitesurfSchools.",
+    url: "https://bestkitesurfschools.com/kitesurf-portugal",
+    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "Kitesurf Portugal: The Ultimate Destination" }],
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kitesurf Portugal: The Ultimate Destination | Best Kitesurf Schools",
+    description: "Read our comprehensive guide to kitesurf portugal: the ultimate destination.",
+    images: ["https://bestkitesurfschools.com/images/hero.png"],
+  }
 };
 
 export default function GuidePage() {

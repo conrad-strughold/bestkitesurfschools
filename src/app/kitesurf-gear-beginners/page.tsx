@@ -7,6 +7,19 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Essential Kitesurf Gear For Beginners | Best Kitesurf Schools",
   description: "Comprehensive guide to essential kitesurf gear for beginners.",
+  openGraph: {
+    title: "Essential Kitesurf Gear For Beginners",
+    description: "Read our comprehensive guide to essential kitesurf gear for beginners on BestKitesurfSchools.",
+    url: "https://bestkitesurfschools.com/kitesurf-gear-beginners",
+    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "Essential Kitesurf Gear For Beginners" }],
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Essential Kitesurf Gear For Beginners | Best Kitesurf Schools",
+    description: "Read our comprehensive guide to essential kitesurf gear for beginners.",
+    images: ["https://bestkitesurfschools.com/images/hero.png"],
+  }
 };
 
 export default function GuidePage() {
