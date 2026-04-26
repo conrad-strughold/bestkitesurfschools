@@ -27,7 +27,7 @@ export default async function SchoolPage({
       <Navigation />
       
       {/* Editorial Hero */}
-      <header className="relative h-[90svh] w-full flex items-end pb-24 px-6 md:px-16 lg:px-24 bg-[#171717]">
+      <header className="relative min-h-[65svh] w-full flex flex-col justify-end pt-40 pb-20 px-6 md:px-16 lg:px-24 bg-[#171717]">
         <div className="absolute inset-0 z-0">
           <Image
             src={school.image || "/images/hero.png"}

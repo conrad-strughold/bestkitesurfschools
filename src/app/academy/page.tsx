@@ -14,7 +14,7 @@ export default function AcademyIndex() {
       <Navigation />
       
       {/* Editorial Hero */}
-      <header className="relative w-full h-[60svh] flex items-end pb-16 bg-[#171717]">
+      <header className="relative w-full min-h-[65svh] flex flex-col justify-end pt-40 pb-20 bg-[#171717]">
         <div className="absolute inset-0 z-0">
           <Image
             src="/images/northern-portugal-kitesurf.jpg"
