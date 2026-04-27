@@ -4,8 +4,8 @@ import { Navigation } from "@/components/Navigation";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "The Academy | Best Kitesurf Schools",
-  description: "Your master directory for learning kitesurfing. Gear guides, wind explanations, and step-by-step video tutorials.",
+  title: "Learn to Kitesurf — The Academy | BestKitesurfSchools",
+  description: "Your complete kitesurfing learning hub. Step-by-step technique guides, wind theory, gear advice, and destination guides — everything from first lesson to independent rider.",
 };
 
 export default function AcademyIndex() {
@@ -38,6 +38,11 @@ export default function AcademyIndex() {
 
       <main className="w-full bg-[#FDFBF7] text-[#171717]">
         <div className="max-w-[1400px] mx-auto px-6 md:px-16 lg:px-24 py-32 space-y-32">
+
+          {/* Intro */}
+          <p className="text-xl text-[#171717]/70 font-light leading-relaxed max-w-2xl border-l-4 border-[#1A365D] pl-8">
+            The Academy is the definitive kitesurfing knowledge library. Whether you're preparing for your first lesson, troubleshooting technique, researching your next destination, or deciding which gear to invest in, everything you need is here.
+          </p>
           
           {/* Section 1: Video Enhanced Tutorials */}
           <section>
