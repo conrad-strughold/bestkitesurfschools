@@ -75,7 +75,7 @@ export const schools: School[] = [
     pricing: "Contact for pricing",
     season: "Year-round",
     featured: false,
-    image: "/images/wingfoil-portugal.jpg"
+    image: "/images/fuerteventura-kite.png"
   },
 
   {
@@ -93,7 +93,7 @@ export const schools: School[] = [
     pricing: "Contact for pricing",
     season: "Apr–Oct",
     featured: false,
-    image: "/images/hero-main.jpg"
+    image: "/images/netherlands-kite.png"
   },
 
   // ─── AFRICA / MIDDLE EAST ────────────────────────────────────────────────────
@@ -114,7 +114,7 @@ export const schools: School[] = [
     pricing: "Contact for packages",
     season: "Year-round (best Mar–Nov)",
     featured: true,
-    image: "/images/wingfoil-portugal.jpg",
+    image: "/images/el-gouna-kite.png",
     gallery: ["/images/feature2.png"]
   },
 
@@ -134,7 +134,7 @@ export const schools: School[] = [
     pricing: "Contact for pricing",
     season: "Year-round",
     featured: false,
-    image: "/images/hero-main.jpg"
+    image: "/images/soma-bay-kite.png"
   },
 
   {
@@ -154,7 +154,7 @@ export const schools: School[] = [
     pricing: "Contact for pricing",
     season: "Late Oct–mid Apr (Cape Verde); mid Apr–mid Oct (Lake Garda)",
     featured: false,
-    image: "/images/portugal-kitesurf-main.jpg"
+    image: "/images/boavista-kite.png"
   },
 
   {
@@ -209,7 +209,7 @@ export const schools: School[] = [
     pricing: "Contact for pricing",
     season: "Jun–Oct, Dec–Feb",
     featured: false,
-    image: "/images/portugal-kitesurf-main.jpg"
+    image: "/images/zanzibar-kite.png"
   },
 
   {
@@ -228,7 +228,7 @@ export const schools: School[] = [
     pricing: "Contact for pricing",
     season: "Nov–May (peak); year-round lessons available",
     featured: false,
-    image: "/images/portugal-kitesurf-main.jpg"
+    image: "/images/dubai-kite.png"
   },
 
   // ─── AMERICAS ────────────────────────────────────────────────────────────────
@@ -252,7 +252,7 @@ export const schools: School[] = [
     pricing: "Contact for pricing",
     season: "Apr–Oct",
     featured: false,
-    image: "/images/wingfoil-portugal.jpg"
+    image: "/images/sicily-kite.png"
   },
 
   {
@@ -273,7 +273,7 @@ export const schools: School[] = [
     pricing: "Contact for pricing",
     season: "Year-round (best Feb–Jun, Oct–Jan)",
     featured: false,
-    image: "/images/portugal-kitesurf-main.jpg"
+    image: "/images/venezuela-kite.png"
   },
 
   {
@@ -293,7 +293,7 @@ export const schools: School[] = [
     pricing: "Contact for pricing",
     season: "Year-round (best Jun–Aug)",
     featured: false,
-    image: "/images/wingfoil-portugal.jpg"
+    image: "/images/cabarete-kite.png"
   },
 
   {
@@ -313,7 +313,7 @@ export const schools: School[] = [
     pricing: "Contact for pricing",
     season: "Dec–Apr",
     featured: false,
-    image: "/images/hero-main.jpg"
+    image: "/images/panama-kite.png"
   },
 
   {
@@ -331,7 +331,7 @@ export const schools: School[] = [
     pricing: "Contact for pricing",
     season: "Apr–Oct",
     featured: false,
-    image: "/images/wingfoil-portugal.jpg"
+    image: "/images/hatteras-kite.png"
   },
 
   {
@@ -349,7 +349,7 @@ export const schools: School[] = [
     pricing: "Contact for pricing",
     season: "Spring–Fall",
     featured: false,
-    image: "/images/hero-main.jpg"
+    image: "/images/real-watersports-kite.png"
   },
 
   {
@@ -367,7 +367,7 @@ export const schools: School[] = [
     pricing: "From $200",
     season: "Mar–Nov",
     featured: false,
-    image: "/images/portugal-kitesurf-main.jpg"
+    image: "/images/texas-kite.png"
   },
 
   {
@@ -386,7 +386,7 @@ export const schools: School[] = [
     pricing: "Contact for pricing",
     season: "Apr–Oct",
     featured: false,
-    image: "/images/hero-main.jpg"
+    image: "/images/maui-kite.png"
   },
 
   {
@@ -406,7 +406,7 @@ export const schools: School[] = [
     pricing: "From $450 / 4-lesson package",
     season: "Year-round",
     featured: false,
-    image: "/images/wingfoil-portugal.jpg"
+    image: "/images/aruba-kite.png"
   },
 
   // ─── ASIA-PACIFIC ────────────────────────────────────────────────────────────
@@ -427,7 +427,7 @@ export const schools: School[] = [
     pricing: "From 1333 THB/hour",
     season: "Nov–Apr",
     featured: false,
-    image: "/images/wingfoil-portugal.jpg"
+    image: "/images/boracay-kite.png"
   },
 
   {
@@ -485,7 +485,7 @@ export const schools: School[] = [
     pricing: "From AUD $549 / beginner course",
     season: "Oct–Apr",
     featured: false,
-    image: "/images/hero-main.jpg"
+    image: "/images/hero.png"
   },
 
   // ─── EUROPE (continued) ───────────────────────────────────────────────────────
