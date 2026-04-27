@@ -45,7 +45,7 @@ export function Navigation({
               </Link>
             </li>
             <li>
-              <Link href="/#locations" className="relative group">
+              <Link href="/schools" className="relative group">
                 <span className="pb-1">Directory</span>
                 <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-current transition-all duration-300 group-hover:w-full"></span>
               </Link>
@@ -60,8 +60,9 @@ export function Navigation({
                     <ul className="space-y-4 text-xs">
                       <li><Link href="/kitesurf-portugal" className="hover:text-[#319795] transition-colors">Portugal</Link></li>
                       <li><Link href="/kitesurf-northern-portugal" className="hover:text-[#319795] transition-colors">Northern Portugal</Link></li>
-                      <li><Link href="/kitesurf-tarifa-spain" className="hover:text-[#319795] transition-colors">Spain</Link></li>
-                      <li><Link href="/kitesurf-dakhla-morocco" className="hover:text-[#319795] transition-colors">Morocco</Link></li>
+                      <li><Link href="/kitesurf-tarifa-spain" className="hover:text-[#319795] transition-colors">Spain: Tarifa</Link></li>
+                      <li><Link href="/kitesurf-dakhla-morocco" className="hover:text-[#319795] transition-colors">Morocco: Dakhla</Link></li>
+                      <li><Link href="/kitesurf-essaouira-morocco" className="hover:text-[#319795] transition-colors">Morocco: Essaouira</Link></li>
                       <li><Link href="/kitesurf-brazil" className="hover:text-[#319795] transition-colors">Brazil</Link></li>
                     </ul>
                   </div>
@@ -114,7 +115,7 @@ export function Navigation({
           </li>
           <li>
             <Link
-              href="/#locations"
+              href="/schools"
               onClick={() => setMenuOpen(false)}
               className="text-4xl font-serif hover:opacity-50 transition-opacity tracking-tight"
             >
@@ -144,18 +145,14 @@ export function Navigation({
               <span className="text-xs uppercase tracking-[0.2em] text-[#171717]/50">Locations</span>
               <Link href="/kitesurf-portugal" onClick={() => setMenuOpen(false)} className="text-2xl font-serif hover:opacity-50">Portugal</Link>
               <Link href="/kitesurf-tarifa-spain" onClick={() => setMenuOpen(false)} className="text-2xl font-serif hover:opacity-50">Spain</Link>
-              <Link href="/kitesurf-dakhla-morocco" onClick={() => setMenuOpen(false)} className="text-2xl font-serif hover:opacity-50">Morocco</Link>
+              <Link href="/kitesurf-dakhla-morocco" onClick={() => setMenuOpen(false)} className="text-2xl font-serif hover:opacity-50">Morocco: Dakhla</Link>
+              <Link href="/kitesurf-essaouira-morocco" onClick={() => setMenuOpen(false)} className="text-2xl font-serif hover:opacity-50">Morocco: Essaouira</Link>
               <Link href="/kitesurf-brazil" onClick={() => setMenuOpen(false)} className="text-2xl font-serif hover:opacity-50">Brazil</Link>
             </div>
           </li>
         </ul>
       </div>
 
-      {/* Sticky Bottom CTA */}
-      <div className="fixed bottom-0 left-0 right-0 p-4 bg-[#FDFBF7]/95 backdrop-blur-md border-t border-[#171717]/10 z-30 flex justify-between items-center sm:hidden">
-         <span className="text-[#171717] font-serif font-bold text-lg">{mobileBarLabel}</span>
-         <a href={mobileBarHref} target="_blank" rel="noopener noreferrer" className="text-xs uppercase tracking-widest font-medium border-b border-[#171717]">Book Now</a>
-      </div>
     </>
   );
 }

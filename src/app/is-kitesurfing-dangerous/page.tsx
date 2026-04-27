@@ -71,7 +71,7 @@ export default function GuidePage() {
 
       <h2 className="font-serif text-4xl mb-6 mt-12">The Importance of Certified Instruction</h2>
       <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
-        Safety systems—like the quick-release chicken loop—mean nothing if you haven't built the muscle memory to use them in a panic. Elite training centers, such as <Link href="/kitesurf-moledo" className="underline hover:text-[#319795]">North Wind</Link> in Portugal, drill these safety mechanisms relentlessly before you even touch a board. Going to an established, professional school is completely non-negotiable for safety.
+        Safety systems: like the quick-release chicken loop: mean nothing if you haven't built the muscle memory to use them in a panic. Elite training centers, such as <Link href="/kitesurf-moledo" className="underline hover:text-[#319795]">North Wind</Link> in Portugal, drill these safety mechanisms relentlessly before you even touch a board. Going to an established, professional school is completely non-negotiable for safety.
       </p>
     
               

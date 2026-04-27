@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const desc = school.longDescription ? school.longDescription.slice(0, 155) : school.description.slice(0, 155);
   
   return {
-    title: `${school.name} — Kitesurf School Review | BestKitesurfSchools`,
+    title: `${school.name} :  Kitesurf School Review | BestKitesurfSchools`,
     description: desc,
     openGraph: {
       title: school.name,

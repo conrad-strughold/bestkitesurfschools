@@ -66,7 +66,7 @@ export default function GuidePage() {
 
       <h2 className="font-serif text-4xl mb-6 mt-12">The Cost of Lessons</h2>
       <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
-        A standard beginner pipeline (approx. 10–12 hours) will cost between $600 and $900 depending on the location. Reputable European schools, like <Link href="/kitesurf-moledo" className="underline hover:text-[#319795]">North Wind in Moledo</Link>, offer premium, small-group instruction that provides an exceptional return on investment by speeding up progression.
+        A standard beginner pipeline (approx. 10-12 hours) will cost between $600 and $900 depending on the location. Reputable European schools, like <Link href="/kitesurf-moledo" className="underline hover:text-[#319795]">North Wind in Moledo</Link>, offer premium, small-group instruction that provides an exceptional return on investment by speeding up progression.
       </p>
 
       <h2 className="font-serif text-4xl mb-6 mt-12">Buying Gear</h2>

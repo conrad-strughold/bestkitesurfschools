@@ -6,7 +6,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Do You Need To Be Strong To Kitesurf? | Best Kitesurf Schools",
-  description: "Do you need to be strong or fit to learn kitesurfing? The honest answer, plus what fitness actually helps — and what you can ignore as a beginner.",
+  description: "Do you need to be strong or fit to learn kitesurfing? The honest answer, plus what fitness actually helps :  and what you can ignore as a beginner.",
   openGraph: {
     title: "Do You Need To Be Strong To Kitesurf?",
     description: "Read our comprehensive guide to do you need to be strong to kitesurf? on BestKitesurfSchools.",

@@ -34,7 +34,7 @@ export const schools: School[] = [
     pricing: "Contact for pricing",
     season: "Spring to early autumn (peak summer)",
     featured: true,
-    image: "/images/hero.png",
+    image: "/images/moledo-beach-view.jpg",
     gallery: ["/images/hero.png", "/images/feature1.png", "/images/feature2.png"]
   },
   {
@@ -49,9 +49,9 @@ export const schools: School[] = [
     contact: "tarifa@ion-club.net",
     tags: ["Levante Wind", "Poniente Wind", "Kitesurf", "Wingfoil", "Year-round"],
     pricing: "From €60 / session",
-    season: "Year-round (peak spring–autumn)",
+    season: "Year-round (peak spring-autumn)",
     featured: true,
-    image: "/images/feature1.png",
+    image: "/images/tarifa-kitesurf.jpg",
     gallery: ["/images/feature1.png"]
   },
   {
@@ -66,9 +66,9 @@ export const schools: School[] = [
     contact: "info@kbc-elgouna.com",
     tags: ["Shallow Lagoon", "Thermal Winds", "Flat Water", "Freestyle"],
     pricing: "Contact for packages",
-    season: "Year-round (best Mar–Nov)",
+    season: "Year-round (best Mar-Nov)",
     featured: true,
-    image: "/images/feature2.png",
+    image: "/images/wingfoil-portugal.jpg",
     gallery: ["/images/feature2.png"]
   },
   {
@@ -85,7 +85,7 @@ export const schools: School[] = [
     pricing: "Contact for pricing",
     season: "Year-round",
     featured: false,
-    image: "/images/hero.png"
+    image: "/images/hero-main.jpg"
   },
   {
     id: "planet-allsports-cape-town",
@@ -99,9 +99,9 @@ export const schools: School[] = [
     contact: "info@planetallsports.com",
     tags: ["Cape Doctor", "Wave Riding", "Big Air", "Ocean"],
     pricing: "Contact for pricing",
-    season: "Nov–Mar",
+    season: "Nov-Mar",
     featured: false,
-    image: "/images/feature1.png"
+    image: "/images/portugal-kitesurf-main.jpg"
   },
   {
     id: "kitexcite-essaouira",
@@ -115,9 +115,9 @@ export const schools: School[] = [
     contact: "info@kitexcite.com",
     tags: ["Bay Riding", "Trade Winds", "Mixed Conditions"],
     pricing: "Contact for pricing",
-    season: "Apr–Sep",
+    season: "Apr-Sep",
     featured: false,
-    image: "/images/feature2.png"
+    image: "/images/essaouira-kitesurf.jpg"
   },
   {
     id: "prokite-brazil",
@@ -131,9 +131,9 @@ export const schools: School[] = [
     contact: "info@prokitebrasil.com",
     tags: ["Trade Winds", "Warm Water", "Consistent"],
     pricing: "Contact for pricing",
-    season: "Jul–Jan",
+    season: "Jul-Jan",
     featured: false,
-    image: "/images/hero.png"
+    image: "/images/brazil-kitesurf.jpg"
   },
   {
     id: "kbc-el-yaque",
@@ -149,7 +149,7 @@ export const schools: School[] = [
     pricing: "Contact for pricing",
     season: "Year-round",
     featured: false,
-    image: "/images/feature1.png"
+    image: "/images/portugal-kitesurf-main.jpg"
   },
   {
     id: "good-breeze-cabarete",
@@ -163,9 +163,9 @@ export const schools: School[] = [
     contact: "info@goodbreeze.com",
     tags: ["Reef Protected", "Thermal Winds", "Caribbean"],
     pricing: "Contact for pricing",
-    season: "Year-round (best Jun–Aug)",
+    season: "Year-round (best Jun-Aug)",
     featured: false,
-    image: "/images/feature2.png"
+    image: "/images/wingfoil-portugal.jpg"
   },
   {
     id: "nitro-city-panama",
@@ -179,9 +179,9 @@ export const schools: School[] = [
     contact: "reservations@nitrocitypanama.com",
     tags: ["Flat Water", "Shallow", "Seasonal Wind"],
     pricing: "Contact for pricing",
-    season: "Dec–Apr",
+    season: "Dec-Apr",
     featured: false,
-    image: "/images/hero.png"
+    image: "/images/hero-main.jpg"
   },
   {
     id: "kiteworldwide-dakhla",
@@ -197,7 +197,7 @@ export const schools: School[] = [
     pricing: "Contact for pricing",
     season: "Year-round",
     featured: false,
-    image: "/images/feature1.png"
+    image: "/images/dakhla-lagoon.jpg"
   },
   {
     id: "kite-club-hatteras",
@@ -211,9 +211,9 @@ export const schools: School[] = [
     contact: "info@kiteclubhatteras.com",
     tags: ["Sound Riding", "Shallow Water", "Outer Banks"],
     pricing: "Contact for pricing",
-    season: "Apr–Oct",
+    season: "Apr-Oct",
     featured: false,
-    image: "/images/feature2.png"
+    image: "/images/wingfoil-portugal.jpg"
   },
   {
     id: "real-watersports",
@@ -227,9 +227,9 @@ export const schools: School[] = [
     contact: "pro@realwatersports.com",
     tags: ["Mega Center", "Shallow Sound", "Consistent Wind"],
     pricing: "Contact for pricing",
-    season: "Spring–fall",
+    season: "Spring-fall",
     featured: false,
-    image: "/images/hero.png"
+    image: "/images/hero-main.jpg"
   },
   {
     id: "air-padre",
@@ -243,9 +243,9 @@ export const schools: School[] = [
     contact: "info@airpadrekiteboarding.com",
     tags: ["Flat Bay", "Reliable Wind", "South Padre"],
     pricing: "Contact for pricing",
-    season: "Mar–Nov",
+    season: "Mar-Nov",
     featured: false,
-    image: "/images/feature1.png"
+    image: "/images/portugal-kitesurf-main.jpg"
   },
   {
     id: "kba-boracay",
@@ -259,9 +259,9 @@ export const schools: School[] = [
     contact: "boracay@kiteboardingasia.com",
     tags: ["Trade Winds", "Flat Water", "Bulabog Beach"],
     pricing: "Contact for pricing",
-    season: "Nov–Apr",
+    season: "Nov-Apr",
     featured: false,
-    image: "/images/feature2.png"
+    image: "/images/wingfoil-portugal.jpg"
   },
   {
     id: "phuket-kiteboarding",
@@ -275,9 +275,9 @@ export const schools: School[] = [
     contact: "info@phuketkiteboarding.com",
     tags: ["Light Wind", "Beach Riding", "Tropical"],
     pricing: "Contact for pricing",
-    season: "Seasonal (Nov–Apr best)",
+    season: "Seasonal (Nov-Apr best)",
     featured: false,
-    image: "/images/hero.png"
+    image: "/images/hero-main.jpg"
   },
   {
     id: "kiteboarding-lanka",
@@ -291,9 +291,9 @@ export const schools: School[] = [
     contact: "info@kiteboardinglanka.com",
     tags: ["Lagoon", "Strong Wind", "Dual Seasons"],
     pricing: "Contact for pricing",
-    season: "May–Oct, Dec–Mar",
+    season: "May-Oct, Dec-Mar",
     featured: false,
-    image: "/images/feature1.png"
+    image: "/images/portugal-kitesurf-main.jpg"
   },
   {
     id: "kiteschool-aruba",
@@ -309,7 +309,7 @@ export const schools: School[] = [
     pricing: "Contact for pricing",
     season: "Year-round",
     featured: false,
-    image: "/images/feature2.png"
+    image: "/images/wingfoil-portugal.jpg"
   },
   {
     id: "kite-control-australia",
@@ -323,9 +323,9 @@ export const schools: School[] = [
     contact: "hello@kitecontrol.com.au",
     tags: ["Sea Breeze", "Ocean", "Flat Sections"],
     pricing: "Contact for pricing",
-    season: "Nov–Mar",
+    season: "Nov-Mar",
     featured: false,
-    image: "/images/hero.png"
+    image: "/images/hero-main.jpg"
   },
   {
     id: "kitesurfari-zanzibar",
@@ -339,9 +339,9 @@ export const schools: School[] = [
     contact: "info@kitesurfari.com",
     tags: ["Lagoon", "Turquoise Water", "Trade Winds"],
     pricing: "Contact for pricing",
-    season: "Jun–Oct, Dec–Mar",
+    season: "Jun-Oct, Dec-Mar",
     featured: false,
-    image: "/images/feature1.png"
+    image: "/images/portugal-kitesurf-main.jpg"
   },
   {
     id: "flag-beach-fuerteventura",
@@ -357,7 +357,7 @@ export const schools: School[] = [
     pricing: "Contact for pricing",
     season: "Year-round",
     featured: false,
-    image: "/images/feature2.png"
+    image: "/images/wingfoil-portugal.jpg"
   },
   {
     id: "kiteboarding-maui",
@@ -371,9 +371,9 @@ export const schools: School[] = [
     contact: "info@kiteboardingmaui.com",
     tags: ["Wave Riding", "Ocean", "Strong Trades"],
     pricing: "Contact for pricing",
-    season: "Apr–Oct",
+    season: "Apr-Oct",
     featured: false,
-    image: "/images/hero.png"
+    image: "/images/hero-main.jpg"
   },
   {
     id: "kite-beach-center-dubai",
@@ -387,9 +387,9 @@ export const schools: School[] = [
     contact: "info@kitebeachcenter.com",
     tags: ["Open Beach", "Light Wind", "Persian Gulf"],
     pricing: "Contact for pricing",
-    season: "Nov–May",
+    season: "Nov-May",
     featured: false,
-    image: "/images/feature1.png"
+    image: "/images/portugal-kitesurf-main.jpg"
   },
   {
     id: "kite-center-roquetas",
@@ -403,9 +403,9 @@ export const schools: School[] = [
     contact: "info@kitecenteroquetas.com",
     tags: ["Mediterranean", "Moderate Wind", "Coastal"],
     pricing: "Contact for pricing",
-    season: "Spring–autumn",
+    season: "Spring-autumn",
     featured: false,
-    image: "/images/feature2.png"
+    image: "/images/wingfoil-portugal.jpg"
   },
   {
     id: "kbn-workum",
@@ -419,8 +419,8 @@ export const schools: School[] = [
     contact: "info@kiteboarding.nl",
     tags: ["Inland Water", "Shallow", "IJsselmeer"],
     pricing: "Contact for pricing",
-    season: "Apr–Oct",
+    season: "Apr-Oct",
     featured: false,
-    image: "/images/hero.png"
+    image: "/images/hero-main.jpg"
   }
 ];

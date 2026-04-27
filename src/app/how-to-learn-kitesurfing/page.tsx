@@ -32,7 +32,7 @@ export default function GuidePage() {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-[#171717]"></div>
           <Image
-            src="/images/hero.png"
+            src="/images/hero-main.jpg"
             alt="How To Learn Kitesurfing"
             fill
             className="object-cover opacity-50 mix-blend-overlay grayscale"
@@ -66,12 +66,12 @@ export default function GuidePage() {
 
       <h2 className="font-serif text-4xl mb-6 mt-12">Self-Learning vs Lessons</h2>
       <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
-        <strong>Never attempt to self-teach kitesurfing.</strong> Watching videos can help with theory, but the sport requires muscle memory and real-time feedback. Self-taught riders develop dangerous habits and put others at risk. Certified lessons are mandatory. Working with schools in Europe, specifically in regions with reliable thermal winds like <Link href="/kitesurf-portugal" className="underline hover:text-[#319795]">Portugal</Link>, dramatically accelerates learning.
+        <strong>Never attempt to self-teach kitesurfing.</strong> Watching videos can help with theory, but the sport requires muscle memory and real-time feedback. Self-taught riders develop dangerous habits and put others at risk. Certified lessons are mandatory. Working with schools in Europe, specifically in regions with reliable thermal winds like <Link href="/kitesurf-portugal" className="underline hover:text-[#319795]">Portugal</Link>, dramatically accelerates <Link href="/best-kitesurf-schools-portugal" className="underline hover:text-[#319795]">learning</Link>.
       </p>
 
       <h2 className="font-serif text-4xl mb-6 mt-12">Progression Stages</h2>
       <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
-        Once you master the basic ride, progression moves to riding upwind, executing smooth transitions (turns) without sinking, and eventually loading the board for your first jumps. Choosing a less crowded spot with vast open water—such as <Link href="/kitesurf-moledo" className="underline hover:text-[#319795]">Moledo</Link> in northern Portugal—removes the stress of dodging other learners, allowing total focus on technique.
+        Once you master the basic ride, progression moves to riding upwind, executing smooth transitions (turns) without sinking, and eventually loading the board for your first jumps. Choosing a less crowded spot with vast open water: such as <Link href="/kitesurf-moledo" className="underline hover:text-[#319795]">Moledo</Link> in northern Portugal: removes the stress of dodging other learners, allowing total focus on technique.
       </p>
     
               

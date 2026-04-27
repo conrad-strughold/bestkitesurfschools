@@ -3,10 +3,10 @@ import { Navigation } from "@/components/Navigation";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best Time to Kitesurf in Portugal — Month-by-Month Wind Guide 2026 | BestKitesurfSchools",
+  title: "Best Time to Kitesurf in Portugal :  Month-by-Month Wind Guide 2026 | BestKitesurfSchools",
   description: "Planning a kitesurf trip to Portugal? Our month-by-month guide covers wind windows, water temperature, crowds, and cost by season. Updated for 2026.",
   openGraph: {
-    title: "Best Time to Kitesurf Portugal — Month-by-Month Wind Guide 2026",
+    title: "Best Time to Kitesurf Portugal :  Month-by-Month Wind Guide 2026",
     description: "Planning a kitesurf trip to Portugal? Our month-by-month guide covers wind windows, water temperature, crowds, and cost by season.",
     url: "https://bestkitesurfschools.com/when-to-kitesurf-portugal",
     type: "article",
@@ -14,18 +14,18 @@ export const metadata: Metadata = {
 };
 
 const months = [
-  { month: "January", wind: "12–20 kt", water: "14°C", crowds: "None", cost: "Low", verdict: "Atlantic storms — advanced SW wind. Not for beginners." },
-  { month: "February", wind: "12–20 kt", water: "13°C", crowds: "None", cost: "Low", verdict: "Similar to January. Cold, variable. Experienced riders only." },
-  { month: "March", wind: "10–18 kt", water: "14°C", crowds: "Low", cost: "Low", verdict: "Transition begins. Occasional Nortada hints. Still cold." },
-  { month: "April", wind: "12–20 kt", water: "15°C", crowds: "Low", cost: "Low", verdict: "Shoulder season value. Unpredictable but uncrowded." },
-  { month: "May", wind: "14–20 kt", water: "16°C", crowds: "Low", cost: "Low–Mid", verdict: "Nortada beginning to establish. Great for flexible intermediates." },
-  { month: "June", wind: "15–22 kt", water: "17°C", crowds: "Medium", cost: "Mid", verdict: "Peak season start. Excellent consistency. Highly recommended." },
-  { month: "July", wind: "18–25 kt", water: "18°C", crowds: "Medium–High", cost: "High", verdict: "★ Peak Nortada. Best month for lessons. Book early." },
-  { month: "August", wind: "18–25 kt", water: "19°C", crowds: "High", cost: "High", verdict: "★ Peak — windiest month. Busiest beaches. Arrive early." },
-  { month: "September", wind: "15–22 kt", water: "19°C", crowds: "Low–Med", cost: "Mid", verdict: "★ Best overall. Wind + warmth + crowds drop. Local favourite." },
-  { month: "October", wind: "12–18 kt", water: "18°C", crowds: "Low", cost: "Low–Mid", verdict: "Season tailing off. Warm water, quieter. Flexible riders." },
-  { month: "November", wind: "12–20 kt", water: "16°C", crowds: "None", cost: "Low", verdict: "Atlantic SW swells. Cold, powerful. Advanced wave riders." },
-  { month: "December", wind: "10–18 kt", water: "14°C", crowds: "None", cost: "Low", verdict: "Deep off-season. Storm seasoned riders only." },
+  { month: "January", wind: "12-20 kt", water: "14°C", crowds: "None", cost: "Low", verdict: "Atlantic storms :  advanced SW wind. Not for beginners." },
+  { month: "February", wind: "12-20 kt", water: "13°C", crowds: "None", cost: "Low", verdict: "Similar to January. Cold, variable. Experienced riders only." },
+  { month: "March", wind: "10-18 kt", water: "14°C", crowds: "Low", cost: "Low", verdict: "Transition begins. Occasional Nortada hints. Still cold." },
+  { month: "April", wind: "12-20 kt", water: "15°C", crowds: "Low", cost: "Low", verdict: "Shoulder season value. Unpredictable but uncrowded." },
+  { month: "May", wind: "14-20 kt", water: "16°C", crowds: "Low", cost: "Low-Mid", verdict: "Nortada beginning to establish. Great for flexible intermediates." },
+  { month: "June", wind: "15-22 kt", water: "17°C", crowds: "Medium", cost: "Mid", verdict: "Peak season start. Excellent consistency. Highly recommended." },
+  { month: "July", wind: "18-25 kt", water: "18°C", crowds: "Medium-High", cost: "High", verdict: "★ Peak Nortada. Best month for lessons. Book early." },
+  { month: "August", wind: "18-25 kt", water: "19°C", crowds: "High", cost: "High", verdict: "★ Peak :  windiest month. Busiest beaches. Arrive early." },
+  { month: "September", wind: "15-22 kt", water: "19°C", crowds: "Low-Med", cost: "Mid", verdict: "★ Best overall. Wind + warmth + crowds drop. Local favourite." },
+  { month: "October", wind: "12-18 kt", water: "18°C", crowds: "Low", cost: "Low-Mid", verdict: "Season tailing off. Warm water, quieter. Flexible riders." },
+  { month: "November", wind: "12-20 kt", water: "16°C", crowds: "None", cost: "Low", verdict: "Atlantic SW swells. Cold, powerful. Advanced wave riders." },
+  { month: "December", wind: "10-18 kt", water: "14°C", crowds: "None", cost: "Low", verdict: "Deep off-season. Storm seasoned riders only." },
 ];
 
 export default function WhenToKitesurfPortugalPage() {
@@ -52,7 +52,7 @@ export default function WhenToKitesurfPortugalPage() {
           <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl text-white leading-[0.95] tracking-tight mb-6">
             When Is the Best Time to Kitesurf in Portugal?
           </h1>
-          <p className="text-white/60 font-light text-lg">Month-by-month wind, conditions & season guide — 2026</p>
+          <p className="text-white/60 font-light text-lg">Month-by-month wind, conditions & season guide :  2026</p>
         </div>
       </header>
 
@@ -65,33 +65,33 @@ export default function WhenToKitesurfPortugalPage() {
               <aside className="border-l-4 border-[#1A365D] bg-[#F0EDE6] p-8 mb-12">
                 <h2 className="text-xs font-semibold uppercase tracking-[0.2em] text-[#1A365D] mb-4">TL;DR</h2>
                 <ul className="space-y-2 text-sm text-[#171717]/80 font-light">
-                  <li>• <strong>Best for beginners:</strong> July–August (most reliable Nortada, safest conditions)</li>
+                  <li>• <strong>Best for beginners:</strong> July-August (most reliable Nortada, safest conditions)</li>
                   <li>• <strong>Best overall:</strong> September (peak wind, warm water, beaches clearing)</li>
-                  <li>• <strong>Best value:</strong> May–June or October (shoulder season prices, still good wind)</li>
-                  <li>• <strong>Avoid:</strong> November–March unless you're an experienced rider chasing Atlantic swell</li>
+                  <li>• <strong>Best value:</strong> May-June or October (shoulder season prices, still good wind)</li>
+                  <li>• <strong>Avoid:</strong> November-March unless you're an experienced rider chasing Atlantic swell</li>
                 </ul>
               </aside>
 
               <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-12">
-                Portugal's kitesurf season is defined by two distinct wind regimes. From June to September, the Nortada thermal delivers reliable 15–25 knot northerly winds on most afternoons. From October through to May, Atlantic pressure systems take over — more powerful, more variable, and suited to experienced riders rather than learners. Understanding this split is the foundation of planning any kitesurf trip to Portugal.
+                Portugal's kitesurf season is defined by two distinct wind regimes. From June to September, the Nortada thermal delivers reliable 15-25 knot northerly winds on most afternoons. From October through to May, Atlantic pressure systems take over :  more powerful, more variable, and suited to experienced riders rather than learners. Understanding this split is the foundation of planning any kitesurf trip to Portugal.
               </p>
 
               <h2 className="font-serif text-4xl mb-6">The Nortada Season: June to September</h2>
               <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-6">
-                This is Portugal's kitesurf golden window. The Nortada is a thermally-driven northerly that builds each afternoon as the hot Iberian interior draws cooler Atlantic air south along the coast. It activates predictably — usually between 11am and 1pm — and hits its peak output of 18–25 knots from around 2pm to sunset. This afternoon reliability is what makes Portugal such an efficient place to learn.
+                This is Portugal's kitesurf golden window. The Nortada is a thermally-driven northerly that builds each afternoon as the hot Iberian interior draws cooler Atlantic air south along the coast. It activates predictably :  usually between 11am and 1pm :  and hits its peak output of 18-25 knots from around 2pm to sunset. This afternoon reliability is what makes Portugal such an efficient place to learn.
               </p>
               <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-16">
-                July and August are the statistically windiest months but also the busiest for tourism. September is the insider's choice: the Nortada is still firing strongly, the water has reached its peak temperature (18–19°C), and the beaches are noticeably quieter as European school holidays end. For maximising progression time with a school like <Link href="/best-kitesurf-schools-portugal" className="underline hover:text-[#319795]">North Wind at Moledo</Link>, September is the sweet spot.
+                July and August are the statistically windiest months but also the busiest for tourism. September is the insider's choice: the Nortada is still firing strongly, the water has reached its peak temperature (18-19°C), and the beaches are noticeably quieter as European school holidays end. For maximising progression time with a school like <Link href="/best-kitesurf-schools-portugal" className="underline hover:text-[#319795]">North Wind at Moledo</Link>, September is the sweet spot.
               </p>
 
               <h2 className="font-serif text-4xl mb-6">The Atlantic Season: October to March</h2>
               <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-16">
-                As the Iberian interior cools and the Nortada retreats, large Atlantic pressure systems take over. Winds become SW to W, often stronger (20–35 knots in storm fronts), and significantly more variable. Swell heights at open-beach spots like Guincho and coastal Viana rise to 2–4m regularly. This is wave-riding season — powerful, raw, and for competent riders with solid self-rescue skills. Water temperatures drop to 14–16°C, requiring a 5/4mm wetsuit. Zero crowds is the upside. <Link href="/kitesurf-northern-portugal" className="underline hover:text-[#319795]">Northern Portugal spots</Link> in a November swell are genuinely spectacular.
+                As the Iberian interior cools and the Nortada retreats, large Atlantic pressure systems take over. Winds become SW to W, often stronger (20-35 knots in storm fronts), and significantly more variable. Swell heights at open-beach spots like Guincho and coastal Viana rise to 2-4m regularly. This is wave-riding season :  powerful, raw, and for competent riders with solid self-rescue skills. Water temperatures drop to 14-16°C, requiring a 5/4mm wetsuit. Zero crowds is the upside. <Link href="/kitesurf-northern-portugal" className="underline hover:text-[#319795]">Northern Portugal spots</Link> in a November swell are genuinely spectacular.
               </p>
 
-              <h2 className="font-serif text-4xl mb-6">Shoulder Season: April–May & October</h2>
+              <h2 className="font-serif text-4xl mb-6">Shoulder Season: April-May & October</h2>
               <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-16">
-                The shoulder months are characterised by transitional, unpredictable wind patterns. You might score three days of 20-knot Nortada followed by two days of calm. This unreliability rules them out for strict 5-day lesson courses, but for intermediate or advanced riders travelling with flexibility, they represent exceptional value: empty beaches, 25–35% cheaper accommodation versus peak season, mild air temperatures, and occasional perfect windows.
+                The shoulder months are characterised by transitional, unpredictable wind patterns. You might score three days of 20-knot Nortada followed by two days of calm. This unreliability rules them out for strict 5-day lesson courses, but for intermediate or advanced riders travelling with flexibility, they represent exceptional value: empty beaches, 25-35% cheaper accommodation versus peak season, mild air temperatures, and occasional perfect windows.
               </p>
 
               <h2 className="font-serif text-4xl mb-6">Month-by-Month Table</h2>
@@ -156,7 +156,7 @@ export default function WhenToKitesurfPortugalPage() {
                     </div>
                     <div className="border-l-4 border-[#171717]/20 pl-4">
                       <span className="text-xs uppercase tracking-widest text-[#171717]/40 block mb-1">Advanced Only</span>
-                      <span className="font-serif text-xl">Nov – Mar</span>
+                      <span className="font-serif text-xl">Nov - Mar</span>
                     </div>
                   </div>
                 </div>

@@ -32,7 +32,7 @@ export default function GuidePage() {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-[#171717]"></div>
           <Image
-            src="/images/hero.png"
+            src="/images/hero-main.jpg"
             alt="Kitesurfing For Beginners"
             fill
             className="object-cover opacity-50 mix-blend-overlay grayscale"
@@ -64,9 +64,9 @@ export default function GuidePage() {
         Kitesurfing, or kiteboarding, is a wind-powered surface watersport using a kite and a board to move across the water. It harnesses the power of the wind through a large parachute type kite to propel a rider across the water on a small surfboard or a kiteboard (similar to a wakeboard).
       </p>
       
-      <h2 className="font-serif text-4xl mb-6 mt-12">Difficulty Level & Learning Curve</h2>
+      <h2 className="font-serif text-4xl mb-6 mt-12">Difficulty Level and Learning Curve</h2>
       <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
-        The initial learning curve can be steep. Unlike surfing where you can paddle out on day one, kitesurfing requires learning to fly a kite before you even think about the board. However, once the "click" happens, progression is incredibly fast. Most beginners are riding upwind within their first 1-2 weeks of practice.
+        The initial <Link href="/best-kitesurf-schools-portugal" className="underline hover:text-[#319795]">learning</Link> curve can be steep. Unlike surfing where you can paddle out on day one, kitesurfing requires learning to fly a kite before you even think about the board. However, once the "click" happens, progression is incredibly fast. Most beginners are riding upwind within their first 1-2 weeks of practice.
       </p>
 
       <h2 className="font-serif text-4xl mb-6 mt-12">The Basic Steps</h2>

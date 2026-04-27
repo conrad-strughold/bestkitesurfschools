@@ -4,8 +4,8 @@ import { Navigation } from "@/components/Navigation";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Learn to Kitesurf — The Academy | BestKitesurfSchools",
-  description: "Your complete kitesurfing learning hub. Step-by-step technique guides, wind theory, gear advice, and destination guides — everything from first lesson to independent rider.",
+  title: "Learn to Kitesurf: The Academy | BestKitesurfSchools",
+  description: "Your complete kitesurfing learning hub. Step-by-step technique guides, wind theory, gear advice, and destination guides: everything from first lesson to independent rider.",
 };
 
 export default function AcademyIndex() {
@@ -17,7 +17,7 @@ export default function AcademyIndex() {
       <header className="relative w-full min-h-[65svh] flex flex-col justify-end pt-40 pb-20 bg-[#171717]">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/northern-portugal-kitesurf.jpg"
+            src="/images/portugal-kitesurf-main.jpg"
             alt="Kitesurf Academy"
             fill
             className="object-cover opacity-60 mix-blend-overlay grayscale"
@@ -44,6 +44,49 @@ export default function AcademyIndex() {
             The Academy is the definitive kitesurfing knowledge library. Whether you're preparing for your first lesson, troubleshooting technique, researching your next destination, or deciding which gear to invest in, everything you need is here.
           </p>
           
+          {/* Section: International Spot Guides */}
+          <section>
+            <div className="flex items-center space-x-4 mb-16">
+              <span className="w-8 h-px bg-[#171717]"></span>
+              <h2 className="font-serif text-4xl">International Spot Guides</h2>
+            </div>
+            
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <Link href="/kitesurf-tarifa-spain" className="group relative aspect-[4/5] overflow-hidden">
+                  <Image src="/images/tarifa-kitesurf.jpg" alt="Tarifa Spain" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
+                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+                  <div className="absolute bottom-8 left-8">
+                    <span className="text-[10px] tracking-widest uppercase text-white/60 mb-2 block">Europe</span>
+                    <h3 className="font-serif text-2xl text-white">Tarifa, Spain</h3>
+                  </div>
+                </Link>
+                <Link href="/kitesurf-dakhla-morocco" className="group relative aspect-[4/5] overflow-hidden">
+                  <Image src="/images/dakhla-lagoon.jpg" alt="Dakhla Morocco" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
+                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+                  <div className="absolute bottom-8 left-8">
+                    <span className="text-[10px] tracking-widest uppercase text-white/60 mb-2 block">Africa</span>
+                    <h3 className="font-serif text-2xl text-white">Dakhla, Morocco</h3>
+                  </div>
+                </Link>
+                <Link href="/kitesurf-essaouira-morocco" className="group relative aspect-[4/5] overflow-hidden">
+                  <Image src="/images/essaouira-kitesurf.jpg" alt="Essaouira Morocco" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
+                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+                  <div className="absolute bottom-8 left-8">
+                    <span className="text-[10px] tracking-widest uppercase text-white/60 mb-2 block">Africa</span>
+                    <h3 className="font-serif text-2xl text-white">Essaouira, Morocco</h3>
+                  </div>
+                </Link>
+                <Link href="/kitesurf-brazil" className="group relative aspect-[4/5] overflow-hidden">
+                  <Image src="/images/brazil-kitesurf.jpg" alt="Brazil" fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
+                  <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors"></div>
+                  <div className="absolute bottom-8 left-8">
+                    <span className="text-[10px] tracking-widest uppercase text-white/60 mb-2 block">South America</span>
+                    <h3 className="font-serif text-2xl text-white">Brazil</h3>
+                  </div>
+                </Link>
+            </div>
+          </section>
+
           {/* Section 1: Video Enhanced Tutorials */}
           <section>
             <div className="flex items-center space-x-4 mb-16">
@@ -59,7 +102,7 @@ export default function AcademyIndex() {
                </Link>
                <Link href="/how-to-control-kite" className="group block border-b border-[#171717]/10 pb-8 hover:opacity-70 transition-opacity">
                   <span className="text-[10px] uppercase tracking-[0.2em] font-medium text-[#1A365D] mb-4 block">Fundamentals</span>
-                  <h3 className="font-serif text-3xl mb-4">Steering & Control</h3>
+                  <h3 className="font-serif text-3xl mb-4">Steering and Control</h3>
                   <p className="text-[#171717]/60 font-light text-sm">Mastering the wind window, power zones, and the safety release.</p>
                </Link>
                <Link href="/kitesurf-body-drag" className="group block border-b border-[#171717]/10 pb-8 hover:opacity-70 transition-opacity">
@@ -84,7 +127,7 @@ export default function AcademyIndex() {
           <section>
             <div className="flex items-center space-x-4 mb-16">
               <span className="w-8 h-px bg-[#171717]"></span>
-              <h2 className="font-serif text-4xl">Theory & Learning Frameworks</h2>
+              <h2 className="font-serif text-4xl">Theory and Learning Frameworks</h2>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
@@ -97,7 +140,7 @@ export default function AcademyIndex() {
                      <Link href="/kitesurfing-for-beginners" className="text-sm font-medium uppercase tracking-[0.1em] hover:text-[#1A365D] transition-colors border-b border-[#171717]/10 pb-2 inline-block max-w-sm">→ Kitesurfing For Beginners</Link>
                      <Link href="/how-to-learn-kitesurfing" className="text-sm font-medium uppercase tracking-[0.1em] hover:text-[#1A365D] transition-colors border-b border-[#171717]/10 pb-2 inline-block max-w-sm">→ Realistic Learning Timelines</Link>
                      <Link href="/common-kitesurfing-mistakes" className="text-sm font-medium uppercase tracking-[0.1em] hover:text-[#1A365D] transition-colors border-b border-[#171717]/10 pb-2 inline-block max-w-sm">→ Top 5 Beginner Mistakes</Link>
-                     <Link href="/kitesurfing-cost-guide" className="text-sm font-medium uppercase tracking-[0.1em] hover:text-[#1A365D] transition-colors border-b border-[#171717]/10 pb-2 inline-block max-w-sm">→ The Cost of Gear & Lessons</Link>
+                     <Link href="/kitesurfing-cost-guide" className="text-sm font-medium uppercase tracking-[0.1em] hover:text-[#1A365D] transition-colors border-b border-[#171717]/10 pb-2 inline-block max-w-sm">→ The Cost of Gear and Lessons</Link>
                      <Link href="/kitesurf-fitness-requirements" className="text-sm font-medium uppercase tracking-[0.1em] hover:text-[#1A365D] transition-colors border-b border-[#171717]/10 pb-2 inline-block max-w-sm">→ Do You Need To Be Strong?</Link>
                      <Link href="/is-kitesurfing-dangerous" className="text-sm font-medium uppercase tracking-[0.1em] hover:text-[#1A365D] transition-colors border-b border-[#171717]/10 pb-2 inline-block max-w-sm">→ Is Kitesurfing Dangerous?</Link>
                   </div>

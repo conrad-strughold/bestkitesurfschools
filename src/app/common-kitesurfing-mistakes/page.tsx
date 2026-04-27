@@ -6,7 +6,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Top 5 Common Kitesurfing Mistakes Beginners Make | Best Kitesurf Schools",
-  description: "The top 5 kitesurfing mistakes that slow your progression — and exactly how to fix them. Every beginner makes these errors. Learn to avoid them fast.",
+  description: "The top 5 kitesurfing mistakes that slow your progression :  and exactly how to fix them. Every beginner makes these errors. Learn to avoid them fast.",
   openGraph: {
     title: "Top 5 Common Kitesurfing Mistakes Beginners Make",
     description: "Read our comprehensive guide to top 5 common kitesurfing mistakes beginners make on BestKitesurfSchools.",

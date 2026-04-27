@@ -6,7 +6,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Essential Kitesurf Gear For Beginners | Best Kitesurf Schools",
-  description: "What gear do you actually need as a kitesurfing beginner? Honest breakdown of kites, boards, harnesses, and wetsuits — and what your school provides.",
+  description: "What gear do you actually need as a kitesurfing beginner? Honest breakdown of kites, boards, harnesses, and wetsuits :  and what your school provides.",
   openGraph: {
     title: "Essential Kitesurf Gear For Beginners",
     description: "Read our comprehensive guide to essential kitesurf gear for beginners on BestKitesurfSchools.",

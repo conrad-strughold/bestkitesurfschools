@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import JsonLd from "@/components/JsonLd";
+import { LeadGenBar } from "@/components/LeadGenBar";
 
 const playfair = Playfair_Display({
   variable: "--font-serif",
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
     siteName: "BestKitesurfSchools",
     images: [
       {
-        url: "https://bestkitesurfschools.com/images/hero.png",
+        url: "https://bestkitesurfschools.com/images/hero-main.jpg",
         width: 1200,
         height: 630,
         alt: "Best Kitesurf Schools Preview",
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Best Kitesurf Schools",
     description: "A curated directory of the world's best kitesurfing schools.",
-    images: ["https://bestkitesurfschools.com/images/hero.png"],
+    images: ["https://bestkitesurfschools.com/images/hero-main.jpg"],
   },
   icons: {
     icon: "/icon.svg",
@@ -67,6 +68,7 @@ export default function RootLayout({
           }
         }} />
         {children}
+        <LeadGenBar />
       </body>
     </html>
   );

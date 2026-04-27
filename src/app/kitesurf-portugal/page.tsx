@@ -4,13 +4,13 @@ import { Navigation } from "@/components/Navigation";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Kitesurfing in Portugal 2026 — Best Spots, Schools & Seasons | BestKitesurfSchools",
+  title: "Kitesurfing in Portugal 2026: Best Spots, Schools and Seasons | BestKitesurfSchools",
   description: "Kitesurfing in Portugal: the complete 2026 guide to spots, schools, conditions, and seasons. Find out why northern Portugal beats the Algarve for serious kiters.",
   openGraph: {
-    title: "Kitesurfing in Portugal 2026 — Best Spots, Schools & Seasons",
+    title: "Kitesurfing in Portugal 2026: Best Spots, Schools and Seasons",
     description: "Everything you need to plan a kitesurf trip to Portugal. Best spots, seasonal wind windows, school recommendations, and where to stay. Updated for 2026.",
     url: "https://bestkitesurfschools.com/kitesurf-portugal",
-    images: [{ url: "https://bestkitesurfschools.com/images/northern-portugal-kitesurf.jpg", width: 1200, height: 630, alt: "Kitesurfing in Portugal" }],
+    images: [{ url: "https://bestkitesurfschools.com/images/portugal-kitesurf-main.jpg", width: 1200, height: 630, alt: "Kitesurfing in Portugal" }],
     type: "article",
   },
 };
@@ -44,7 +44,7 @@ export default function KitesurfPortugalPage() {
       <header className="relative min-h-[65svh] w-full flex flex-col justify-end pt-40 pb-20 px-6 md:px-16 lg:px-24 bg-[#171717]">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/northern-portugal-kitesurf.jpg"
+            src="/images/portugal-kitesurf-main.jpg"
             alt="Kitesurfing in Portugal"
             fill
             className="object-cover opacity-75 mix-blend-overlay"
@@ -78,7 +78,7 @@ export default function KitesurfPortugalPage() {
                   <li>• Portugal offers 180+ wind days per year driven by the Atlantic Nortada thermal</li>
                   <li>• Northern Portugal is dramatically less crowded than the Algarve, with equal or better wind</li>
                   <li>• Peak kitesurf season runs June to September; shoulder seasons offer excellent value</li>
-                  <li>• Moledo is the top spot for beginner-to-intermediate learning — flat, wide, uncrowded</li>
+                  <li>• Moledo is the top spot for beginner-to-intermediate learning :  flat, wide, uncrowded</li>
                   <li>• IKO-certified schools are concentrated in the north and central coast</li>
                 </ul>
               </aside>
@@ -92,7 +92,7 @@ export default function KitesurfPortugalPage() {
                 The Atlantic Ocean dominates Portugal's western edge. That exposure is the engine of everything. Unlike the enclosed Mediterranean, Portugal's coastline faces open ocean fetch, which means swells, pressure systems, and importantly, thermally-driven wind patterns that develop with remarkable regularity every summer afternoon.
               </p>
               <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-6">
-                The "Nortada" is the name locals give to the prevailing northerly thermal wind that builds along Portugal's west coast during the summer months. It typically activates around 11am to 1pm and builds steadily to its peak of 18–25 knots by mid-afternoon, before easing at sunset. This predictability is gold for kiters — you can plan your days with confidence, knowing the window will open.
+                The "Nortada" is the name locals give to the prevailing northerly thermal wind that builds along Portugal's west coast during the summer months. It typically activates around 11am to 1pm and builds steadily to its peak of 18-25 knots by mid-afternoon, before easing at sunset. This predictability is gold for kiters :  you can plan your days with confidence, knowing the window will open.
               </p>
               <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-16">
                 Add to this year-round mild temperatures, low rainfall in summer, excellent infrastructure, affordable cost compared to Western European alternatives, and a thriving community of certified schools, and Portugal's credentials are obvious. The country has produced multiple world-class freestylers and is home to some of the most respected IKO instruction facilities in Europe.
@@ -100,24 +100,24 @@ export default function KitesurfPortugalPage() {
 
               <h2 className="font-serif text-4xl mb-6">The Best Kitesurfing Spots in Portugal</h2>
 
-              <h3 className="font-serif text-2xl mb-3 text-[#1A365D]">Moledo (Northern Portugal — #1 Pick)</h3>
+              <h3 className="font-serif text-2xl mb-3 text-[#1A365D]">Moledo (Northern Portugal :  #1 Pick)</h3>
               <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-6">
-                Situated at the mouth of the Minho river, directly on the Spanish border, <Link href="/kitesurf-moledo" className="underline hover:text-[#319795] transition-colors">Moledo</Link> is the undeniable crown jewel of Portuguese kitesurfing. The beach is vast — several kilometres of pristine north-facing sand — and crucially, it sees a fraction of the foot traffic of southern alternatives. The Nortada funnels through the elevated terrain behind the beach and accelerates measurably, making Moledo consistently windier than surrounding spots. The river mouth creates a natural shallow-water lagoon ideal for beginners, while the open ocean side caters to experienced riders. <strong>Difficulty: Beginner–Advanced. Best season: June–September.</strong>
+                Situated at the mouth of the Minho river, directly on the Spanish border, <Link href="/kitesurf-moledo" className="underline hover:text-[#319795] transition-colors">Moledo</Link> is the undeniable crown jewel of Portuguese kitesurfing. The beach is vast :  several kilometres of pristine north-facing sand :  and crucially, it sees a fraction of the foot traffic of southern alternatives. The Nortada funnels through the elevated terrain behind the beach and accelerates measurably, making Moledo consistently windier than surrounding spots. The river mouth creates a natural shallow-water lagoon ideal for beginners, while the open ocean side caters to experienced riders. <strong>Difficulty: Beginner-Advanced. Best season: June-September.</strong>
               </p>
 
               <h3 className="font-serif text-2xl mb-3 text-[#1A365D]">Viana do Castelo</h3>
               <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-6">
-                Just 20km south of Moledo, Viana do Castelo is the regional capital and offers solid kitesurf conditions on its long estuary beach. The wind is slightly less powerful than Moledo due to less terrain channeling, but conditions are still very good in summer. <strong>Difficulty: Beginner–Intermediate. Best season: July–August.</strong>
+                Just 20km south of Moledo, Viana do Castelo is the regional capital and offers solid kitesurf conditions on its long estuary beach. The wind is slightly less powerful than Moledo due to less terrain channeling, but conditions are still very good in summer. <strong>Difficulty: Beginner-Intermediate. Best season: July-August.</strong>
               </p>
 
               <h3 className="font-serif text-2xl mb-3 text-[#1A365D]">Guincho (Lisbon Area)</h3>
               <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-6">
-                Guincho is beautiful and iconic — dramatic dunes, powerful Atlantic swells, and consistent strong winds. But strong is the operative word. Guincho can reach Beaufort 6–7 regularly, making it a poor choice for beginners or even lower-intermediates. The beach is also significantly busier with surfers, swimmers, and general tourists. For experienced freeriders who want power, Guincho is a legendary session. <strong>Difficulty: Advanced. Best season: April–October.</strong>
+                Guincho is beautiful and iconic :  dramatic dunes, powerful Atlantic swells, and consistent strong winds. But strong is the operative word. Guincho can reach Beaufort 6-7 regularly, making it a poor choice for beginners or even lower-intermediates. The beach is also significantly busier with surfers, swimmers, and general tourists. For experienced freeriders who want power, Guincho is a legendary session. <strong>Difficulty: Advanced. Best season: April-October.</strong>
               </p>
 
               <h3 className="font-serif text-2xl mb-3 text-[#1A365D]">Algarve</h3>
               <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-12">
-                The Algarve gets the tourists, the media exposure, and the crowded lineups. Spots like Lagos, Meia Praia, and Ferragudo have operational kite schools, but the sheer density of people in peak season turns beaches into obstacle courses. The wind can also be gustier and more inconsistent, influenced by local topography rather than clean Nortada thermals. <strong>Difficulty: All levels (but crowded). Best season: May–September.</strong>
+                The Algarve gets the tourists, the media exposure, and the crowded lineups. Spots like Lagos, Meia Praia, and Ferragudo have operational kite schools, but the sheer density of people in peak season turns beaches into obstacle courses. The wind can also be gustier and more inconsistent, influenced by local topography rather than clean Nortada thermals. <strong>Difficulty: All levels (but crowded). Best season: May-September.</strong>
               </p>
 
               {/* Spots table */}
@@ -134,25 +134,25 @@ export default function KitesurfPortugalPage() {
                   <tbody className="text-[#171717]/70 font-light">
                     <tr className="border-b border-[#171717]/10">
                       <td className="py-3 pr-6 font-medium text-[#171717]">Moledo</td>
-                      <td className="py-3 pr-6">Jun–Sep</td>
-                      <td className="py-3 pr-6">Beginner–Adv</td>
+                      <td className="py-3 pr-6">Jun-Sep</td>
+                      <td className="py-3 pr-6">Beginner-Adv</td>
                       <td className="py-3 text-[#319795]">Low ✓</td>
                     </tr>
                     <tr className="border-b border-[#171717]/10">
                       <td className="py-3 pr-6 font-medium text-[#171717]">Viana do Castelo</td>
-                      <td className="py-3 pr-6">Jul–Aug</td>
-                      <td className="py-3 pr-6">Beginner–Int</td>
+                      <td className="py-3 pr-6">Jul-Aug</td>
+                      <td className="py-3 pr-6">Beginner-Int</td>
                       <td className="py-3">Medium</td>
                     </tr>
                     <tr className="border-b border-[#171717]/10">
                       <td className="py-3 pr-6 font-medium text-[#171717]">Guincho</td>
-                      <td className="py-3 pr-6">Apr–Oct</td>
+                      <td className="py-3 pr-6">Apr-Oct</td>
                       <td className="py-3 pr-6">Advanced</td>
                       <td className="py-3">Medium</td>
                     </tr>
                     <tr>
                       <td className="py-3 pr-6 font-medium text-[#171717]">Algarve</td>
-                      <td className="py-3 pr-6">May–Sep</td>
+                      <td className="py-3 pr-6">May-Sep</td>
                       <td className="py-3 pr-6">All levels</td>
                       <td className="py-3 text-red-400">High ✗</td>
                     </tr>
@@ -162,13 +162,13 @@ export default function KitesurfPortugalPage() {
 
               <h2 className="font-serif text-4xl mb-6">When to Go: Portugal Kitesurf Seasons</h2>
               <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-6">
-                <strong>June–September (Nortada Peak):</strong> This is the money window. The Nortada thermal activates reliably across all northern coast spots. Average wind speeds sit at 15–25 knots on most days. Water temperature reaches 18–20°C, making a 3/2mm wetsuit sufficient. August is the busiest month for tourism across Portugal, so plan your accommodation well in advance if you're targeting Moledo or Viana. September is a local favourite — the Nortada is still firing but the beaches are noticeably quieter.
+                <strong>June-September (Nortada Peak):</strong> This is the money window. The Nortada thermal activates reliably across all northern coast spots. Average wind speeds sit at 15-25 knots on most days. Water temperature reaches 18-20°C, making a 3/2mm wetsuit sufficient. August is the busiest month for tourism across Portugal, so plan your accommodation well in advance if you're targeting Moledo or Viana. September is a local favourite :  the Nortada is still firing but the beaches are noticeably quieter.
               </p>
               <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-6">
-                <strong>October–March (Atlantic Season):</strong> The Nortada retreats but the Atlantic swell season arrives. Winds become stronger, more variable, and predominantly from the southwest. This suits advanced wave riders rather than beginners. Water drops to 15°C — you'll want a 5/4mm wetsuit. The upside: zero crowds, dramatically cheaper accommodation, and an entirely different and raw beauty to the coastline.
+                <strong>October-March (Atlantic Season):</strong> The Nortada retreats but the Atlantic swell season arrives. Winds become stronger, more variable, and predominantly from the southwest. This suits advanced wave riders rather than beginners. Water drops to 15°C :  you'll want a 5/4mm wetsuit. The upside: zero crowds, dramatically cheaper accommodation, and an entirely different and raw beauty to the coastline.
               </p>
               <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-16">
-                <strong>April–May & October (Shoulder Season):</strong> Transitional winds, genuinely mild weather, uncrowded beaches, and best-value accommodation. Conditions are unpredictable enough that you wouldn't book a strict 5-day beginner course, but for an intermediate or advanced rider with flexibility in their schedule, shoulder season Portugal is excellent value. <Link href="/when-to-kitesurf-portugal" className="underline hover:text-[#319795] transition-colors">See our full month-by-month seasonal breakdown →</Link>
+                <strong>April-May & October (Shoulder Season):</strong> Transitional winds, genuinely mild weather, uncrowded beaches, and best-value accommodation. Conditions are unpredictable enough that you wouldn't book a strict 5-day beginner course, but for an intermediate or advanced rider with flexibility in their schedule, shoulder season Portugal is excellent value. <Link href="/when-to-kitesurf-portugal" className="underline hover:text-[#319795] transition-colors">See our full month-by-month seasonal breakdown →</Link>
               </p>
 
               <h2 className="font-serif text-4xl mb-6">North vs South: Which Region Is Right For You?</h2>
@@ -184,7 +184,7 @@ export default function KitesurfPortugalPage() {
                   <tbody className="text-[#171717]/70 font-light">
                     {[
                       ["Wind Reliability", "★★★★★", "★★★☆☆"],
-                      ["Crowds", "Low — ideal", "High in summer"],
+                      ["Crowds", "Low :  ideal", "High in summer"],
                       ["Beginner Friendly", "Yes (flat lagoon)", "Moderate"],
                       ["Cost", "Mid-range", "Higher (tourist premium)"],
                       ["Scenery", "Dramatic, rugged", "Beautiful, busy"],
@@ -217,13 +217,13 @@ export default function KitesurfPortugalPage() {
 
               <h2 className="font-serif text-4xl mb-6">Planning Your Trip: Practical Info</h2>
               <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-6">
-                <strong>Flights:</strong> Porto (OPO) is the closest international hub for northern Portugal spots including Moledo, Viana do Castelo, and the Minho coast — approximately 1h 15min drive to Moledo via the A28. Lisbon (LIS) works for Guincho and central coast spots. Budget airlines connect most European cities to Porto and Lisbon year-round.
+                <strong>Flights:</strong> Porto (OPO) is the closest international hub for northern Portugal spots including Moledo, Viana do Castelo, and the Minho coast :  approximately 1h 15min drive to Moledo via the A28. Lisbon (LIS) works for Guincho and central coast spots. Budget airlines connect most European cities to Porto and Lisbon year-round.
               </p>
               <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-6">
                 <strong>Getting Around:</strong> A hire car is strongly recommended, especially for northern spots. The A28 coastal motorway is fast and well maintained. Public transport exists but limits flexibility between beaches.
               </p>
               <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-16">
-                <strong>Accommodation:</strong> Options near Moledo range from beachside campsites (budget, very popular with kiters) to mid-range guesthouses in nearby Moledo village, and upscale hotels in Viana do Castelo city centre (20 minutes away). Book well in advance for July–August. Weekly apartment rentals offer the best value for a 5–7 day lesson course.
+                <strong>Accommodation:</strong> Options near Moledo range from beachside campsites (budget, very popular with kiters) to mid-range guesthouses in nearby Moledo village, and upscale hotels in Viana do Castelo city centre (20 minutes away). Book well in advance for July-August. Weekly apartment rentals offer the best value for a 5-7 day lesson course.
               </p>
 
               {/* Related Reads */}

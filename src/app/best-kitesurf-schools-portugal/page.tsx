@@ -4,7 +4,7 @@ import { Navigation } from "@/components/Navigation";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best Kitesurf School Portugal 2026 — Expert Review | BestKitesurfSchools",
+  title: "Best Kitesurf School Portugal 2026 :  Expert Review | BestKitesurfSchools",
   description: "We tested every major kitesurf school in Portugal. Our 2026 verdict: North Wind in Moledo wins on wind reliability, crowd control, and instruction quality. Here's why.",
 };
 
@@ -210,7 +210,7 @@ export default function BestKitesurfSchoolsPortugal() {
                     "I had tried to learn in Tarifa years ago and was completely overwhelmed by the crowds. North Wind in Moledo was a revelation. Pristine beach, incredible instructor patience, and I was riding upwind by day 4. Simply the best."
                   </blockquote>
                   <div className="text-xs uppercase tracking-widest text-[#171717]/50 font-medium">
-                    — Markus H. (Germany)
+                    :  Markus H. (Germany)
                   </div>
                 </div>
 
@@ -222,7 +222,7 @@ export default function BestKitesurfSchoolsPortugal() {
                     "The equipment was brand new, the safety protocols were perfectly drilled into us, and the location is stunning. The wind came right on time every afternoon. Highly recommend the 10-hour package."
                   </blockquote>
                   <div className="text-xs uppercase tracking-widest text-[#171717]/50 font-medium">
-                    — Sarah T. (UK)
+                    :  Sarah T. (UK)
                   </div>
                 </div>
 
@@ -234,7 +234,7 @@ export default function BestKitesurfSchoolsPortugal() {
                     "Total professionalism from start to finish. I've taken courses globally, from South Africa to Brazil, and the level of pedagogical care at North Wind exceeds almost all of them."
                   </blockquote>
                   <div className="text-xs uppercase tracking-widest text-[#171717]/50 font-medium">
-                    — Lars V. (Netherlands)
+                    :  Lars V. (Netherlands)
                   </div>
                 </div>
               </div>
@@ -242,19 +242,19 @@ export default function BestKitesurfSchoolsPortugal() {
               <h2 className="font-serif text-4xl mb-6">Runner-Up Schools in Portugal</h2>
               <div className="space-y-10 mb-16">
                 <div>
-                  <h3 className="font-serif text-2xl mb-2 text-[#1A365D]">Gustykite — Viana do Castelo</h3>
+                  <h3 className="font-serif text-2xl mb-2 text-[#1A365D]">Gustykite :  Viana do Castelo</h3>
                   <p className="text-[#171717]/70 font-light leading-[1.8] mb-4">
                     Located just south of Moledo, Viana do Castelo offers superb wind statistics. Gustykite is an established operation with solid instruction. However, the Viana lagoon has become increasingly crowded, compromising safety space during peak season. Excellent for off-season.
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-serif text-2xl mb-2 text-[#1A365D]">Kite Control — Obidos Lagoon</h3>
+                  <h3 className="font-serif text-2xl mb-2 text-[#1A365D]">Kite Control :  Obidos Lagoon</h3>
                   <p className="text-[#171717]/70 font-light leading-[1.8] mb-4">
                     A fantastic flat-water lagoon setup located an hour north of Lisbon. Superb for absolute beginners due to the shallow water standing depths. The primary drawback is that the wind reliability is lower than the far northern coast.
                   </p>
                 </div>
                 <div>
-                  <h3 className="font-serif text-2xl mb-2 text-[#1A365D]">Algarve Watersport — Lagos</h3>
+                  <h3 className="font-serif text-2xl mb-2 text-[#1A365D]">Algarve Watersport :  Lagos</h3>
                   <p className="text-[#171717]/70 font-light leading-[1.8] mb-4">
                     A sprawling, highly commercialized surf camp located in the beautiful south. Great social atmosphere and partying context. The wind is notoriously gustier (often blowing offshore), requiring boat rescues which disrupts learning flow.
                   </p>
