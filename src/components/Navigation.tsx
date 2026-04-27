@@ -31,24 +31,32 @@ export function Navigation() {
             BestKitesurfSchools
           </Link>
 
-          <div className="hidden lg:flex space-x-10 text-[10px] uppercase tracking-[0.2em] font-medium">
-            <Link href="/" className="relative group">
-              <span className="pb-1">Home</span>
-              <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-current transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-            <Link href="/#locations" className="relative group">
-              <span className="pb-1">Directory</span>
-              <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-current transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-            <Link href="/academy" className="relative group flex items-center">
-              <span className="pb-1">The Academy & Guides</span>
-              <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-current transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-            <Link href="/best-kitesurf-schools-portugal" className="relative group text-[#319795]">
-              <span className="pb-1">Portugal Review</span>
-              <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-current transition-all duration-300 group-hover:w-full"></span>
-            </Link>
-          </div>
+          <ul className="hidden lg:flex space-x-10 text-[10px] uppercase tracking-[0.2em] font-medium">
+            <li>
+              <Link href="/" className="relative group">
+                <span className="pb-1">Home</span>
+                <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-current transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+            </li>
+            <li>
+              <Link href="/#locations" className="relative group">
+                <span className="pb-1">Directory</span>
+                <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-current transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+            </li>
+            <li>
+              <Link href="/academy" className="relative group flex items-center">
+                <span className="pb-1">The Academy & Guides</span>
+                <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-current transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+            </li>
+            <li>
+              <Link href="/best-kitesurf-schools-portugal" className="relative group text-[#319795]">
+                <span className="pb-1">Portugal Review</span>
+                <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-current transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+            </li>
+          </ul>
 
           <button
             onClick={() => setMenuOpen(!menuOpen)}
@@ -68,37 +76,46 @@ export function Navigation() {
         className={`fixed inset-0 bg-[#FDFBF7] z-40 flex justify-center items-center overflow-y-auto transition-opacity duration-500 lg:hidden text-[#171717] ${
           menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
+        aria-hidden="true"
       >
-        <div className="w-full px-6 py-24 flex flex-col space-y-8">
-          <Link
-            href="/"
-            onClick={() => setMenuOpen(false)}
-            className="text-4xl font-serif hover:opacity-50 transition-opacity tracking-tight"
-          >
-            Home
-          </Link>
-          <Link
-            href="/#locations"
-            onClick={() => setMenuOpen(false)}
-            className="text-4xl font-serif hover:opacity-50 transition-opacity tracking-tight"
-          >
-            Directory
-          </Link>
-          <Link
-            href="/academy"
-            onClick={() => setMenuOpen(false)}
-            className="text-4xl font-serif hover:opacity-50 transition-opacity tracking-tight"
-          >
-            The Academy
-          </Link>
-          <Link
-            href="/best-kitesurf-schools-portugal"
-            onClick={() => setMenuOpen(false)}
-            className="text-4xl font-serif text-[#1A365D] hover:opacity-50 transition-opacity tracking-tight"
-          >
-            Portugal Review
-          </Link>
-        </div>
+        <ul className="w-full px-6 py-24 flex flex-col space-y-8">
+          <li>
+            <Link
+              href="/"
+              onClick={() => setMenuOpen(false)}
+              className="text-4xl font-serif hover:opacity-50 transition-opacity tracking-tight"
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/#locations"
+              onClick={() => setMenuOpen(false)}
+              className="text-4xl font-serif hover:opacity-50 transition-opacity tracking-tight"
+            >
+              Directory
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/academy"
+              onClick={() => setMenuOpen(false)}
+              className="text-4xl font-serif hover:opacity-50 transition-opacity tracking-tight"
+            >
+              The Academy
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/best-kitesurf-schools-portugal"
+              onClick={() => setMenuOpen(false)}
+              className="text-4xl font-serif text-[#1A365D] hover:opacity-50 transition-opacity tracking-tight"
+            >
+              Portugal Review
+            </Link>
+          </li>
+        </ul>
       </div>
     </>
   );
