@@ -65,7 +65,7 @@ export default async function SchoolPage({
               <span className="opacity-40">/</span>
               <span className="opacity-80">{school.country}</span>
             </div>
-            <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl text-white leading-[0.9] tracking-tight mb-8">
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white leading-[1.05] tracking-tight mb-8">
               {school.name}
             </h1>
             <div className="text-white/60 text-lg md:text-xl font-light tracking-wide uppercase">

@@ -53,14 +53,19 @@ export function Navigation({
             <li className="relative group/loc">
               <span className="pb-1 cursor-pointer">Locations</span>
               <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-current transition-all duration-300 group-hover/loc:w-full"></span>
-              {/* Dropdown */}
-              <div className="absolute top-full left-0 mt-4 hidden group-hover/loc:block bg-white text-[#171717] shadow-lg p-6 w-48 transition-all">
-                <ul className="space-y-4 text-xs">
-                  <li><Link href="/kitesurf-portugal" className="hover:text-[#319795] transition-colors">Portugal</Link></li>
-                  <li><Link href="/kitesurf-tarifa-spain" className="hover:text-[#319795] transition-colors">Spain</Link></li>
-                  <li><Link href="/kitesurf-dakhla-morocco" className="hover:text-[#319795] transition-colors">Morocco</Link></li>
-                  <li><Link href="/kitesurf-brazil" className="hover:text-[#319795] transition-colors">Brazil</Link></li>
-                </ul>
+              {/* Dropdown — flush at top-full with internal pt so no gap breaks hover */}
+              <div className="absolute top-full left-0 invisible group-hover/loc:visible opacity-0 group-hover/loc:opacity-100 transition-opacity duration-150 z-50">
+                <div className="pt-4">
+                  <div className="bg-white text-[#171717] shadow-lg p-6 w-48">
+                    <ul className="space-y-4 text-xs">
+                      <li><Link href="/kitesurf-portugal" className="hover:text-[#319795] transition-colors">Portugal</Link></li>
+                      <li><Link href="/kitesurf-northern-portugal" className="hover:text-[#319795] transition-colors">Northern Portugal</Link></li>
+                      <li><Link href="/kitesurf-tarifa-spain" className="hover:text-[#319795] transition-colors">Spain</Link></li>
+                      <li><Link href="/kitesurf-dakhla-morocco" className="hover:text-[#319795] transition-colors">Morocco</Link></li>
+                      <li><Link href="/kitesurf-brazil" className="hover:text-[#319795] transition-colors">Brazil</Link></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </li>
             <li>

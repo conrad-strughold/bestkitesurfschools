@@ -58,7 +58,7 @@ export default function KitesurfPortugalPage() {
             <span className="opacity-40">/</span>
             <Link href="/kitesurf-portugal" className="opacity-80">Portugal</Link>
           </div>
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-[0.9] tracking-tight mb-6">
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white leading-[1.05] tracking-tight mb-6">
             Kitesurfing in Portugal: The Complete 2026 Guide
           </h1>
           <span className="text-xs uppercase tracking-widest text-white/50">By the BestKitesurfSchools Editorial Team | Updated April 2026</span>

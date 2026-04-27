@@ -47,7 +47,7 @@ export default function KitesurfNorthernPortugalPage() {
             <span className="opacity-40">/</span>
             <span className="opacity-80">Northern Portugal</span>
           </div>
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-[0.9] tracking-tight mb-6">
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white leading-[1.05] tracking-tight mb-6">
             Kitesurfing in Northern Portugal — The Insider's Guide
           </h1>
           <span className="text-xs uppercase tracking-widest text-white/40">By the BestKitesurfSchools Editorial Team | Updated April 2026</span>

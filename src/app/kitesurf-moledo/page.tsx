@@ -78,7 +78,7 @@ export default function KitesurfMoledoPage() {
             <span className="opacity-40">/</span>
             <span className="opacity-80">Moledo</span>
           </div>
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-[0.9] tracking-tight mb-6">
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white leading-[1.05] tracking-tight mb-6">
             Kitesurfing in Moledo, Portugal
           </h1>
           <p className="text-white/70 font-light text-lg max-w-2xl">Spot Guide, Wind Conditions & Where to Learn</p>

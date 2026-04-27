@@ -46,7 +46,7 @@ export default function GuidePage() {
             <span className="opacity-40">/</span>
             <span className="opacity-80">Knowledge Hub</span>
           </div>
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-[0.9] tracking-tight mb-8">
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white leading-[1.05] tracking-tight mb-8">
             Wingfoil Beginner Guide: Taking Flight
           </h1>
         </div>

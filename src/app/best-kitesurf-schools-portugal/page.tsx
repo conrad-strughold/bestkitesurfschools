@@ -113,7 +113,7 @@ export default function BestKitesurfSchoolsPortugal() {
             <span className="opacity-40">/</span>
             <span className="opacity-80">Portugal Review</span>
           </div>
-          <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl text-white leading-[0.9] tracking-tight mb-8 max-w-5xl">
+          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white leading-[1.05] tracking-tight mb-8 max-w-5xl">
             The Best Kitesurf School in Portugal: North Wind (2026 Review)
           </h1>
           <span className="text-xs uppercase tracking-widest text-white/50 block">By the BestKitesurfSchools Editorial Team | Updated April 2026</span>
