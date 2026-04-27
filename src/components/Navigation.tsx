@@ -53,18 +53,41 @@ export function Navigation({
             <li className="relative group/loc">
               <span className="pb-1 cursor-pointer">Locations</span>
               <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-current transition-all duration-300 group-hover/loc:w-full"></span>
-              {/* Dropdown — flush at top-full with internal pt so no gap breaks hover */}
               <div className="absolute top-full left-0 invisible group-hover/loc:visible opacity-0 group-hover/loc:opacity-100 transition-opacity duration-150 z-50">
                 <div className="pt-4">
-                  <div className="bg-white text-[#171717] shadow-lg p-6 w-48">
-                    <ul className="space-y-4 text-xs">
-                      <li><Link href="/kitesurf-portugal" className="hover:text-[#319795] transition-colors">Portugal</Link></li>
-                      <li><Link href="/kitesurf-northern-portugal" className="hover:text-[#319795] transition-colors">Northern Portugal</Link></li>
-                      <li><Link href="/kitesurf-tarifa-spain" className="hover:text-[#319795] transition-colors">Spain: Tarifa</Link></li>
-                      <li><Link href="/kitesurf-dakhla-morocco" className="hover:text-[#319795] transition-colors">Morocco: Dakhla</Link></li>
-                      <li><Link href="/kitesurf-essaouira-morocco" className="hover:text-[#319795] transition-colors">Morocco: Essaouira</Link></li>
-                      <li><Link href="/kitesurf-brazil" className="hover:text-[#319795] transition-colors">Brazil</Link></li>
-                    </ul>
+                  <div className="bg-white text-[#171717] shadow-xl p-8 w-[500px] border border-black/5">
+                    <div className="grid grid-cols-2 gap-x-12 gap-y-8">
+                      <div>
+                        <h4 className="text-[10px] uppercase tracking-[0.2em] font-bold text-[#319795] mb-4">Core Focus</h4>
+                        <ul className="space-y-3 text-xs font-medium">
+                          <li><Link href="/kitesurf-portugal" className="hover:opacity-60 transition-opacity">Portugal Overview</Link></li>
+                          <li><Link href="/kitesurf-northern-portugal" className="hover:opacity-60 transition-opacity">Northern Portugal Guide</Link></li>
+                        </ul>
+                        
+                        <h4 className="text-[10px] uppercase tracking-[0.2em] font-bold text-[#171717]/40 mt-8 mb-4">Europe</h4>
+                        <ul className="space-y-3 text-xs font-light">
+                          <li><Link href="/kitesurf-tarifa-spain" className="hover:text-[#319795] transition-colors">Tarifa, Spain</Link></li>
+                          <li><Link href="/kitesurf-sicily-italy" className="hover:text-[#319795] transition-colors">Lo Stagnone, Sicily</Link></li>
+                          <li><Link href="/kitesurf-netherlands" className="hover:text-[#319795] transition-colors">Workum, Netherlands</Link></li>
+                        </ul>
+                      </div>
+                      <div>
+                        <h4 className="text-[10px] uppercase tracking-[0.2em] font-bold text-[#171717]/40 mb-4">Africa & ME</h4>
+                        <ul className="space-y-3 text-xs font-light">
+                          <li><Link href="/kitesurf-dakhla-morocco" className="hover:text-[#319795] transition-colors">Dakhla, Morocco</Link></li>
+                          <li><Link href="/kitesurf-essaouira-morocco" className="hover:text-[#319795] transition-colors">Essaouira, Morocco</Link></li>
+                          <li><Link href="/kitesurf-egypt" className="hover:text-[#319795] transition-colors">Egypt (Soma Bay & Gouna)</Link></li>
+                          <li><Link href="/kitesurf-zanzibar" className="hover:text-[#319795] transition-colors">Zanzibar, Tanzania</Link></li>
+                        </ul>
+
+                        <h4 className="text-[10px] uppercase tracking-[0.2em] font-bold text-[#171717]/40 mt-8 mb-4">Global Pillars</h4>
+                        <ul className="space-y-3 text-xs font-light">
+                          <li><Link href="/kitesurf-brazil" className="hover:text-[#319795] transition-colors">Brazil (Ceará)</Link></li>
+                          <li><Link href="/kitesurf-sri-lanka" className="hover:text-[#319795] transition-colors">Sri Lanka (Kalpitiya)</Link></li>
+                          <li><Link href="/kitesurf-caribbean" className="hover:text-[#319795] transition-colors">The Caribbean</Link></li>
+                        </ul>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -143,11 +166,14 @@ export function Navigation({
           <li>
             <div className="flex flex-col space-y-4 pt-4 border-t border-[#171717]/10">
               <span className="text-xs uppercase tracking-[0.2em] text-[#171717]/50">Locations</span>
-              <Link href="/kitesurf-portugal" onClick={() => setMenuOpen(false)} className="text-2xl font-serif hover:opacity-50">Portugal</Link>
-              <Link href="/kitesurf-tarifa-spain" onClick={() => setMenuOpen(false)} className="text-2xl font-serif hover:opacity-50">Spain</Link>
-              <Link href="/kitesurf-dakhla-morocco" onClick={() => setMenuOpen(false)} className="text-2xl font-serif hover:opacity-50">Morocco: Dakhla</Link>
-              <Link href="/kitesurf-essaouira-morocco" onClick={() => setMenuOpen(false)} className="text-2xl font-serif hover:opacity-50">Morocco: Essaouira</Link>
-              <Link href="/kitesurf-brazil" onClick={() => setMenuOpen(false)} className="text-2xl font-serif hover:opacity-50">Brazil</Link>
+              <Link href="/kitesurf-portugal" onClick={() => setMenuOpen(false)} className="text-2xl font-serif text-[#319795]">Portugal</Link>
+              <Link href="/kitesurf-tarifa-spain" onClick={() => setMenuOpen(false)} className="text-2xl font-serif">Spain</Link>
+              <Link href="/kitesurf-egypt" onClick={() => setMenuOpen(false)} className="text-2xl font-serif">Egypt</Link>
+              <Link href="/kitesurf-dakhla-morocco" onClick={() => setMenuOpen(false)} className="text-2xl font-serif">Dakhla</Link>
+              <Link href="/kitesurf-zanzibar" onClick={() => setMenuOpen(false)} className="text-2xl font-serif">Zanzibar</Link>
+              <Link href="/kitesurf-sicily-italy" onClick={() => setMenuOpen(false)} className="text-2xl font-serif">Sicily</Link>
+              <Link href="/kitesurf-brazil" onClick={() => setMenuOpen(false)} className="text-2xl font-serif">Brazil</Link>
+              <Link href="/kitesurf-sri-lanka" onClick={() => setMenuOpen(false)} className="text-2xl font-serif">Sri Lanka</Link>
             </div>
           </li>
         </ul>
