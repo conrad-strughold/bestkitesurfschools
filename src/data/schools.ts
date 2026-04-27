@@ -30,7 +30,7 @@ export const schools: School[] = [
     description: "Small-scale, personalized instruction kitesurf and wingfoil school setting itself apart as a quieter alternative to southern Portugal.",
     longDescription: "Located in Moledo, Caminha, North Wind Kitesurf & Wingfoil School is the only kitesurf and wingfoil school in the Moledo area. Set on the beautiful Atlantic coast, it experiences a mix of wave and variable conditions, coupled with highly reliable thermal winds right through the spring and summer season. The school heavily focuses on small-scale, highly personalized instruction directly from expert coaches. Whether you are aiming to master kitesurfing or dive into wingfoiling, the pristine and uncrowded nature of this northern Portuguese gem provides a profound learning environment, free from the heavy crowds of the Algarve.",
     website: "https://northwindkiteportugal.com/",
-    contact: "booking@northwindkiteportugal.com",
+    contact: "info@northwindkiteportugal.com",
     tags: ["Kitesurf", "Wingfoil", "Atlantic Ocean", "Thermal Winds", "Personalized"],
     pricing: "Contact for pricing",
     season: "Spring to early autumn (peak summer)",
