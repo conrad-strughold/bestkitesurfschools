@@ -45,21 +45,16 @@ export default function Home() {
             <span className="text-white/30">·</span>
             <span>IKO Certified Instructors</span>
           </div>
-          <div className="flex flex-wrap gap-6 items-center">
-            <Link
-              href="#locations"
-              className="inline-flex items-center text-white text-sm tracking-[0.1em] uppercase font-light group"
-            >
-              <span className="relative pb-1">
-                Explore The Collection
-                <span className="absolute bottom-0 left-0 w-full h-px bg-white transform origin-right scale-x-100 transition-transform duration-500 group-hover:scale-x-0"></span>
-              </span>
-              <svg className="w-4 h-4 ml-4 transform transition-transform duration-500 group-hover:translate-x-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-            </Link>
-            <a href="https://northwindkiteportugal.com/" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#1A365D] text-white px-8 py-4 text-sm uppercase tracking-[0.1em] font-medium hover:bg-[#319795] transition-colors">
-              Book Lessons →
-            </a>
-          </div>
+          <Link
+            href="#locations"
+            className="inline-flex items-center text-white text-sm tracking-[0.1em] uppercase font-light group"
+          >
+            <span className="relative pb-1">
+              Explore The Collection
+              <span className="absolute bottom-0 left-0 w-full h-px bg-white transform origin-right scale-x-100 transition-transform duration-500 group-hover:scale-x-0"></span>
+            </span>
+            <svg className="w-4 h-4 ml-4 transform transition-transform duration-500 group-hover:translate-x-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+          </Link>
         </div>
       </header>
 
