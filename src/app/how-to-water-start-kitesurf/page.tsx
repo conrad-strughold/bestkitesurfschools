@@ -6,7 +6,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "How To Water Start Kitesurfing | Best Kitesurf Schools",
-  description: "Comprehensive guide to how to water start kitesurfing.",
+  description: "How to water start kitesurfing: the exact technique, kite position, and board angle to pop up cleanly every time. Step-by-step beginner guide.",
   openGraph: {
     title: "How To Water Start Kitesurfing",
     description: "Read our comprehensive guide to how to water start kitesurfing on BestKitesurfSchools.",

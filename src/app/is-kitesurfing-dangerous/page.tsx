@@ -6,7 +6,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Is Kitesurfing Dangerous? | Best Kitesurf Schools",
-  description: "Comprehensive guide to is kitesurfing dangerous?.",
+  description: "Is kitesurfing dangerous? Real accident statistics, modern safety systems explained, and how IKO-certified instruction dramatically mitigates risk.",
   openGraph: {
     title: "Is Kitesurfing Dangerous?",
     description: "Read our comprehensive guide to is kitesurfing dangerous? on BestKitesurfSchools.",

@@ -6,7 +6,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Kitesurf Moledo: The Northern Sanctuary | Best Kitesurf Schools",
-  description: "Comprehensive guide to kitesurf moledo: the northern sanctuary.",
+  description: "Moledo is northern Portugal's secret kitesurf paradise. Consistent Nortada winds, uncrowded beaches, and Europe's top-rated school. Full spot guide inside.",
   openGraph: {
     title: "Kitesurf Moledo: The Northern Sanctuary",
     description: "Read our comprehensive guide to kitesurf moledo: the northern sanctuary on BestKitesurfSchools.",

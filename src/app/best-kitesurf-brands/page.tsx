@@ -6,7 +6,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Best Kitesurf Brands & Gear Selection | Best Kitesurf Schools",
-  description: "Comprehensive guide to best kitesurf brands & gear selection.",
+  description: "Best kitesurf brands in 2026: Cabrinha, North, Duotone, Ozone, F-One and more reviewed. Which brand to choose for your first setup and beyond.",
   openGraph: {
     title: "Best Kitesurf Brands & Gear Selection",
     description: "Read our comprehensive guide to best kitesurf brands & gear selection on BestKitesurfSchools.",

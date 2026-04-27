@@ -6,7 +6,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "How Much Does It Cost To Learn Kitesurfing? | Best Kitesurf Schools",
-  description: "Comprehensive guide to how much does it cost to learn kitesurfing?.",
+  description: "How much does kitesurfing cost? Full breakdown of lessons, gear, and travel costs for 2026. Know exactly what to budget before you book.",
   openGraph: {
     title: "How Much Does It Cost To Learn Kitesurfing?",
     description: "Read our comprehensive guide to how much does it cost to learn kitesurfing? on BestKitesurfSchools.",

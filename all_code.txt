@@ -1,0 +1,3675 @@
+
+
+=======================================================
+// FILE: src\app\academy\page.tsx
+=======================================================
+
+import Image from "next/image";
+import Link from "next/link";
+import { Navigation } from "@/components/Navigation";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "The Academy | Best Kitesurf Schools",
+  description: "Your master directory for learning kitesurfing. Gear guides, wind explanations, and step-by-step video tutorials.",
+};
+
+export default function AcademyIndex() {
+  return (
+    <>
+      <Navigation />
+      
+      {/* Editorial Hero */}
+      <header className="relative w-full min-h-[65svh] flex flex-col justify-end pt-40 pb-20 bg-[#171717]">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/northern-portugal-kitesurf.jpg"
+            alt="Kitesurf Academy"
+            fill
+            className="object-cover opacity-60 mix-blend-overlay grayscale"
+            priority
+          />
+          <div className="absolute inset-0 bg-black/40"></div>
+        </div>
+
+        <div className="relative z-10 w-full px-6 md:px-16 lg:px-24 max-w-[1400px] mx-auto">
+          <h1 className="font-serif text-6xl md:text-8xl text-white leading-[0.95] tracking-tight mb-8">
+            The Academy
+          </h1>
+          <p className="text-white/70 text-lg font-light tracking-wide max-w-xl">
+            A comprehensive, masterclass-level database of wind theory, gear selection, and video technique tutorials.
+          </p>
+        </div>
+      </header>
+
+      <main className="w-full bg-[#FDFBF7] text-[#171717]">
+        <div className="max-w-[1400px] mx-auto px-6 md:px-16 lg:px-24 py-32 space-y-32">
+          
+          {/* Section 1: Video Enhanced Tutorials */}
+          <section>
+            <div className="flex items-center space-x-4 mb-16">
+              <span className="w-8 h-px bg-[#171717]"></span>
+              <h2 className="font-serif text-4xl">Video Tutorials</h2>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+               <Link href="/how-to-water-start-kitesurf" className="group block border-b border-[#171717]/10 pb-8 hover:opacity-70 transition-opacity">
+                  <span className="text-[10px] uppercase tracking-[0.2em] font-medium text-[#1A365D] mb-4 block">Core Skill</span>
+                  <h3 className="font-serif text-3xl mb-4">How To Water Start</h3>
+                  <p className="text-[#171717]/60 font-light text-sm">The make-or-break move. Learn to balance kite power and board resistance.</p>
+               </Link>
+               <Link href="/how-to-control-kite" className="group block border-b border-[#171717]/10 pb-8 hover:opacity-70 transition-opacity">
+                  <span className="text-[10px] uppercase tracking-[0.2em] font-medium text-[#1A365D] mb-4 block">Fundamentals</span>
+                  <h3 className="font-serif text-3xl mb-4">Steering & Control</h3>
+                  <p className="text-[#171717]/60 font-light text-sm">Mastering the wind window, power zones, and the safety release.</p>
+               </Link>
+               <Link href="/kitesurf-body-drag" className="group block border-b border-[#171717]/10 pb-8 hover:opacity-70 transition-opacity">
+                  <span className="text-[10px] uppercase tracking-[0.2em] font-medium text-[#1A365D] mb-4 block">Safety</span>
+                  <h3 className="font-serif text-3xl mb-4">Body Dragging</h3>
+                  <p className="text-[#171717]/60 font-light text-sm">How to recover your board and navigate deep water safely.</p>
+               </Link>
+               <Link href="/kitesurf-first-ride" className="group block border-b border-[#171717]/10 pb-8 hover:opacity-70 transition-opacity">
+                  <span className="text-[10px] uppercase tracking-[0.2em] font-medium text-[#1A365D] mb-4 block">Progression</span>
+                  <h3 className="font-serif text-3xl mb-4">Your First Ride</h3>
+                  <p className="text-[#171717]/60 font-light text-sm">Sustaining the glide and converting lateral drag to forward momentum.</p>
+               </Link>
+               <Link href="/wingfoil-beginner-guide" className="group block border-b border-[#171717]/10 pb-8 hover:opacity-70 transition-opacity">
+                  <span className="text-[10px] uppercase tracking-[0.2em] font-medium text-[#1A365D] mb-4 block">New Sport</span>
+                  <h3 className="font-serif text-3xl mb-4">Wingfoil Basics</h3>
+                  <p className="text-[#171717]/60 font-light text-sm">Taking flight for the first time on a hydrofoil.</p>
+               </Link>
+            </div>
+          </section>
+
+          {/* Section 2: Core Fundamentals */}
+          <section>
+            <div className="flex items-center space-x-4 mb-16">
+              <span className="w-8 h-px bg-[#171717]"></span>
+              <h2 className="font-serif text-4xl">Theory & Learning Frameworks</h2>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
+               <div className="md:col-span-2 border border-[#171717]/10 p-12 bg-white flex flex-col justify-center">
+                  <h3 className="font-serif text-4xl mb-6">Start Here</h3>
+                  <p className="text-lg text-[#171717]/70 font-light mb-8 max-w-xl">
+                    Kitesurfing has a steep initial learning curve. Understand exactly what to expect from day one on the beach to your first independent ride.
+                  </p>
+                  <div className="flex flex-col space-y-4">
+                     <Link href="/kitesurfing-for-beginners" className="text-sm font-medium uppercase tracking-[0.1em] hover:text-[#1A365D] transition-colors border-b border-[#171717]/10 pb-2 inline-block max-w-sm">→ Kitesurfing For Beginners</Link>
+                     <Link href="/how-to-learn-kitesurfing" className="text-sm font-medium uppercase tracking-[0.1em] hover:text-[#1A365D] transition-colors border-b border-[#171717]/10 pb-2 inline-block max-w-sm">→ Realistic Learning Timelines</Link>
+                     <Link href="/common-kitesurfing-mistakes" className="text-sm font-medium uppercase tracking-[0.1em] hover:text-[#1A365D] transition-colors border-b border-[#171717]/10 pb-2 inline-block max-w-sm">→ Top 5 Beginner Mistakes</Link>
+                     <Link href="/kitesurfing-cost-guide" className="text-sm font-medium uppercase tracking-[0.1em] hover:text-[#1A365D] transition-colors border-b border-[#171717]/10 pb-2 inline-block max-w-sm">→ The Cost of Gear & Lessons</Link>
+                     <Link href="/kitesurf-fitness-requirements" className="text-sm font-medium uppercase tracking-[0.1em] hover:text-[#1A365D] transition-colors border-b border-[#171717]/10 pb-2 inline-block max-w-sm">→ Do You Need To Be Strong?</Link>
+                     <Link href="/is-kitesurfing-dangerous" className="text-sm font-medium uppercase tracking-[0.1em] hover:text-[#1A365D] transition-colors border-b border-[#171717]/10 pb-2 inline-block max-w-sm">→ Is Kitesurfing Dangerous?</Link>
+                  </div>
+               </div>
+               
+               <div className="flex flex-col justify-between">
+                  <div>
+                    <span className="text-[10px] uppercase tracking-[0.2em] font-medium text-[#1A365D] mb-4 block">Location Focus</span>
+                    <h3 className="font-serif text-3xl mb-4">Why Portugal?</h3>
+                    <p className="text-[#171717]/70 font-light text-sm mb-6 leading-relaxed">
+                      Discover why thousands of riders flock to the Atlantic coast every summer, and why heading North changes everything.
+                    </p>
+                  </div>
+                  <div className="space-y-3">
+                     <Link href="/kitesurf-portugal" className="block text-xs uppercase tracking-widest font-medium hover:text-[#319795]">Portugal Overview</Link>
+                     <Link href="/kitesurf-moledo" className="block text-xs uppercase tracking-widest font-medium hover:text-[#319795]">Moledo Spot Guide</Link>
+                  </div>
+               </div>
+            </div>
+          </section>
+
+          {/* Section 3: Wind & Gear Lists */}
+          <section>
+            <div className="flex items-center space-x-4 mb-16">
+              <span className="w-8 h-px bg-[#171717]"></span>
+              <h2 className="font-serif text-4xl">Technical Knowledge</h2>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 border-t border-[#171717]/10 pt-16">
+               <div className="md:col-span-1">
+                 <h3 className="font-serif text-2xl mb-8">Wind & Weather</h3>
+               </div>
+               <div className="md:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-8">
+                 <Link href="/kitesurf-wind-guide" className="group">
+                    <h4 className="font-serif text-xl mb-3 group-hover:text-[#1A365D] transition-colors">Reading The Elements</h4>
+                    <p className="text-sm text-[#171717]/60 font-light">Onshore, offshore, and the magic of thermal acceleration.</p>
+                 </Link>
+                 <Link href="/best-wind-apps-kitesurfing" className="group">
+                    <h4 className="font-serif text-xl mb-3 group-hover:text-[#1A365D] transition-colors">Best Forecasting Apps</h4>
+                    <p className="text-sm text-[#171717]/60 font-light">How to interpret Windguru and Windy without guessing.</p>
+                 </Link>
+               </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 border-t border-[#171717]/10 pt-16 mt-16">
+               <div className="md:col-span-1">
+                 <h3 className="font-serif text-2xl mb-8">Gear & Brands</h3>
+               </div>
+               <div className="md:col-span-3 grid grid-cols-1 sm:grid-cols-2 gap-8">
+                 <Link href="/best-kitesurf-brands" className="group">
+                    <h4 className="font-serif text-xl mb-3 group-hover:text-[#1A365D] transition-colors">The Best Kitesurf Brands</h4>
+                    <p className="text-sm text-[#171717]/60 font-light">Breaking down Duotone, North, and Cabrinha in 2026.</p>
+                 </Link>
+                 <Link href="/kitesurf-gear-beginners" className="group">
+                    <h4 className="font-serif text-xl mb-3 group-hover:text-[#1A365D] transition-colors">Essential Beginner Gear</h4>
+                    <p className="text-sm text-[#171717]/60 font-light">What you need, and exactly why you shouldn't buy it yet.</p>
+                 </Link>
+               </div>
+            </div>
+          </section>
+
+        </div>
+      </main>
+      
+      <footer className="w-full bg-[#171717] text-[#FDFBF7] py-20 px-6 md:px-16 text-center">
+        <Link href="/" className="inline-flex flex-col items-center group relative">
+          <span className="text-xs tracking-[0.15em] uppercase font-light pb-2">Return Home</span>
+          <span className="w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
+        </Link>
+      </footer>
+    </>
+  );
+}
+
+
+=======================================================
+// FILE: src\app\best-kitesurf-brands\page.tsx
+=======================================================
+
+
+import Image from "next/image";
+import Link from "next/link";
+import { Navigation } from "@/components/Navigation";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Best Kitesurf Brands & Gear Selection | Best Kitesurf Schools",
+  description: "Comprehensive guide to best kitesurf brands & gear selection.",
+  openGraph: {
+    title: "Best Kitesurf Brands & Gear Selection",
+    description: "Read our comprehensive guide to best kitesurf brands & gear selection on BestKitesurfSchools.",
+    url: "https://bestkitesurfschools.com/best-kitesurf-brands",
+    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "Best Kitesurf Brands & Gear Selection" }],
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Best Kitesurf Brands & Gear Selection | Best Kitesurf Schools",
+    description: "Read our comprehensive guide to best kitesurf brands & gear selection.",
+    images: ["https://bestkitesurfschools.com/images/hero.png"],
+  }
+};
+
+export default function GuidePage() {
+  return (
+    <>
+      <Navigation />
+      
+      {/* Editorial Hero */}
+      <header className="relative min-h-[65svh] w-full flex flex-col justify-end pt-40 pb-20 px-6 md:px-16 lg:px-24 bg-[#171717]">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-[#171717]"></div>
+          <Image
+            src="/images/hero.png"
+            alt="Best Kitesurf Brands & Gear Selection"
+            fill
+            className="object-cover opacity-50 mix-blend-overlay grayscale"
+            priority
+          />
+        </div>
+
+        <div className="relative z-10 w-full max-w-[1000px] mx-auto">
+          <div className="mb-8 flex items-center space-x-3 text-white text-[10px] tracking-[0.2em] uppercase font-medium">
+            <Link href="/" className="hover:opacity-60 transition-opacity">Home</Link>
+            <span className="opacity-40">/</span>
+            <span className="opacity-80">Knowledge Hub</span>
+          </div>
+          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-[0.9] tracking-tight mb-8">
+            Best Kitesurf Brands & Gear Selection
+          </h1>
+        </div>
+      </header>
+
+      <main className="relative z-20 bg-[#FDFBF7] text-[#171717]">
+        <div className="w-full px-6 md:px-16 lg:px-24 py-24 max-w-[1200px] mx-auto">
+          <div className="flex flex-col lg:flex-row gap-24">
+            
+            {/* Main Content Column */}
+            <div className="lg:w-2/3 editorial-content">
+              
+      <h2 className="font-serif text-4xl mb-6 mt-12">The Big Three</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        <strong>Duotone:</strong> The market leader. Extremely resilient, highly engineered gear. Their Evo model is a legendary all-rounder.<br/><br/>
+        <strong>North Kiteboarding:</strong> Not to be confused with older iterations, the modern North brand creates hyper-premium, sleek, and highly predictable kites.<br/><br/>
+        <strong>Cabrinha:</strong> Known for incredible durability and ease of use, particularly their Moto and Switchblade models.
+      </p>
+
+      <h2 className="font-serif text-4xl mb-6 mt-12">Beginner vs Advanced Gear</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        Beginners need 'freeride' kites (usually delta or bow shapes) that offer massive depower and easy water relaunch. C-kites are strictly for advanced freestyle professionals. Wait until you have taken professional <Link href="/best-kitesurf-schools-portugal" className="underline hover:text-[#319795]">kitesurf lessons</Link> before ever purchasing gear.
+      </p>
+    
+              
+              
+
+              <div className="mt-24 p-8 border border-[#171717]/10 bg-[#FDFBF7]">
+                 <h4 className="font-serif text-2xl mb-4">The ultimate progression secret? Professional instruction.</h4>
+                 <p className="text-[#171717]/70 font-light leading-relaxed mb-6">
+                   While self-study is valuable, nothing replaces time on the water with certified experts. Looking for lessons in Europe? Portugal offers legendary thermal winds and spectacular uncrowded beaches if you know where to look.
+                 </p>
+                 <a href="https://northwindkiteportugal.com" target="_blank" rel="noopener noreferrer" className="inline-block border-b border-[#1A365D] text-[#1A365D] font-medium uppercase tracking-widest text-xs pb-1 hover:opacity-70 transition-opacity">
+                   View Kitesurf School in Moledo
+                 </a>
+              </div>
+            </div>
+
+            {/* Sidebar Column */}
+            <aside className="lg:w-1/3">
+              <div className="sticky top-32">
+                <div className="border-t border-[#171717]/10 pt-12 mb-16">
+                  <h3 className="text-xs font-medium uppercase tracking-[0.2em] mb-8 text-[#171717]/50">Trending Guides</h3>
+                  <ul className="space-y-4 text-sm font-light text-[#171717]/80">
+                     <li><Link href="/kitesurf-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Kitesurf Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/best-kitesurf-schools-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Best Schools in Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurfing-for-beginners" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Beginner's Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurf-moledo" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Moledo Spot Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+
+          </div>
+        </div>
+      </main>
+    </>
+  );
+}
+
+
+=======================================================
+// FILE: src\app\best-kitesurf-schools-portugal\page.tsx
+=======================================================
+
+import Image from "next/image";
+import Link from "next/link";
+import { Navigation } from "@/components/Navigation";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "The Best Kitesurf Schools in Portugal: Editor's Review (2026)",
+  description: "Our comprehensive criteria for selecting the absolute best kitesurf school in Portugal, evaluating wind reliability, crowd control, and instruction quality.",
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "North Wind Kitesurf & Wingfoil School",
+  "image": "https://bestkitesurfschools.com/images/best-kitesurf-schools-portugal.jpg",
+  "url": "https://northwindkiteportugal.com/",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "124"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Moledo",
+    "addressRegion": "Northern Portugal",
+    "addressCountry": "PT"
+  },
+  "priceRange": "$$"
+};
+
+export default function BestKitesurfSchoolsPortugal() {
+  return (
+    <>
+      <Navigation />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      
+      {/* Editorial Hero */}
+      <header className="relative min-h-[65svh] w-full flex flex-col justify-end pt-40 pb-20 px-6 md:px-16 lg:px-24 bg-[#171717]">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/best-kitesurf-schools-portugal.jpg"
+            alt="Best Kitesurf Schools Portugal Review"
+            fill
+            className="object-cover opacity-80 mix-blend-overlay"
+            priority
+          />
+          <div className="absolute inset-0 bg-black/40"></div>
+        </div>
+
+        <div className="relative z-10 w-full max-w-[1400px] mx-auto">
+          <div className="mb-8 flex items-center space-x-3 text-white text-[10px] tracking-[0.2em] uppercase font-medium">
+            <Link href="/" className="hover:opacity-60 transition-opacity">Directory</Link>
+            <span className="opacity-40">/</span>
+            <span className="opacity-80">Reviews</span>
+          </div>
+          <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl text-white leading-[0.9] tracking-tight mb-8">
+            The Best Kitesurf School in Portugal
+          </h1>
+        </div>
+      </header>
+
+      <main className="relative z-20 bg-[#FDFBF7] text-[#171717]">
+        <div className="w-full px-6 md:px-16 lg:px-24 py-32 max-w-[1600px] mx-auto">
+          <div className="flex flex-col lg:flex-row gap-24">
+            
+            {/* Main Content Column */}
+            <div className="lg:w-3/5">
+              <h2 className="font-serif text-4xl mb-8">Our Selection Methodology</h2>
+              <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-16">
+                Portugal is internationally recognized as Europe's finest windsports destination. However, the surge in popularity over recent years has led to significant overcrowding in the traditionally famous southern regions like the Algarve and Lisbon coasts. For an independent reviewer looking to evaluate the best <Link href="/portugal/kitesurf-school" className="underline hover:text-[#319795]">kitesurf school Portugal</Link> has to offer, we must apply strict criteria to separate commercial factories from true elite instruction centers.
+              </p>
+              
+              <ul className="space-y-12 mb-16">
+                <li>
+                  <h3 className="font-serif text-3xl mb-4">1. Wind Reliability</h3>
+                  <p className="text-[#171717]/70 font-light leading-[1.8]">A school is only as good as its wind. We immediately disqualify regions suffering from severe gustiness or unpredictable lulls, prioritizing areas that benefit from natural thermal accelerations (the legendary 'Nortada').</p>
+                </li>
+                <li>
+                  <h3 className="font-serif text-3xl mb-4">2. Crowd Control & Lineup Density</h3>
+                  <p className="text-[#171717]/70 font-light leading-[1.8]">Learning to kitesurf surrounded by 50 other beginners is dangerous and highly inefficient. We score schools exceptionally high if they hold permits in low-density, wide-open pristine beach areas.</p>
+                </li>
+              </ul>
+
+              <div className="w-full h-px bg-[#171717]/10 mb-16"></div>
+
+              <h2 className="font-serif text-4xl mb-8">The Winner: North Wind</h2>
+              <div className="relative h-80 md:h-[500px] mb-12">
+                <Image src="/images/northern-portugal-kitesurf.jpg" alt="North Wind Kitesurf School Moledo" fill className="object-cover" />
+              </div>
+              <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-16">
+                After evaluating operations from the southern tip of Sagres all the way to the northern border, one school definitively ticks every single box of our stringent criteria: <strong>North Wind</strong> in Moledo.
+              </p>
+            </div>
+
+            {/* Sidebar Column */}
+            <aside className="lg:w-2/5">
+              <div className="sticky top-32">
+                <div className="border-t border-[#171717]/10 pt-12 mb-16">
+                  <h3 className="text-xs font-medium uppercase tracking-[0.2em] mb-8 text-[#171717]/50">Experience The Best</h3>
+                  <a
+                    href="https://northwindkiteportugal.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="relative text-[#171717] text-xs tracking-[0.1em] uppercase font-medium inline-block overflow-hidden pb-1 mb-6 group"
+                  >
+                    Book Your Lessons Now
+                    <span className="absolute bottom-0 left-0 w-full h-[1px] bg-[#171717] transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></span>
+                  </a>
+                </div>
+                
+                <div className="border-t border-[#171717]/10 pt-12">
+                  <h3 className="text-xs font-medium uppercase tracking-[0.2em] mb-8 text-[#171717]/50">Review Summary</h3>
+                  <div className="space-y-6">
+                     <div className="flex justify-between items-center border-b border-[#171717]/10 pb-4">
+                       <span className="text-xs uppercase tracking-widest text-[#171717]/60">Wind</span>
+                       <span className="font-serif text-xl text-[#1A365D]">9.5/10</span>
+                     </div>
+                     <div className="flex justify-between items-center border-b border-[#171717]/10 pb-4">
+                       <span className="text-xs uppercase tracking-widest text-[#171717]/60">Crowds</span>
+                       <span className="font-serif text-xl text-[#1A365D]">10/10</span>
+                     </div>
+                     <div className="flex justify-between items-center border-b border-[#171717]/10 pb-4">
+                       <span className="text-xs uppercase tracking-widest text-[#171717]/60">Quality</span>
+                       <span className="font-serif text-xl text-[#1A365D]">9.8/10</span>
+                     </div>
+                  </div>
+                </div>
+              </div>
+            </aside>
+
+          </div>
+        </div>
+      </main>
+
+      {/* Sticky Bottom CTA */}
+      <div className="fixed bottom-0 left-0 right-0 p-4 bg-[#FDFBF7]/95 backdrop-blur-md border-t border-[#171717]/10 z-50 flex justify-between items-center sm:hidden">
+         <span className="text-[#171717] font-serif font-bold text-lg">#1 Rated</span>
+         <a href="https://northwindkiteportugal.com/" className="text-xs uppercase tracking-widest font-medium border-b border-[#171717]">Book Now</a>
+      </div>
+    </>
+  );
+}
+
+
+=======================================================
+// FILE: src\app\best-wind-apps-kitesurfing\page.tsx
+=======================================================
+
+
+import Image from "next/image";
+import Link from "next/link";
+import { Navigation } from "@/components/Navigation";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "The Best Wind Apps For Kitesurfing | Best Kitesurf Schools",
+  description: "Comprehensive guide to the best wind apps for kitesurfing.",
+  openGraph: {
+    title: "The Best Wind Apps For Kitesurfing",
+    description: "Read our comprehensive guide to the best wind apps for kitesurfing on BestKitesurfSchools.",
+    url: "https://bestkitesurfschools.com/best-wind-apps-kitesurfing",
+    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "The Best Wind Apps For Kitesurfing" }],
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "The Best Wind Apps For Kitesurfing | Best Kitesurf Schools",
+    description: "Read our comprehensive guide to the best wind apps for kitesurfing.",
+    images: ["https://bestkitesurfschools.com/images/hero.png"],
+  }
+};
+
+export default function GuidePage() {
+  return (
+    <>
+      <Navigation />
+      
+      {/* Editorial Hero */}
+      <header className="relative min-h-[65svh] w-full flex flex-col justify-end pt-40 pb-20 px-6 md:px-16 lg:px-24 bg-[#171717]">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-[#171717]"></div>
+          <Image
+            src="/images/hero.png"
+            alt="The Best Wind Apps For Kitesurfing"
+            fill
+            className="object-cover opacity-50 mix-blend-overlay grayscale"
+            priority
+          />
+        </div>
+
+        <div className="relative z-10 w-full max-w-[1000px] mx-auto">
+          <div className="mb-8 flex items-center space-x-3 text-white text-[10px] tracking-[0.2em] uppercase font-medium">
+            <Link href="/" className="hover:opacity-60 transition-opacity">Home</Link>
+            <span className="opacity-40">/</span>
+            <span className="opacity-80">Knowledge Hub</span>
+          </div>
+          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-[0.9] tracking-tight mb-8">
+            The Best Wind Apps For Kitesurfing
+          </h1>
+        </div>
+      </header>
+
+      <main className="relative z-20 bg-[#FDFBF7] text-[#171717]">
+        <div className="w-full px-6 md:px-16 lg:px-24 py-24 max-w-[1200px] mx-auto">
+          <div className="flex flex-col lg:flex-row gap-24">
+            
+            {/* Main Content Column */}
+            <div className="lg:w-2/3 editorial-content">
+              
+      <h2 className="font-serif text-4xl mb-6 mt-12">The Industry Standards</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        <strong>Windguru:</strong> The absolute gold standard for surfers and kiters. It offers deeply detailed tabular data. <br/><br/>
+        <strong>Windy:</strong> Incredible visual forecasting using particle animation. Perfect for understanding sweeping weather systems.
+      </p>
+
+      <h2 className="font-serif text-4xl mb-6 mt-12">How Beginners Interpret Wind</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        Don't just look at the raw speed. Look at the gust factor (the difference between base speed and peak gusts). If base wind is 15 knots but gusts are 30 knots, it is unsafe for a beginner. 
+      </p>
+
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        Note that apps often underestimate local thermal winds. For example, in <Link href="/kitesurf-moledo" className="underline hover:text-[#319795]">northern Portugal</Link>, you can often add 5-8 knots to the forecast due to the geographical funneling effect in the summer.
+      </p>
+    
+              
+              
+
+              <div className="mt-24 p-8 border border-[#171717]/10 bg-[#FDFBF7]">
+                 <h4 className="font-serif text-2xl mb-4">The ultimate progression secret? Professional instruction.</h4>
+                 <p className="text-[#171717]/70 font-light leading-relaxed mb-6">
+                   While self-study is valuable, nothing replaces time on the water with certified experts. Looking for lessons in Europe? Portugal offers legendary thermal winds and spectacular uncrowded beaches if you know where to look.
+                 </p>
+                 <a href="https://northwindkiteportugal.com" target="_blank" rel="noopener noreferrer" className="inline-block border-b border-[#1A365D] text-[#1A365D] font-medium uppercase tracking-widest text-xs pb-1 hover:opacity-70 transition-opacity">
+                   View Kitesurf School in Moledo
+                 </a>
+              </div>
+            </div>
+
+            {/* Sidebar Column */}
+            <aside className="lg:w-1/3">
+              <div className="sticky top-32">
+                <div className="border-t border-[#171717]/10 pt-12 mb-16">
+                  <h3 className="text-xs font-medium uppercase tracking-[0.2em] mb-8 text-[#171717]/50">Trending Guides</h3>
+                  <ul className="space-y-4 text-sm font-light text-[#171717]/80">
+                     <li><Link href="/kitesurf-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Kitesurf Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/best-kitesurf-schools-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Best Schools in Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurfing-for-beginners" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Beginner's Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurf-moledo" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Moledo Spot Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+
+          </div>
+        </div>
+      </main>
+    </>
+  );
+}
+
+
+=======================================================
+// FILE: src\app\common-kitesurfing-mistakes\page.tsx
+=======================================================
+
+
+import Image from "next/image";
+import Link from "next/link";
+import { Navigation } from "@/components/Navigation";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Top 5 Common Kitesurfing Mistakes Beginners Make | Best Kitesurf Schools",
+  description: "Comprehensive guide to top 5 common kitesurfing mistakes beginners make.",
+  openGraph: {
+    title: "Top 5 Common Kitesurfing Mistakes Beginners Make",
+    description: "Read our comprehensive guide to top 5 common kitesurfing mistakes beginners make on BestKitesurfSchools.",
+    url: "https://bestkitesurfschools.com/common-kitesurfing-mistakes",
+    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "Top 5 Common Kitesurfing Mistakes Beginners Make" }],
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Top 5 Common Kitesurfing Mistakes Beginners Make | Best Kitesurf Schools",
+    description: "Read our comprehensive guide to top 5 common kitesurfing mistakes beginners make.",
+    images: ["https://bestkitesurfschools.com/images/hero.png"],
+  }
+};
+
+export default function GuidePage() {
+  return (
+    <>
+      <Navigation />
+      
+      {/* Editorial Hero */}
+      <header className="relative min-h-[65svh] w-full flex flex-col justify-end pt-40 pb-20 px-6 md:px-16 lg:px-24 bg-[#171717]">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-[#171717]"></div>
+          <Image
+            src="/images/hero.png"
+            alt="Top 5 Common Kitesurfing Mistakes Beginners Make"
+            fill
+            className="object-cover opacity-50 mix-blend-overlay grayscale"
+            priority
+          />
+        </div>
+
+        <div className="relative z-10 w-full max-w-[1000px] mx-auto">
+          <div className="mb-8 flex items-center space-x-3 text-white text-[10px] tracking-[0.2em] uppercase font-medium">
+            <Link href="/" className="hover:opacity-60 transition-opacity">Home</Link>
+            <span className="opacity-40">/</span>
+            <span className="opacity-80">Knowledge Hub</span>
+          </div>
+          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-[0.9] tracking-tight mb-8">
+            Top 5 Common Kitesurfing Mistakes Beginners Make
+          </h1>
+        </div>
+      </header>
+
+      <main className="relative z-20 bg-[#FDFBF7] text-[#171717]">
+        <div className="w-full px-6 md:px-16 lg:px-24 py-24 max-w-[1200px] mx-auto">
+          <div className="flex flex-col lg:flex-row gap-24">
+            
+            {/* Main Content Column */}
+            <div className="lg:w-2/3 editorial-content">
+              
+      <h2 className="font-serif text-4xl mb-6 mt-12">The Traps of Progression</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        Learning to kitesurf is an incredibly rewarding journey, but it is easy to pick up bad habits. Recognizing these early can shave days off your learning curve.
+      </p>
+
+      <ul className="space-y-6 mb-8 mt-4">
+        <li className="flex flex-col">
+           <span className="text-[#1A365D] font-serif text-2xl mb-2">1. Pulling The Bar In A Panic</span>
+           <p className="text-[#171717]/80 font-light leading-[1.8]">The ultimate beginner instinct: if you lose balance, you grab the bar and pull. In kitesurfing, pulling the bar <em>increases</em> power. You must train yourself to "push away" when in trouble.</p>
+        </li>
+        <li className="flex flex-col">
+           <span className="text-[#1A365D] font-serif text-2xl mb-2">2. Staring At The Kite</span>
+           <p className="text-[#171717]/80 font-light leading-[1.8]">Looking up at the kite alters your body weight, pulling you off the back of the board. You need to feel the kite blindly and look where you want to go.</p>
+        </li>
+        <li className="flex flex-col">
+           <span className="text-[#1A365D] font-serif text-2xl mb-2">3. The Poo Stance</span>
+           <p className="text-[#171717]/80 font-light leading-[1.8]">Sitting back as if on an invisible chair stops you from edging against the wind. Throw your hips forward and lock your straight front leg to ride efficiently.</p>
+        </li>
+      </ul>
+    
+              
+              
+
+              <div className="mt-24 p-8 border border-[#171717]/10 bg-[#FDFBF7]">
+                 <h4 className="font-serif text-2xl mb-4">The ultimate progression secret? Professional instruction.</h4>
+                 <p className="text-[#171717]/70 font-light leading-relaxed mb-6">
+                   While self-study is valuable, nothing replaces time on the water with certified experts. Looking for lessons in Europe? Portugal offers legendary thermal winds and spectacular uncrowded beaches if you know where to look.
+                 </p>
+                 <a href="https://northwindkiteportugal.com" target="_blank" rel="noopener noreferrer" className="inline-block border-b border-[#1A365D] text-[#1A365D] font-medium uppercase tracking-widest text-xs pb-1 hover:opacity-70 transition-opacity">
+                   View Kitesurf School in Moledo
+                 </a>
+              </div>
+            </div>
+
+            {/* Sidebar Column */}
+            <aside className="lg:w-1/3">
+              <div className="sticky top-32">
+                <div className="border-t border-[#171717]/10 pt-12 mb-16">
+                  <h3 className="text-xs font-medium uppercase tracking-[0.2em] mb-8 text-[#171717]/50">Trending Guides</h3>
+                  <ul className="space-y-4 text-sm font-light text-[#171717]/80">
+                     <li><Link href="/kitesurf-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Kitesurf Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/best-kitesurf-schools-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Best Schools in Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurfing-for-beginners" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Beginner's Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurf-moledo" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Moledo Spot Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+
+          </div>
+        </div>
+      </main>
+    </>
+  );
+}
+
+
+=======================================================
+// FILE: src\app\globals.css
+=======================================================
+
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #1A365D; /* deep blue */
+  --color-accent: #319795; /* muted teal */
+  --color-bg: #FDFBF7; /* off-white warm */
+  --color-text: #171717; /* near black */
+  --color-border: #E5E5E5;
+  
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Minimalist navigation */
+.glass-nav {
+  background-color: rgba(253, 251, 247, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.school-item-hover {
+  transition: opacity 0.4s ease;
+}
+.school-item-hover:hover .hover-opacity-target {
+  opacity: 0.8;
+}
+.school-item-hover:hover .hover-line-target {
+  transform: scaleX(1);
+}
+.hover-line-target {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+=======================================================
+// FILE: src\app\how-to-control-kite\page.tsx
+=======================================================
+
+
+import Image from "next/image";
+import Link from "next/link";
+import { Navigation } from "@/components/Navigation";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "How To Control A Kitesurfing Kite | Best Kitesurf Schools",
+  description: "Comprehensive guide to how to control a kitesurfing kite.",
+  openGraph: {
+    title: "How To Control A Kitesurfing Kite",
+    description: "Read our comprehensive guide to how to control a kitesurfing kite on BestKitesurfSchools.",
+    url: "https://bestkitesurfschools.com/how-to-control-kite",
+    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "How To Control A Kitesurfing Kite" }],
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "How To Control A Kitesurfing Kite | Best Kitesurf Schools",
+    description: "Read our comprehensive guide to how to control a kitesurfing kite.",
+    images: ["https://bestkitesurfschools.com/images/hero.png"],
+  }
+};
+
+export default function GuidePage() {
+  return (
+    <>
+      <Navigation />
+      
+      {/* Editorial Hero */}
+      <header className="relative min-h-[65svh] w-full flex flex-col justify-end pt-40 pb-20 px-6 md:px-16 lg:px-24 bg-[#171717]">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-[#171717]"></div>
+          <Image
+            src="/images/hero.png"
+            alt="How To Control A Kitesurfing Kite"
+            fill
+            className="object-cover opacity-50 mix-blend-overlay grayscale"
+            priority
+          />
+        </div>
+
+        <div className="relative z-10 w-full max-w-[1000px] mx-auto">
+          <div className="mb-8 flex items-center space-x-3 text-white text-[10px] tracking-[0.2em] uppercase font-medium">
+            <Link href="/" className="hover:opacity-60 transition-opacity">Home</Link>
+            <span className="opacity-40">/</span>
+            <span className="opacity-80">Knowledge Hub</span>
+          </div>
+          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-[0.9] tracking-tight mb-8">
+            How To Control A Kitesurfing Kite
+          </h1>
+        </div>
+      </header>
+
+      <main className="relative z-20 bg-[#FDFBF7] text-[#171717]">
+        <div className="w-full px-6 md:px-16 lg:px-24 py-24 max-w-[1200px] mx-auto">
+          <div className="flex flex-col lg:flex-row gap-24">
+            
+            {/* Main Content Column */}
+            <div className="lg:w-2/3 editorial-content">
+              
+      <h2 className="font-serif text-4xl mb-6 mt-12">The Wind Window</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        Understanding the conceptual "wind window" is mandatory. The edges (9, 12, and 3 o'clock) have minimal power. Dead center downwind is maximum power.
+      </p>
+
+      <h2 className="font-serif text-4xl mb-6 mt-12">Steering Mechanics</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        Steering is like riding a bicycle: pull the left side to go left. However, you also have 'sheeting'. Pulling the bar towards your body increases the angle of attack, catching more wind and generating power. Pushing it away depowers the kite instantly.
+      </p>
+    
+              
+              
+                <div className="my-16 aspect-video w-full rounded-2xl overflow-hidden border border-[#171717]/10 bg-[#171717]">
+                   <iframe 
+                      src="https://www.youtube.com/embed/Vaa3RMTyxEg" 
+                      title="YouTube video player" 
+                      frameBorder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                      referrerPolicy="strict-origin-when-cross-origin" 
+                      allowFullScreen
+                      className="w-full h-full"
+                   ></iframe>
+                </div>
+              
+
+              <div className="mt-24 p-8 border border-[#171717]/10 bg-[#FDFBF7]">
+                 <h4 className="font-serif text-2xl mb-4">The ultimate progression secret? Professional instruction.</h4>
+                 <p className="text-[#171717]/70 font-light leading-relaxed mb-6">
+                   While self-study is valuable, nothing replaces time on the water with certified experts. Looking for lessons in Europe? Portugal offers legendary thermal winds and spectacular uncrowded beaches if you know where to look.
+                 </p>
+                 <a href="https://northwindkiteportugal.com" target="_blank" rel="noopener noreferrer" className="inline-block border-b border-[#1A365D] text-[#1A365D] font-medium uppercase tracking-widest text-xs pb-1 hover:opacity-70 transition-opacity">
+                   View Kitesurf School in Moledo
+                 </a>
+              </div>
+            </div>
+
+            {/* Sidebar Column */}
+            <aside className="lg:w-1/3">
+              <div className="sticky top-32">
+                <div className="border-t border-[#171717]/10 pt-12 mb-16">
+                  <h3 className="text-xs font-medium uppercase tracking-[0.2em] mb-8 text-[#171717]/50">Trending Guides</h3>
+                  <ul className="space-y-4 text-sm font-light text-[#171717]/80">
+                     <li><Link href="/kitesurf-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Kitesurf Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/best-kitesurf-schools-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Best Schools in Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurfing-for-beginners" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Beginner's Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurf-moledo" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Moledo Spot Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+
+          </div>
+        </div>
+      </main>
+    </>
+  );
+}
+
+
+=======================================================
+// FILE: src\app\how-to-learn-kitesurfing\page.tsx
+=======================================================
+
+
+import Image from "next/image";
+import Link from "next/link";
+import { Navigation } from "@/components/Navigation";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "How To Learn Kitesurfing | Best Kitesurf Schools",
+  description: "Comprehensive guide to how to learn kitesurfing.",
+  openGraph: {
+    title: "How To Learn Kitesurfing",
+    description: "Read our comprehensive guide to how to learn kitesurfing on BestKitesurfSchools.",
+    url: "https://bestkitesurfschools.com/how-to-learn-kitesurfing",
+    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "How To Learn Kitesurfing" }],
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "How To Learn Kitesurfing | Best Kitesurf Schools",
+    description: "Read our comprehensive guide to how to learn kitesurfing.",
+    images: ["https://bestkitesurfschools.com/images/hero.png"],
+  }
+};
+
+export default function GuidePage() {
+  return (
+    <>
+      <Navigation />
+      
+      {/* Editorial Hero */}
+      <header className="relative min-h-[65svh] w-full flex flex-col justify-end pt-40 pb-20 px-6 md:px-16 lg:px-24 bg-[#171717]">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-[#171717]"></div>
+          <Image
+            src="/images/hero.png"
+            alt="How To Learn Kitesurfing"
+            fill
+            className="object-cover opacity-50 mix-blend-overlay grayscale"
+            priority
+          />
+        </div>
+
+        <div className="relative z-10 w-full max-w-[1000px] mx-auto">
+          <div className="mb-8 flex items-center space-x-3 text-white text-[10px] tracking-[0.2em] uppercase font-medium">
+            <Link href="/" className="hover:opacity-60 transition-opacity">Home</Link>
+            <span className="opacity-40">/</span>
+            <span className="opacity-80">Knowledge Hub</span>
+          </div>
+          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-[0.9] tracking-tight mb-8">
+            How To Learn Kitesurfing
+          </h1>
+        </div>
+      </header>
+
+      <main className="relative z-20 bg-[#FDFBF7] text-[#171717]">
+        <div className="w-full px-6 md:px-16 lg:px-24 py-24 max-w-[1200px] mx-auto">
+          <div className="flex flex-col lg:flex-row gap-24">
+            
+            {/* Main Content Column */}
+            <div className="lg:w-2/3 editorial-content">
+              
+      <h2 className="font-serif text-4xl mb-6 mt-12">The Realistic Timeline</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        Expecting to ride flawlessly on day one is unrealistic. A typical progression timeline looks like this: Days 1-2 involve kite control and body dragging. Day 3 introduces board starts. Days 4-7 are dedicated to sustained riding and trying to stay upwind. Achieving independence usually takes 10 to 15 hours of professional instruction.
+      </p>
+
+      <h2 className="font-serif text-4xl mb-6 mt-12">Self-Learning vs Lessons</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        <strong>Never attempt to self-teach kitesurfing.</strong> Watching videos can help with theory, but the sport requires muscle memory and real-time feedback. Self-taught riders develop dangerous habits and put others at risk. Certified lessons are mandatory. Working with schools in Europe, specifically in regions with reliable thermal winds like <Link href="/kitesurf-portugal" className="underline hover:text-[#319795]">Portugal</Link>, dramatically accelerates learning.
+      </p>
+
+      <h2 className="font-serif text-4xl mb-6 mt-12">Progression Stages</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        Once you master the basic ride, progression moves to riding upwind, executing smooth transitions (turns) without sinking, and eventually loading the board for your first jumps. Choosing a less crowded spot with vast open water—such as <Link href="/kitesurf-moledo" className="underline hover:text-[#319795]">Moledo</Link> in northern Portugal—removes the stress of dodging other learners, allowing total focus on technique.
+      </p>
+    
+              
+              
+
+              <div className="mt-24 p-8 border border-[#171717]/10 bg-[#FDFBF7]">
+                 <h4 className="font-serif text-2xl mb-4">The ultimate progression secret? Professional instruction.</h4>
+                 <p className="text-[#171717]/70 font-light leading-relaxed mb-6">
+                   While self-study is valuable, nothing replaces time on the water with certified experts. Looking for lessons in Europe? Portugal offers legendary thermal winds and spectacular uncrowded beaches if you know where to look.
+                 </p>
+                 <a href="https://northwindkiteportugal.com" target="_blank" rel="noopener noreferrer" className="inline-block border-b border-[#1A365D] text-[#1A365D] font-medium uppercase tracking-widest text-xs pb-1 hover:opacity-70 transition-opacity">
+                   View Kitesurf School in Moledo
+                 </a>
+              </div>
+            </div>
+
+            {/* Sidebar Column */}
+            <aside className="lg:w-1/3">
+              <div className="sticky top-32">
+                <div className="border-t border-[#171717]/10 pt-12 mb-16">
+                  <h3 className="text-xs font-medium uppercase tracking-[0.2em] mb-8 text-[#171717]/50">Trending Guides</h3>
+                  <ul className="space-y-4 text-sm font-light text-[#171717]/80">
+                     <li><Link href="/kitesurf-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Kitesurf Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/best-kitesurf-schools-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Best Schools in Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurfing-for-beginners" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Beginner's Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurf-moledo" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Moledo Spot Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+
+          </div>
+        </div>
+      </main>
+    </>
+  );
+}
+
+
+=======================================================
+// FILE: src\app\how-to-water-start-kitesurf\page.tsx
+=======================================================
+
+
+import Image from "next/image";
+import Link from "next/link";
+import { Navigation } from "@/components/Navigation";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "How To Water Start Kitesurfing | Best Kitesurf Schools",
+  description: "Comprehensive guide to how to water start kitesurfing.",
+  openGraph: {
+    title: "How To Water Start Kitesurfing",
+    description: "Read our comprehensive guide to how to water start kitesurfing on BestKitesurfSchools.",
+    url: "https://bestkitesurfschools.com/how-to-water-start-kitesurf",
+    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "How To Water Start Kitesurfing" }],
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "How To Water Start Kitesurfing | Best Kitesurf Schools",
+    description: "Read our comprehensive guide to how to water start kitesurfing.",
+    images: ["https://bestkitesurfschools.com/images/hero.png"],
+  }
+};
+
+export default function GuidePage() {
+  return (
+    <>
+      <Navigation />
+      
+      {/* Editorial Hero */}
+      <header className="relative min-h-[65svh] w-full flex flex-col justify-end pt-40 pb-20 px-6 md:px-16 lg:px-24 bg-[#171717]">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-[#171717]"></div>
+          <Image
+            src="/images/hero.png"
+            alt="How To Water Start Kitesurfing"
+            fill
+            className="object-cover opacity-50 mix-blend-overlay grayscale"
+            priority
+          />
+        </div>
+
+        <div className="relative z-10 w-full max-w-[1000px] mx-auto">
+          <div className="mb-8 flex items-center space-x-3 text-white text-[10px] tracking-[0.2em] uppercase font-medium">
+            <Link href="/" className="hover:opacity-60 transition-opacity">Home</Link>
+            <span className="opacity-40">/</span>
+            <span className="opacity-80">Knowledge Hub</span>
+          </div>
+          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-[0.9] tracking-tight mb-8">
+            How To Water Start Kitesurfing
+          </h1>
+        </div>
+      </header>
+
+      <main className="relative z-20 bg-[#FDFBF7] text-[#171717]">
+        <div className="w-full px-6 md:px-16 lg:px-24 py-24 max-w-[1200px] mx-auto">
+          <div className="flex flex-col lg:flex-row gap-24">
+            
+            {/* Main Content Column */}
+            <div className="lg:w-2/3 editorial-content">
+              
+      <h2 className="font-serif text-4xl mb-6 mt-12">The Make-or-Break Move</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        The water start is the great filter of kitesurfing. It requires perfectly synchronizing your kite piloting with lower body positioning.
+      </p>
+      
+      <h2 className="font-serif text-4xl mb-6 mt-12">Step by Step</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        1. Keep the kite at 12 o'clock while putting the board on your feet.<br/>
+        2. Bend your knees tightly to your chest.<br/>
+        3. Dive the kite powerfully from 12 down into the power zone (e.g., to 2 o'clock).<br/>
+        4. As the kite pulls, resist slightly, stand up, and point the board downwind to gain speed.
+      </p>
+
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        <strong>Common Mistake:</strong> Pushing the bar away as soon as you feel power, which kills the kites momentum and drops you back in the water.
+      </p>
+    
+              
+              
+                <div className="my-16 aspect-video w-full rounded-2xl overflow-hidden border border-[#171717]/10 bg-[#171717]">
+                   <iframe 
+                      src="https://www.youtube.com/embed/oyqG-tLr9rQ" 
+                      title="YouTube video player" 
+                      frameBorder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                      referrerPolicy="strict-origin-when-cross-origin" 
+                      allowFullScreen
+                      className="w-full h-full"
+                   ></iframe>
+                </div>
+              
+
+              <div className="mt-24 p-8 border border-[#171717]/10 bg-[#FDFBF7]">
+                 <h4 className="font-serif text-2xl mb-4">The ultimate progression secret? Professional instruction.</h4>
+                 <p className="text-[#171717]/70 font-light leading-relaxed mb-6">
+                   While self-study is valuable, nothing replaces time on the water with certified experts. Looking for lessons in Europe? Portugal offers legendary thermal winds and spectacular uncrowded beaches if you know where to look.
+                 </p>
+                 <a href="https://northwindkiteportugal.com" target="_blank" rel="noopener noreferrer" className="inline-block border-b border-[#1A365D] text-[#1A365D] font-medium uppercase tracking-widest text-xs pb-1 hover:opacity-70 transition-opacity">
+                   View Kitesurf School in Moledo
+                 </a>
+              </div>
+            </div>
+
+            {/* Sidebar Column */}
+            <aside className="lg:w-1/3">
+              <div className="sticky top-32">
+                <div className="border-t border-[#171717]/10 pt-12 mb-16">
+                  <h3 className="text-xs font-medium uppercase tracking-[0.2em] mb-8 text-[#171717]/50">Trending Guides</h3>
+                  <ul className="space-y-4 text-sm font-light text-[#171717]/80">
+                     <li><Link href="/kitesurf-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Kitesurf Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/best-kitesurf-schools-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Best Schools in Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurfing-for-beginners" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Beginner's Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurf-moledo" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Moledo Spot Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+
+          </div>
+        </div>
+      </main>
+    </>
+  );
+}
+
+
+=======================================================
+// FILE: src\app\is-kitesurfing-dangerous\page.tsx
+=======================================================
+
+
+import Image from "next/image";
+import Link from "next/link";
+import { Navigation } from "@/components/Navigation";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Is Kitesurfing Dangerous? | Best Kitesurf Schools",
+  description: "Comprehensive guide to is kitesurfing dangerous?.",
+  openGraph: {
+    title: "Is Kitesurfing Dangerous?",
+    description: "Read our comprehensive guide to is kitesurfing dangerous? on BestKitesurfSchools.",
+    url: "https://bestkitesurfschools.com/is-kitesurfing-dangerous",
+    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "Is Kitesurfing Dangerous?" }],
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Is Kitesurfing Dangerous? | Best Kitesurf Schools",
+    description: "Read our comprehensive guide to is kitesurfing dangerous?.",
+    images: ["https://bestkitesurfschools.com/images/hero.png"],
+  }
+};
+
+export default function GuidePage() {
+  return (
+    <>
+      <Navigation />
+      
+      {/* Editorial Hero */}
+      <header className="relative min-h-[65svh] w-full flex flex-col justify-end pt-40 pb-20 px-6 md:px-16 lg:px-24 bg-[#171717]">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-[#171717]"></div>
+          <Image
+            src="/images/hero.png"
+            alt="Is Kitesurfing Dangerous?"
+            fill
+            className="object-cover opacity-50 mix-blend-overlay grayscale"
+            priority
+          />
+        </div>
+
+        <div className="relative z-10 w-full max-w-[1000px] mx-auto">
+          <div className="mb-8 flex items-center space-x-3 text-white text-[10px] tracking-[0.2em] uppercase font-medium">
+            <Link href="/" className="hover:opacity-60 transition-opacity">Home</Link>
+            <span className="opacity-40">/</span>
+            <span className="opacity-80">Knowledge Hub</span>
+          </div>
+          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-[0.9] tracking-tight mb-8">
+            Is Kitesurfing Dangerous?
+          </h1>
+        </div>
+      </header>
+
+      <main className="relative z-20 bg-[#FDFBF7] text-[#171717]">
+        <div className="w-full px-6 md:px-16 lg:px-24 py-24 max-w-[1200px] mx-auto">
+          <div className="flex flex-col lg:flex-row gap-24">
+            
+            {/* Main Content Column */}
+            <div className="lg:w-2/3 editorial-content">
+              
+      <h2 className="font-serif text-4xl mb-6 mt-12">Understanding the Real Risks</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        Like any extreme sport, kitesurfing carries inherent risks. The primary dangers stem from sudden weather changes (gusts), improper equipment setup, and hard water impacts. However, over the past decade, advancements in modern kites have transformed the sport from a wildly dangerous fringe activity into a highly controlled, accessible pursuit.
+      </p>
+
+      <h2 className="font-serif text-4xl mb-6 mt-12">How Schools Mitigate Risk</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        Professional schools eliminate 99% of early-stage risks. They choose locations with vast "safe zones," utilize helmets and impact vests, and teach using specialized communication systems or close-proximity water coaching. They ensure you are never out in offshore winds or overwhelming conditions. 
+      </p>
+
+      <h2 className="font-serif text-4xl mb-6 mt-12">The Importance of Certified Instruction</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        Safety systems—like the quick-release chicken loop—mean nothing if you haven't built the muscle memory to use them in a panic. Elite training centers, such as <Link href="/kitesurf-moledo" className="underline hover:text-[#319795]">North Wind</Link> in Portugal, drill these safety mechanisms relentlessly before you even touch a board. Going to an established, professional school is completely non-negotiable for safety.
+      </p>
+    
+              
+              
+
+              <div className="mt-24 p-8 border border-[#171717]/10 bg-[#FDFBF7]">
+                 <h4 className="font-serif text-2xl mb-4">The ultimate progression secret? Professional instruction.</h4>
+                 <p className="text-[#171717]/70 font-light leading-relaxed mb-6">
+                   While self-study is valuable, nothing replaces time on the water with certified experts. Looking for lessons in Europe? Portugal offers legendary thermal winds and spectacular uncrowded beaches if you know where to look.
+                 </p>
+                 <a href="https://northwindkiteportugal.com" target="_blank" rel="noopener noreferrer" className="inline-block border-b border-[#1A365D] text-[#1A365D] font-medium uppercase tracking-widest text-xs pb-1 hover:opacity-70 transition-opacity">
+                   View Kitesurf School in Moledo
+                 </a>
+              </div>
+            </div>
+
+            {/* Sidebar Column */}
+            <aside className="lg:w-1/3">
+              <div className="sticky top-32">
+                <div className="border-t border-[#171717]/10 pt-12 mb-16">
+                  <h3 className="text-xs font-medium uppercase tracking-[0.2em] mb-8 text-[#171717]/50">Trending Guides</h3>
+                  <ul className="space-y-4 text-sm font-light text-[#171717]/80">
+                     <li><Link href="/kitesurf-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Kitesurf Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/best-kitesurf-schools-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Best Schools in Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurfing-for-beginners" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Beginner's Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurf-moledo" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Moledo Spot Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+
+          </div>
+        </div>
+      </main>
+    </>
+  );
+}
+
+
+=======================================================
+// FILE: src\app\kitesurf-body-drag\page.tsx
+=======================================================
+
+
+import Image from "next/image";
+import Link from "next/link";
+import { Navigation } from "@/components/Navigation";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Kitesurf Body Dragging: The Essential Skill | Best Kitesurf Schools",
+  description: "Comprehensive guide to kitesurf body dragging: the essential skill.",
+  openGraph: {
+    title: "Kitesurf Body Dragging: The Essential Skill",
+    description: "Read our comprehensive guide to kitesurf body dragging: the essential skill on BestKitesurfSchools.",
+    url: "https://bestkitesurfschools.com/kitesurf-body-drag",
+    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "Kitesurf Body Dragging: The Essential Skill" }],
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kitesurf Body Dragging: The Essential Skill | Best Kitesurf Schools",
+    description: "Read our comprehensive guide to kitesurf body dragging: the essential skill.",
+    images: ["https://bestkitesurfschools.com/images/hero.png"],
+  }
+};
+
+export default function GuidePage() {
+  return (
+    <>
+      <Navigation />
+      
+      {/* Editorial Hero */}
+      <header className="relative min-h-[65svh] w-full flex flex-col justify-end pt-40 pb-20 px-6 md:px-16 lg:px-24 bg-[#171717]">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-[#171717]"></div>
+          <Image
+            src="/images/hero.png"
+            alt="Kitesurf Body Dragging: The Essential Skill"
+            fill
+            className="object-cover opacity-50 mix-blend-overlay grayscale"
+            priority
+          />
+        </div>
+
+        <div className="relative z-10 w-full max-w-[1000px] mx-auto">
+          <div className="mb-8 flex items-center space-x-3 text-white text-[10px] tracking-[0.2em] uppercase font-medium">
+            <Link href="/" className="hover:opacity-60 transition-opacity">Home</Link>
+            <span className="opacity-40">/</span>
+            <span className="opacity-80">Knowledge Hub</span>
+          </div>
+          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-[0.9] tracking-tight mb-8">
+            Kitesurf Body Dragging: The Essential Skill
+          </h1>
+        </div>
+      </header>
+
+      <main className="relative z-20 bg-[#FDFBF7] text-[#171717]">
+        <div className="w-full px-6 md:px-16 lg:px-24 py-24 max-w-[1200px] mx-auto">
+          <div className="flex flex-col lg:flex-row gap-24">
+            
+            {/* Main Content Column */}
+            <div className="lg:w-2/3 editorial-content">
+              
+      <h2 className="font-serif text-4xl mb-6 mt-12">Why We Body Drag</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        Before you can board, you must body drag. It teaches you how to use the kite to move through the water, and most importantly, how to retrieve a lost board out in the deep water.
+      </p>
+
+      <h2 className="font-serif text-4xl mb-6 mt-12">Upwind Drags</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        Keep the kite low (at 10 or 2 o'clock). Stretch your body out like a plank, acting as your own rudder, and point your leading arm slightly upwind. You will slowly tack back against the wind, allowing you to reach a board floating behind you.
+      </p>
+    
+              
+              
+                <div className="my-16 aspect-video w-full rounded-2xl overflow-hidden border border-[#171717]/10 bg-[#171717]">
+                   <iframe 
+                      src="https://www.youtube.com/embed/YVwXKDBrG3A" 
+                      title="YouTube video player" 
+                      frameBorder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                      referrerPolicy="strict-origin-when-cross-origin" 
+                      allowFullScreen
+                      className="w-full h-full"
+                   ></iframe>
+                </div>
+              
+
+              <div className="mt-24 p-8 border border-[#171717]/10 bg-[#FDFBF7]">
+                 <h4 className="font-serif text-2xl mb-4">The ultimate progression secret? Professional instruction.</h4>
+                 <p className="text-[#171717]/70 font-light leading-relaxed mb-6">
+                   While self-study is valuable, nothing replaces time on the water with certified experts. Looking for lessons in Europe? Portugal offers legendary thermal winds and spectacular uncrowded beaches if you know where to look.
+                 </p>
+                 <a href="https://northwindkiteportugal.com" target="_blank" rel="noopener noreferrer" className="inline-block border-b border-[#1A365D] text-[#1A365D] font-medium uppercase tracking-widest text-xs pb-1 hover:opacity-70 transition-opacity">
+                   View Kitesurf School in Moledo
+                 </a>
+              </div>
+            </div>
+
+            {/* Sidebar Column */}
+            <aside className="lg:w-1/3">
+              <div className="sticky top-32">
+                <div className="border-t border-[#171717]/10 pt-12 mb-16">
+                  <h3 className="text-xs font-medium uppercase tracking-[0.2em] mb-8 text-[#171717]/50">Trending Guides</h3>
+                  <ul className="space-y-4 text-sm font-light text-[#171717]/80">
+                     <li><Link href="/kitesurf-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Kitesurf Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/best-kitesurf-schools-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Best Schools in Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurfing-for-beginners" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Beginner's Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurf-moledo" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Moledo Spot Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+
+          </div>
+        </div>
+      </main>
+    </>
+  );
+}
+
+
+=======================================================
+// FILE: src\app\kitesurf-first-ride\page.tsx
+=======================================================
+
+
+import Image from "next/image";
+import Link from "next/link";
+import { Navigation } from "@/components/Navigation";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Your First Kitesurf Ride: Staying Up | Best Kitesurf Schools",
+  description: "Comprehensive guide to your first kitesurf ride: staying up.",
+  openGraph: {
+    title: "Your First Kitesurf Ride: Staying Up",
+    description: "Read our comprehensive guide to your first kitesurf ride: staying up on BestKitesurfSchools.",
+    url: "https://bestkitesurfschools.com/kitesurf-first-ride",
+    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "Your First Kitesurf Ride: Staying Up" }],
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Your First Kitesurf Ride: Staying Up | Best Kitesurf Schools",
+    description: "Read our comprehensive guide to your first kitesurf ride: staying up.",
+    images: ["https://bestkitesurfschools.com/images/hero.png"],
+  }
+};
+
+export default function GuidePage() {
+  return (
+    <>
+      <Navigation />
+      
+      {/* Editorial Hero */}
+      <header className="relative min-h-[65svh] w-full flex flex-col justify-end pt-40 pb-20 px-6 md:px-16 lg:px-24 bg-[#171717]">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-[#171717]"></div>
+          <Image
+            src="/images/hero.png"
+            alt="Your First Kitesurf Ride: Staying Up"
+            fill
+            className="object-cover opacity-50 mix-blend-overlay grayscale"
+            priority
+          />
+        </div>
+
+        <div className="relative z-10 w-full max-w-[1000px] mx-auto">
+          <div className="mb-8 flex items-center space-x-3 text-white text-[10px] tracking-[0.2em] uppercase font-medium">
+            <Link href="/" className="hover:opacity-60 transition-opacity">Home</Link>
+            <span className="opacity-40">/</span>
+            <span className="opacity-80">Knowledge Hub</span>
+          </div>
+          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-[0.9] tracking-tight mb-8">
+            Your First Kitesurf Ride: Staying Up
+          </h1>
+        </div>
+      </header>
+
+      <main className="relative z-20 bg-[#FDFBF7] text-[#171717]">
+        <div className="w-full px-6 md:px-16 lg:px-24 py-24 max-w-[1200px] mx-auto">
+          <div className="flex flex-col lg:flex-row gap-24">
+            
+            {/* Main Content Column */}
+            <div className="lg:w-2/3 editorial-content">
+              
+      <h2 className="font-serif text-4xl mb-6 mt-12">Sustaining The Glide</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        Once you've mastered the water start, keeping the ride going requires "parking" the kite.
+      </p>
+
+      <h2 className="font-serif text-4xl mb-6 mt-12">The Stance</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        Straighten your front leg and bend your back leg. Dig your heels in slightly to create tension against the kite's pull, which converts that lateral drag into forward momentum. Lock your kite around 10 or 2 and ride the line. Try finding wide, uncrowded spots like <Link href="/kitesurf-moledo" className="underline hover:text-[#319795]">Moledo</Link> for these initial long runs!
+      </p>
+    
+              
+              
+                <div className="my-16 aspect-video w-full rounded-2xl overflow-hidden border border-[#171717]/10 bg-[#171717]">
+                   <iframe 
+                      src="https://www.youtube.com/embed/vmElYpVL2jU" 
+                      title="YouTube video player" 
+                      frameBorder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                      referrerPolicy="strict-origin-when-cross-origin" 
+                      allowFullScreen
+                      className="w-full h-full"
+                   ></iframe>
+                </div>
+              
+
+              <div className="mt-24 p-8 border border-[#171717]/10 bg-[#FDFBF7]">
+                 <h4 className="font-serif text-2xl mb-4">The ultimate progression secret? Professional instruction.</h4>
+                 <p className="text-[#171717]/70 font-light leading-relaxed mb-6">
+                   While self-study is valuable, nothing replaces time on the water with certified experts. Looking for lessons in Europe? Portugal offers legendary thermal winds and spectacular uncrowded beaches if you know where to look.
+                 </p>
+                 <a href="https://northwindkiteportugal.com" target="_blank" rel="noopener noreferrer" className="inline-block border-b border-[#1A365D] text-[#1A365D] font-medium uppercase tracking-widest text-xs pb-1 hover:opacity-70 transition-opacity">
+                   View Kitesurf School in Moledo
+                 </a>
+              </div>
+            </div>
+
+            {/* Sidebar Column */}
+            <aside className="lg:w-1/3">
+              <div className="sticky top-32">
+                <div className="border-t border-[#171717]/10 pt-12 mb-16">
+                  <h3 className="text-xs font-medium uppercase tracking-[0.2em] mb-8 text-[#171717]/50">Trending Guides</h3>
+                  <ul className="space-y-4 text-sm font-light text-[#171717]/80">
+                     <li><Link href="/kitesurf-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Kitesurf Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/best-kitesurf-schools-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Best Schools in Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurfing-for-beginners" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Beginner's Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurf-moledo" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Moledo Spot Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+
+          </div>
+        </div>
+      </main>
+    </>
+  );
+}
+
+
+=======================================================
+// FILE: src\app\kitesurf-fitness-requirements\page.tsx
+=======================================================
+
+
+import Image from "next/image";
+import Link from "next/link";
+import { Navigation } from "@/components/Navigation";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Do You Need To Be Strong To Kitesurf? | Best Kitesurf Schools",
+  description: "Comprehensive guide to do you need to be strong to kitesurf?.",
+  openGraph: {
+    title: "Do You Need To Be Strong To Kitesurf?",
+    description: "Read our comprehensive guide to do you need to be strong to kitesurf? on BestKitesurfSchools.",
+    url: "https://bestkitesurfschools.com/kitesurf-fitness-requirements",
+    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "Do You Need To Be Strong To Kitesurf?" }],
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Do You Need To Be Strong To Kitesurf? | Best Kitesurf Schools",
+    description: "Read our comprehensive guide to do you need to be strong to kitesurf?.",
+    images: ["https://bestkitesurfschools.com/images/hero.png"],
+  }
+};
+
+export default function GuidePage() {
+  return (
+    <>
+      <Navigation />
+      
+      {/* Editorial Hero */}
+      <header className="relative min-h-[65svh] w-full flex flex-col justify-end pt-40 pb-20 px-6 md:px-16 lg:px-24 bg-[#171717]">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-[#171717]"></div>
+          <Image
+            src="/images/hero.png"
+            alt="Do You Need To Be Strong To Kitesurf?"
+            fill
+            className="object-cover opacity-50 mix-blend-overlay grayscale"
+            priority
+          />
+        </div>
+
+        <div className="relative z-10 w-full max-w-[1000px] mx-auto">
+          <div className="mb-8 flex items-center space-x-3 text-white text-[10px] tracking-[0.2em] uppercase font-medium">
+            <Link href="/" className="hover:opacity-60 transition-opacity">Home</Link>
+            <span className="opacity-40">/</span>
+            <span className="opacity-80">Knowledge Hub</span>
+          </div>
+          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-[0.9] tracking-tight mb-8">
+            Do You Need To Be Strong To Kitesurf?
+          </h1>
+        </div>
+      </header>
+
+      <main className="relative z-20 bg-[#FDFBF7] text-[#171717]">
+        <div className="w-full px-6 md:px-16 lg:px-24 py-24 max-w-[1200px] mx-auto">
+          <div className="flex flex-col lg:flex-row gap-24">
+            
+            {/* Main Content Column */}
+            <div className="lg:w-2/3 editorial-content">
+              
+      <h2 className="font-serif text-4xl mb-6 mt-12">The Biggest Misconception</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        "I don't have the upper body strength for that." It is the most common phrase heard on the beach by spectators, and it is entirely false.
+      </p>
+
+      <h2 className="font-serif text-4xl mb-6 mt-12">Harnessing The Elements</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        Unlike wakeboarding where the pull goes directly through your arms and back, in kitesurfing, 95% of the kite's force is directed straight to your center of gravity via the seat or waist harness.
+      </p>
+      
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        You steer the bar purely with your fingertips. If your arms are burning, you are holding the bar far too tightly or using outdated, non-depower equipment. Core strength and leg endurance (specifically the quads) are much more vital than upper body muscle.
+      </p>
+    
+              
+              
+
+              <div className="mt-24 p-8 border border-[#171717]/10 bg-[#FDFBF7]">
+                 <h4 className="font-serif text-2xl mb-4">The ultimate progression secret? Professional instruction.</h4>
+                 <p className="text-[#171717]/70 font-light leading-relaxed mb-6">
+                   While self-study is valuable, nothing replaces time on the water with certified experts. Looking for lessons in Europe? Portugal offers legendary thermal winds and spectacular uncrowded beaches if you know where to look.
+                 </p>
+                 <a href="https://northwindkiteportugal.com" target="_blank" rel="noopener noreferrer" className="inline-block border-b border-[#1A365D] text-[#1A365D] font-medium uppercase tracking-widest text-xs pb-1 hover:opacity-70 transition-opacity">
+                   View Kitesurf School in Moledo
+                 </a>
+              </div>
+            </div>
+
+            {/* Sidebar Column */}
+            <aside className="lg:w-1/3">
+              <div className="sticky top-32">
+                <div className="border-t border-[#171717]/10 pt-12 mb-16">
+                  <h3 className="text-xs font-medium uppercase tracking-[0.2em] mb-8 text-[#171717]/50">Trending Guides</h3>
+                  <ul className="space-y-4 text-sm font-light text-[#171717]/80">
+                     <li><Link href="/kitesurf-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Kitesurf Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/best-kitesurf-schools-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Best Schools in Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurfing-for-beginners" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Beginner's Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurf-moledo" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Moledo Spot Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+
+          </div>
+        </div>
+      </main>
+    </>
+  );
+}
+
+
+=======================================================
+// FILE: src\app\kitesurf-gear-beginners\page.tsx
+=======================================================
+
+
+import Image from "next/image";
+import Link from "next/link";
+import { Navigation } from "@/components/Navigation";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Essential Kitesurf Gear For Beginners | Best Kitesurf Schools",
+  description: "Comprehensive guide to essential kitesurf gear for beginners.",
+  openGraph: {
+    title: "Essential Kitesurf Gear For Beginners",
+    description: "Read our comprehensive guide to essential kitesurf gear for beginners on BestKitesurfSchools.",
+    url: "https://bestkitesurfschools.com/kitesurf-gear-beginners",
+    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "Essential Kitesurf Gear For Beginners" }],
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Essential Kitesurf Gear For Beginners | Best Kitesurf Schools",
+    description: "Read our comprehensive guide to essential kitesurf gear for beginners.",
+    images: ["https://bestkitesurfschools.com/images/hero.png"],
+  }
+};
+
+export default function GuidePage() {
+  return (
+    <>
+      <Navigation />
+      
+      {/* Editorial Hero */}
+      <header className="relative min-h-[65svh] w-full flex flex-col justify-end pt-40 pb-20 px-6 md:px-16 lg:px-24 bg-[#171717]">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-[#171717]"></div>
+          <Image
+            src="/images/hero.png"
+            alt="Essential Kitesurf Gear For Beginners"
+            fill
+            className="object-cover opacity-50 mix-blend-overlay grayscale"
+            priority
+          />
+        </div>
+
+        <div className="relative z-10 w-full max-w-[1000px] mx-auto">
+          <div className="mb-8 flex items-center space-x-3 text-white text-[10px] tracking-[0.2em] uppercase font-medium">
+            <Link href="/" className="hover:opacity-60 transition-opacity">Home</Link>
+            <span className="opacity-40">/</span>
+            <span className="opacity-80">Knowledge Hub</span>
+          </div>
+          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-[0.9] tracking-tight mb-8">
+            Essential Kitesurf Gear For Beginners
+          </h1>
+        </div>
+      </header>
+
+      <main className="relative z-20 bg-[#FDFBF7] text-[#171717]">
+        <div className="w-full px-6 md:px-16 lg:px-24 py-24 max-w-[1200px] mx-auto">
+          <div className="flex flex-col lg:flex-row gap-24">
+            
+            {/* Main Content Column */}
+            <div className="lg:w-2/3 editorial-content">
+              
+      <h2 className="font-serif text-4xl mb-6 mt-12">The Core Kit</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        1. <strong>The Kite:</strong> Usually a highly durable Freeride kite with easy relaunch.<br/>
+        2. <strong>The Board:</strong> A ‘Twin Tip’ board, preferably quite large (140cm+) for stability.<br/>
+        3. <strong>The Harness:</strong> Seat harnesses are often used for extreme beginners, transitioning to waist harnesses for mobility.<br/>
+        4. <strong>Safety:</strong> Helmet, impact vest, and hook knife.
+      </p>
+
+      <h2 className="font-serif text-4xl mb-6 mt-12">Why You Shouldn't Buy Yet</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        You simply do not know what wind conditions or riding style you will prefer until you finish training. Most importantly, when you book lessons at leading schools like <Link href="/portugal/moledo" className="underline hover:text-[#319795]">North Wind</Link>, all high-end, perfectly maintained equipment is provided.
+      </p>
+    
+              
+              
+
+              <div className="mt-24 p-8 border border-[#171717]/10 bg-[#FDFBF7]">
+                 <h4 className="font-serif text-2xl mb-4">The ultimate progression secret? Professional instruction.</h4>
+                 <p className="text-[#171717]/70 font-light leading-relaxed mb-6">
+                   While self-study is valuable, nothing replaces time on the water with certified experts. Looking for lessons in Europe? Portugal offers legendary thermal winds and spectacular uncrowded beaches if you know where to look.
+                 </p>
+                 <a href="https://northwindkiteportugal.com" target="_blank" rel="noopener noreferrer" className="inline-block border-b border-[#1A365D] text-[#1A365D] font-medium uppercase tracking-widest text-xs pb-1 hover:opacity-70 transition-opacity">
+                   View Kitesurf School in Moledo
+                 </a>
+              </div>
+            </div>
+
+            {/* Sidebar Column */}
+            <aside className="lg:w-1/3">
+              <div className="sticky top-32">
+                <div className="border-t border-[#171717]/10 pt-12 mb-16">
+                  <h3 className="text-xs font-medium uppercase tracking-[0.2em] mb-8 text-[#171717]/50">Trending Guides</h3>
+                  <ul className="space-y-4 text-sm font-light text-[#171717]/80">
+                     <li><Link href="/kitesurf-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Kitesurf Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/best-kitesurf-schools-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Best Schools in Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurfing-for-beginners" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Beginner's Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurf-moledo" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Moledo Spot Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+
+          </div>
+        </div>
+      </main>
+    </>
+  );
+}
+
+
+=======================================================
+// FILE: src\app\kitesurf-moledo\page.tsx
+=======================================================
+
+
+import Image from "next/image";
+import Link from "next/link";
+import { Navigation } from "@/components/Navigation";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Kitesurf Moledo: The Northern Sanctuary | Best Kitesurf Schools",
+  description: "Comprehensive guide to kitesurf moledo: the northern sanctuary.",
+  openGraph: {
+    title: "Kitesurf Moledo: The Northern Sanctuary",
+    description: "Read our comprehensive guide to kitesurf moledo: the northern sanctuary on BestKitesurfSchools.",
+    url: "https://bestkitesurfschools.com/kitesurf-moledo",
+    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "Kitesurf Moledo: The Northern Sanctuary" }],
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kitesurf Moledo: The Northern Sanctuary | Best Kitesurf Schools",
+    description: "Read our comprehensive guide to kitesurf moledo: the northern sanctuary.",
+    images: ["https://bestkitesurfschools.com/images/hero.png"],
+  }
+};
+
+export default function GuidePage() {
+  return (
+    <>
+      <Navigation />
+      
+      {/* Editorial Hero */}
+      <header className="relative min-h-[65svh] w-full flex flex-col justify-end pt-40 pb-20 px-6 md:px-16 lg:px-24 bg-[#171717]">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-[#171717]"></div>
+          <Image
+            src="/images/hero.png"
+            alt="Kitesurf Moledo: The Northern Sanctuary"
+            fill
+            className="object-cover opacity-50 mix-blend-overlay grayscale"
+            priority
+          />
+        </div>
+
+        <div className="relative z-10 w-full max-w-[1000px] mx-auto">
+          <div className="mb-8 flex items-center space-x-3 text-white text-[10px] tracking-[0.2em] uppercase font-medium">
+            <Link href="/" className="hover:opacity-60 transition-opacity">Home</Link>
+            <span className="opacity-40">/</span>
+            <span className="opacity-80">Knowledge Hub</span>
+          </div>
+          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-[0.9] tracking-tight mb-8">
+            Kitesurf Moledo: The Northern Sanctuary
+          </h1>
+        </div>
+      </header>
+
+      <main className="relative z-20 bg-[#FDFBF7] text-[#171717]">
+        <div className="w-full px-6 md:px-16 lg:px-24 py-24 max-w-[1200px] mx-auto">
+          <div className="flex flex-col lg:flex-row gap-24">
+            
+            {/* Main Content Column */}
+            <div className="lg:w-2/3 editorial-content">
+              
+      <h2 className="font-serif text-4xl mb-6 mt-12">Wind Conditions & Beach Layout</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        Moledo is located near the Spanish border and benefits from an incredible thermal acceleration effect. The afternoon Nortada funneling down the beach means it is almost always windier here than anywhere else nearby. The beach is a massive stretch of pristine fine sand flanked by stunning scenery.
+      </p>
+
+      <h2 className="font-serif text-4xl mb-6 mt-12">Crowd Levels & Lesson Suitability</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        The primary reason advanced riders and smart beginners choose Moledo is the total lack of crowds. In peak summer, when southern spots are dangerous to ride due to sheer volume, Moledo remains a peaceful, wide-open expanse. It is simply the perfect environment for uninterrupted kitesurf progression.
+      </p>
+
+      <h2 className="font-serif text-4xl mb-6 mt-12">The Local Authority</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        Moledo is deeply respected, and local instruction is paramount. <strong>North Wind Kitesurf & Wingfoil School</strong> is the definitive local operator. Their highly personal, boutique approach matches the exclusive feel of the location itself. Check them out on our <Link href="/best-kitesurf-schools-portugal" className="underline hover:text-[#319795]">best schools list</Link>.
+      </p>
+    
+              
+              
+
+              <div className="mt-24 p-8 border border-[#171717]/10 bg-[#FDFBF7]">
+                 <h4 className="font-serif text-2xl mb-4">The ultimate progression secret? Professional instruction.</h4>
+                 <p className="text-[#171717]/70 font-light leading-relaxed mb-6">
+                   While self-study is valuable, nothing replaces time on the water with certified experts. Looking for lessons in Europe? Portugal offers legendary thermal winds and spectacular uncrowded beaches if you know where to look.
+                 </p>
+                 <a href="https://northwindkiteportugal.com" target="_blank" rel="noopener noreferrer" className="inline-block border-b border-[#1A365D] text-[#1A365D] font-medium uppercase tracking-widest text-xs pb-1 hover:opacity-70 transition-opacity">
+                   View Kitesurf School in Moledo
+                 </a>
+              </div>
+            </div>
+
+            {/* Sidebar Column */}
+            <aside className="lg:w-1/3">
+              <div className="sticky top-32">
+                <div className="border-t border-[#171717]/10 pt-12 mb-16">
+                  <h3 className="text-xs font-medium uppercase tracking-[0.2em] mb-8 text-[#171717]/50">Trending Guides</h3>
+                  <ul className="space-y-4 text-sm font-light text-[#171717]/80">
+                     <li><Link href="/kitesurf-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Kitesurf Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/best-kitesurf-schools-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Best Schools in Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurfing-for-beginners" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Beginner's Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurf-moledo" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Moledo Spot Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+
+          </div>
+        </div>
+      </main>
+    </>
+  );
+}
+
+
+=======================================================
+// FILE: src\app\kitesurf-portugal\page.tsx
+=======================================================
+
+
+import Image from "next/image";
+import Link from "next/link";
+import { Navigation } from "@/components/Navigation";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Kitesurf Portugal: The Ultimate Destination | Best Kitesurf Schools",
+  description: "Comprehensive guide to kitesurf portugal: the ultimate destination.",
+  openGraph: {
+    title: "Kitesurf Portugal: The Ultimate Destination",
+    description: "Read our comprehensive guide to kitesurf portugal: the ultimate destination on BestKitesurfSchools.",
+    url: "https://bestkitesurfschools.com/kitesurf-portugal",
+    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "Kitesurf Portugal: The Ultimate Destination" }],
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kitesurf Portugal: The Ultimate Destination | Best Kitesurf Schools",
+    description: "Read our comprehensive guide to kitesurf portugal: the ultimate destination.",
+    images: ["https://bestkitesurfschools.com/images/hero.png"],
+  }
+};
+
+export default function GuidePage() {
+  return (
+    <>
+      <Navigation />
+      
+      {/* Editorial Hero */}
+      <header className="relative min-h-[65svh] w-full flex flex-col justify-end pt-40 pb-20 px-6 md:px-16 lg:px-24 bg-[#171717]">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-[#171717]"></div>
+          <Image
+            src="/images/hero.png"
+            alt="Kitesurf Portugal: The Ultimate Destination"
+            fill
+            className="object-cover opacity-50 mix-blend-overlay grayscale"
+            priority
+          />
+        </div>
+
+        <div className="relative z-10 w-full max-w-[1000px] mx-auto">
+          <div className="mb-8 flex items-center space-x-3 text-white text-[10px] tracking-[0.2em] uppercase font-medium">
+            <Link href="/" className="hover:opacity-60 transition-opacity">Home</Link>
+            <span className="opacity-40">/</span>
+            <span className="opacity-80">Knowledge Hub</span>
+          </div>
+          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-[0.9] tracking-tight mb-8">
+            Kitesurf Portugal: The Ultimate Destination
+          </h1>
+        </div>
+      </header>
+
+      <main className="relative z-20 bg-[#FDFBF7] text-[#171717]">
+        <div className="w-full px-6 md:px-16 lg:px-24 py-24 max-w-[1200px] mx-auto">
+          <div className="flex flex-col lg:flex-row gap-24">
+            
+            {/* Main Content Column */}
+            <div className="lg:w-2/3 editorial-content">
+              
+      <h2 className="font-serif text-4xl mb-6 mt-12">Overview</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        Portugal is undeniably Europe's capital for wind and wave sports. The country's western exposure to the Atlantic provides a near-infinite coastline battered by consistent thermals.
+      </p>
+
+      <h2 className="font-serif text-4xl mb-6 mt-12">Main Regions</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        <strong>The Algarve:</strong> Famous globally, warm, and highly commercial. The downside? It is incredibly crowded, making progression difficult for beginners who need space.
+        <br/><br/>
+        <strong>Lisbon Coast (Guincho/Peniche):</strong> Iconic surf breaks, but the wind can be brutal, gusty, and the water heavily populated with traditional surfers.
+        <br/><br/>
+        <strong>Northern Portugal:</strong> The underrated gem of the country. Benefiting from the "Nortada" (thermal north wind), the north offers infinitely more space. Spots like <Link href="/kitesurf-moledo" className="underline hover:text-[#319795]">Moledo</Link> are vast, breathtaking, and crucially, uncrowded.
+      </p>
+
+      <h2 className="font-serif text-4xl mb-6 mt-12">The Northern Advantage</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        If you are looking for <Link href="/best-kitesurf-schools-portugal" className="underline hover:text-[#319795]">kitesurf lessons in Portugal</Link>, heading north is the insider's move. You sacrifice none of the wind consistency but gain hundreds of meters of empty beach.
+      </p>
+    
+              
+              
+
+              <div className="mt-24 p-8 border border-[#171717]/10 bg-[#FDFBF7]">
+                 <h4 className="font-serif text-2xl mb-4">The ultimate progression secret? Professional instruction.</h4>
+                 <p className="text-[#171717]/70 font-light leading-relaxed mb-6">
+                   While self-study is valuable, nothing replaces time on the water with certified experts. Looking for lessons in Europe? Portugal offers legendary thermal winds and spectacular uncrowded beaches if you know where to look.
+                 </p>
+                 <a href="https://northwindkiteportugal.com" target="_blank" rel="noopener noreferrer" className="inline-block border-b border-[#1A365D] text-[#1A365D] font-medium uppercase tracking-widest text-xs pb-1 hover:opacity-70 transition-opacity">
+                   View Kitesurf School in Moledo
+                 </a>
+              </div>
+            </div>
+
+            {/* Sidebar Column */}
+            <aside className="lg:w-1/3">
+              <div className="sticky top-32">
+                <div className="border-t border-[#171717]/10 pt-12 mb-16">
+                  <h3 className="text-xs font-medium uppercase tracking-[0.2em] mb-8 text-[#171717]/50">Trending Guides</h3>
+                  <ul className="space-y-4 text-sm font-light text-[#171717]/80">
+                     <li><Link href="/kitesurf-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Kitesurf Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/best-kitesurf-schools-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Best Schools in Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurfing-for-beginners" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Beginner's Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurf-moledo" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Moledo Spot Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+
+          </div>
+        </div>
+      </main>
+    </>
+  );
+}
+
+
+=======================================================
+// FILE: src\app\kitesurf-wind-guide\page.tsx
+=======================================================
+
+
+import Image from "next/image";
+import Link from "next/link";
+import { Navigation } from "@/components/Navigation";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Kitesurf Wind Guide: Reading The Elements | Best Kitesurf Schools",
+  description: "Comprehensive guide to kitesurf wind guide: reading the elements.",
+  openGraph: {
+    title: "Kitesurf Wind Guide: Reading The Elements",
+    description: "Read our comprehensive guide to kitesurf wind guide: reading the elements on BestKitesurfSchools.",
+    url: "https://bestkitesurfschools.com/kitesurf-wind-guide",
+    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "Kitesurf Wind Guide: Reading The Elements" }],
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kitesurf Wind Guide: Reading The Elements | Best Kitesurf Schools",
+    description: "Read our comprehensive guide to kitesurf wind guide: reading the elements.",
+    images: ["https://bestkitesurfschools.com/images/hero.png"],
+  }
+};
+
+export default function GuidePage() {
+  return (
+    <>
+      <Navigation />
+      
+      {/* Editorial Hero */}
+      <header className="relative min-h-[65svh] w-full flex flex-col justify-end pt-40 pb-20 px-6 md:px-16 lg:px-24 bg-[#171717]">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-[#171717]"></div>
+          <Image
+            src="/images/hero.png"
+            alt="Kitesurf Wind Guide: Reading The Elements"
+            fill
+            className="object-cover opacity-50 mix-blend-overlay grayscale"
+            priority
+          />
+        </div>
+
+        <div className="relative z-10 w-full max-w-[1000px] mx-auto">
+          <div className="mb-8 flex items-center space-x-3 text-white text-[10px] tracking-[0.2em] uppercase font-medium">
+            <Link href="/" className="hover:opacity-60 transition-opacity">Home</Link>
+            <span className="opacity-40">/</span>
+            <span className="opacity-80">Knowledge Hub</span>
+          </div>
+          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-[0.9] tracking-tight mb-8">
+            Kitesurf Wind Guide: Reading The Elements
+          </h1>
+        </div>
+      </header>
+
+      <main className="relative z-20 bg-[#FDFBF7] text-[#171717]">
+        <div className="w-full px-6 md:px-16 lg:px-24 py-24 max-w-[1200px] mx-auto">
+          <div className="flex flex-col lg:flex-row gap-24">
+            
+            {/* Main Content Column */}
+            <div className="lg:w-2/3 editorial-content">
+              
+      <h2 className="font-serif text-4xl mb-6 mt-12">Understanding Wind Types</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        The golden rule of kitesurfing is simple: Never ride in offshore winds (wind blowing away from the land) unless you have a dedicated rescue boat. <strong>Cross-shore</strong> or <strong>Cross-onshore</strong> winds are ideal, as they provide clean air and gently push you back to the beach.
+      </p>
+
+      <h2 className="font-serif text-4xl mb-6 mt-12">Ideal Wind Speeds</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        For beginners, 12 to 18 knots is the sweet spot—enough power to get out of the water, but gentle enough to forgive mistakes. Advanced riders jumping high prefer 25+ knots. 
+      </p>
+
+      <h2 className="font-serif text-4xl mb-6 mt-12">The Magic of Thermal Winds</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        Thermal winds are generated by the temperature difference between land and sea. They are incredibly smooth and predictable. This is exactly why <Link href="/kitesurf-portugal" className="underline hover:text-[#319795]">Portugal</Link> (and specifically northern spots like <Link href="/kitesurf-moledo" className="underline hover:text-[#319795]">Moledo</Link>) are legendary—the reliable summer thermals act almost like clockwork.
+      </p>
+    
+              
+              
+
+              <div className="mt-24 p-8 border border-[#171717]/10 bg-[#FDFBF7]">
+                 <h4 className="font-serif text-2xl mb-4">The ultimate progression secret? Professional instruction.</h4>
+                 <p className="text-[#171717]/70 font-light leading-relaxed mb-6">
+                   While self-study is valuable, nothing replaces time on the water with certified experts. Looking for lessons in Europe? Portugal offers legendary thermal winds and spectacular uncrowded beaches if you know where to look.
+                 </p>
+                 <a href="https://northwindkiteportugal.com" target="_blank" rel="noopener noreferrer" className="inline-block border-b border-[#1A365D] text-[#1A365D] font-medium uppercase tracking-widest text-xs pb-1 hover:opacity-70 transition-opacity">
+                   View Kitesurf School in Moledo
+                 </a>
+              </div>
+            </div>
+
+            {/* Sidebar Column */}
+            <aside className="lg:w-1/3">
+              <div className="sticky top-32">
+                <div className="border-t border-[#171717]/10 pt-12 mb-16">
+                  <h3 className="text-xs font-medium uppercase tracking-[0.2em] mb-8 text-[#171717]/50">Trending Guides</h3>
+                  <ul className="space-y-4 text-sm font-light text-[#171717]/80">
+                     <li><Link href="/kitesurf-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Kitesurf Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/best-kitesurf-schools-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Best Schools in Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurfing-for-beginners" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Beginner's Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurf-moledo" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Moledo Spot Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+
+          </div>
+        </div>
+      </main>
+    </>
+  );
+}
+
+
+=======================================================
+// FILE: src\app\kitesurfing-cost-guide\page.tsx
+=======================================================
+
+
+import Image from "next/image";
+import Link from "next/link";
+import { Navigation } from "@/components/Navigation";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "How Much Does It Cost To Learn Kitesurfing? | Best Kitesurf Schools",
+  description: "Comprehensive guide to how much does it cost to learn kitesurfing?.",
+  openGraph: {
+    title: "How Much Does It Cost To Learn Kitesurfing?",
+    description: "Read our comprehensive guide to how much does it cost to learn kitesurfing? on BestKitesurfSchools.",
+    url: "https://bestkitesurfschools.com/kitesurfing-cost-guide",
+    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "How Much Does It Cost To Learn Kitesurfing?" }],
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "How Much Does It Cost To Learn Kitesurfing? | Best Kitesurf Schools",
+    description: "Read our comprehensive guide to how much does it cost to learn kitesurfing?.",
+    images: ["https://bestkitesurfschools.com/images/hero.png"],
+  }
+};
+
+export default function GuidePage() {
+  return (
+    <>
+      <Navigation />
+      
+      {/* Editorial Hero */}
+      <header className="relative min-h-[65svh] w-full flex flex-col justify-end pt-40 pb-20 px-6 md:px-16 lg:px-24 bg-[#171717]">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-[#171717]"></div>
+          <Image
+            src="/images/hero.png"
+            alt="How Much Does It Cost To Learn Kitesurfing?"
+            fill
+            className="object-cover opacity-50 mix-blend-overlay grayscale"
+            priority
+          />
+        </div>
+
+        <div className="relative z-10 w-full max-w-[1000px] mx-auto">
+          <div className="mb-8 flex items-center space-x-3 text-white text-[10px] tracking-[0.2em] uppercase font-medium">
+            <Link href="/" className="hover:opacity-60 transition-opacity">Home</Link>
+            <span className="opacity-40">/</span>
+            <span className="opacity-80">Knowledge Hub</span>
+          </div>
+          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-[0.9] tracking-tight mb-8">
+            How Much Does It Cost To Learn Kitesurfing?
+          </h1>
+        </div>
+      </header>
+
+      <main className="relative z-20 bg-[#FDFBF7] text-[#171717]">
+        <div className="w-full px-6 md:px-16 lg:px-24 py-24 max-w-[1200px] mx-auto">
+          <div className="flex flex-col lg:flex-row gap-24">
+            
+            {/* Main Content Column */}
+            <div className="lg:w-2/3 editorial-content">
+              
+      <h2 className="font-serif text-4xl mb-6 mt-12">The Initial Investment</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        Kitesports require precision equipment. Trying to cut corners financially on instruction or gear usually results in broken equipment or serious injury.
+      </p>
+
+      <h2 className="font-serif text-4xl mb-6 mt-12">The Cost of Lessons</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        A standard beginner pipeline (approx. 10–12 hours) will cost between $600 and $900 depending on the location. Reputable European schools, like <Link href="/kitesurf-moledo" className="underline hover:text-[#319795]">North Wind in Moledo</Link>, offer premium, small-group instruction that provides an exceptional return on investment by speeding up progression.
+      </p>
+
+      <h2 className="font-serif text-4xl mb-6 mt-12">Buying Gear</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        Once independent, buying a kite, bar, board, and harness new will range from $2,500 to $4,000. Many riders prefer to purchase second-hand gear from the previous season, cutting this cost down to roughly $1,500.
+      </p>
+    
+              
+              
+
+              <div className="mt-24 p-8 border border-[#171717]/10 bg-[#FDFBF7]">
+                 <h4 className="font-serif text-2xl mb-4">The ultimate progression secret? Professional instruction.</h4>
+                 <p className="text-[#171717]/70 font-light leading-relaxed mb-6">
+                   While self-study is valuable, nothing replaces time on the water with certified experts. Looking for lessons in Europe? Portugal offers legendary thermal winds and spectacular uncrowded beaches if you know where to look.
+                 </p>
+                 <a href="https://northwindkiteportugal.com" target="_blank" rel="noopener noreferrer" className="inline-block border-b border-[#1A365D] text-[#1A365D] font-medium uppercase tracking-widest text-xs pb-1 hover:opacity-70 transition-opacity">
+                   View Kitesurf School in Moledo
+                 </a>
+              </div>
+            </div>
+
+            {/* Sidebar Column */}
+            <aside className="lg:w-1/3">
+              <div className="sticky top-32">
+                <div className="border-t border-[#171717]/10 pt-12 mb-16">
+                  <h3 className="text-xs font-medium uppercase tracking-[0.2em] mb-8 text-[#171717]/50">Trending Guides</h3>
+                  <ul className="space-y-4 text-sm font-light text-[#171717]/80">
+                     <li><Link href="/kitesurf-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Kitesurf Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/best-kitesurf-schools-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Best Schools in Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurfing-for-beginners" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Beginner's Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurf-moledo" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Moledo Spot Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+
+          </div>
+        </div>
+      </main>
+    </>
+  );
+}
+
+
+=======================================================
+// FILE: src\app\kitesurfing-for-beginners\page.tsx
+=======================================================
+
+
+import Image from "next/image";
+import Link from "next/link";
+import { Navigation } from "@/components/Navigation";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Kitesurfing For Beginners | Best Kitesurf Schools",
+  description: "Comprehensive guide to kitesurfing for beginners.",
+  openGraph: {
+    title: "Kitesurfing For Beginners",
+    description: "Read our comprehensive guide to kitesurfing for beginners on BestKitesurfSchools.",
+    url: "https://bestkitesurfschools.com/kitesurfing-for-beginners",
+    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "Kitesurfing For Beginners" }],
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kitesurfing For Beginners | Best Kitesurf Schools",
+    description: "Read our comprehensive guide to kitesurfing for beginners.",
+    images: ["https://bestkitesurfschools.com/images/hero.png"],
+  }
+};
+
+export default function GuidePage() {
+  return (
+    <>
+      <Navigation />
+      
+      {/* Editorial Hero */}
+      <header className="relative min-h-[65svh] w-full flex flex-col justify-end pt-40 pb-20 px-6 md:px-16 lg:px-24 bg-[#171717]">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-[#171717]"></div>
+          <Image
+            src="/images/hero.png"
+            alt="Kitesurfing For Beginners"
+            fill
+            className="object-cover opacity-50 mix-blend-overlay grayscale"
+            priority
+          />
+        </div>
+
+        <div className="relative z-10 w-full max-w-[1000px] mx-auto">
+          <div className="mb-8 flex items-center space-x-3 text-white text-[10px] tracking-[0.2em] uppercase font-medium">
+            <Link href="/" className="hover:opacity-60 transition-opacity">Home</Link>
+            <span className="opacity-40">/</span>
+            <span className="opacity-80">Knowledge Hub</span>
+          </div>
+          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-[0.9] tracking-tight mb-8">
+            Kitesurfing For Beginners
+          </h1>
+        </div>
+      </header>
+
+      <main className="relative z-20 bg-[#FDFBF7] text-[#171717]">
+        <div className="w-full px-6 md:px-16 lg:px-24 py-24 max-w-[1200px] mx-auto">
+          <div className="flex flex-col lg:flex-row gap-24">
+            
+            {/* Main Content Column */}
+            <div className="lg:w-2/3 editorial-content">
+              
+      <h2 className="font-serif text-4xl mb-6 mt-12">What is Kitesurfing?</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        Kitesurfing, or kiteboarding, is a wind-powered surface watersport using a kite and a board to move across the water. It harnesses the power of the wind through a large parachute type kite to propel a rider across the water on a small surfboard or a kiteboard (similar to a wakeboard).
+      </p>
+      
+      <h2 className="font-serif text-4xl mb-6 mt-12">Difficulty Level & Learning Curve</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        The initial learning curve can be steep. Unlike surfing where you can paddle out on day one, kitesurfing requires learning to fly a kite before you even think about the board. However, once the "click" happens, progression is incredibly fast. Most beginners are riding upwind within their first 1-2 weeks of practice.
+      </p>
+
+      <h2 className="font-serif text-4xl mb-6 mt-12">The Basic Steps</h2>
+      <ul className="space-y-6 mb-8 mt-4">
+        <li className="flex items-start">
+           <span className="text-[#1A365D] font-serif text-2xl mr-4">1.</span>
+           <p className="text-[#171717]/80 font-light leading-[1.8]"><strong>Kite Control:</strong> Flying trainer kites on the beach to understand the wind window and power zones.</p>
+        </li>
+        <li className="flex items-start">
+           <span className="text-[#1A365D] font-serif text-2xl mr-4">2.</span>
+           <p className="text-[#171717]/80 font-light leading-[1.8]"><strong>Body Dragging:</strong> Using the kite's power to pull you through the water without a board. This teaches essential safety.</p>
+        </li>
+        <li className="flex items-start">
+           <span className="text-[#1A365D] font-serif text-2xl mr-4">3.</span>
+           <p className="text-[#171717]/80 font-light leading-[1.8]"><strong>The Water Start:</strong> Putting the board on your feet and diving the kite to generate the power needed to stand up and ride.</p>
+        </li>
+      </ul>
+
+      <h2 className="font-serif text-4xl mb-6 mt-12">Safety First</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        Modern equipment has massive depower capabilities, making the sport safer than ever. However, weather awareness and safety releases must become second nature. Always start with a certified instructor. If you are looking for an incredible destination with wide-open, uncrowded beaches perfect for safe learning, Northern Portugal (specifically <Link href="/kitesurf-moledo" className="underline hover:text-[#319795]">Moledo</Link>) provides exceptional thermal winds away from the chaos of southern shores.
+      </p>
+    
+              
+              
+
+              <div className="mt-24 p-8 border border-[#171717]/10 bg-[#FDFBF7]">
+                 <h4 className="font-serif text-2xl mb-4">The ultimate progression secret? Professional instruction.</h4>
+                 <p className="text-[#171717]/70 font-light leading-relaxed mb-6">
+                   While self-study is valuable, nothing replaces time on the water with certified experts. Looking for lessons in Europe? Portugal offers legendary thermal winds and spectacular uncrowded beaches if you know where to look.
+                 </p>
+                 <a href="https://northwindkiteportugal.com" target="_blank" rel="noopener noreferrer" className="inline-block border-b border-[#1A365D] text-[#1A365D] font-medium uppercase tracking-widest text-xs pb-1 hover:opacity-70 transition-opacity">
+                   View Kitesurf School in Moledo
+                 </a>
+              </div>
+            </div>
+
+            {/* Sidebar Column */}
+            <aside className="lg:w-1/3">
+              <div className="sticky top-32">
+                <div className="border-t border-[#171717]/10 pt-12 mb-16">
+                  <h3 className="text-xs font-medium uppercase tracking-[0.2em] mb-8 text-[#171717]/50">Trending Guides</h3>
+                  <ul className="space-y-4 text-sm font-light text-[#171717]/80">
+                     <li><Link href="/kitesurf-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Kitesurf Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/best-kitesurf-schools-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Best Schools in Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurfing-for-beginners" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Beginner's Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurf-moledo" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Moledo Spot Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+
+          </div>
+        </div>
+      </main>
+    </>
+  );
+}
+
+
+=======================================================
+// FILE: src\app\layout.tsx
+=======================================================
+
+import type { Metadata } from "next";
+import { Inter, Playfair_Display } from "next/font/google";
+import "./globals.css";
+
+const playfair = Playfair_Display({
+  variable: "--font-serif",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const inter = Inter({
+  variable: "--font-sans",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+});
+
+export const metadata: Metadata = {
+  title: "Best Kitesurf Schools | The World's Finest Instruction",
+  description: "A curated directory of the world's best kitesurfing schools. Discover premier centers globally and unlock progression secrets.",
+  openGraph: {
+    title: "Best Kitesurf Schools",
+    description: "A curated directory of the world's best kitesurfing schools.",
+    url: "https://bestkitesurfschools.com",
+    siteName: "BestKitesurfSchools",
+    images: [
+      {
+        url: "https://bestkitesurfschools.com/images/hero.png",
+        width: 1200,
+        height: 630,
+        alt: "Best Kitesurf Schools Preview",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Best Kitesurf Schools",
+    description: "A curated directory of the world's best kitesurfing schools.",
+    images: ["https://bestkitesurfschools.com/images/hero.png"],
+  },
+  icons: {
+    icon: "/icon.svg",
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en" className="scroll-smooth">
+      <body
+        className={`${playfair.variable} ${inter.variable} antialiased font-sans min-h-screen selection:bg-[#1A365D] selection:text-white`}
+      >
+        {children}
+      </body>
+    </html>
+  );
+}
+
+
+=======================================================
+// FILE: src\app\page.tsx
+=======================================================
+
+import Image from "next/image";
+import Link from "next/link";
+import { schools } from "@/data/schools";
+import { Navigation } from "@/components/Navigation";
+import { SchoolGrid } from "@/components/SchoolGrid";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Best Kitesurf Schools | The World's Finest Instruction",
+  description: "A curated directory of the world's best kitesurfing schools. Discover premier centers globally from Brazil to Portugal.",
+};
+
+export default function Home() {
+  const standardSchools = schools.filter((s) => s.id !== "north-wind");
+
+  return (
+    <>
+      <Navigation />
+      
+      {/* Hero Section - Edge to Edge */}
+      <header className="relative w-full h-[100svh] flex items-center bg-[#171717]">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/hero.png"
+            alt="Kitesurfer catching air over dramatic ocean"
+            fill
+            className="object-cover opacity-80"
+            priority
+          />
+          <div className="absolute inset-0 bg-black/30"></div>
+        </div>
+
+        <div className="relative z-10 w-full px-6 md:px-16 lg:px-24 max-w-[1600px] mx-auto animate-in fade-in duration-1000 mt-20">
+          <p className="text-white text-xs tracking-[0.2em] uppercase font-light mb-6">
+            The Definitive Global Directory
+          </p>
+          <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl text-white leading-[0.95] tracking-tight max-w-5xl mb-12">
+            The World's Best Kitesurf Schools.
+          </h1>
+          <Link
+            href="#locations"
+            className="inline-flex items-center text-white text-sm tracking-[0.1em] uppercase font-light group"
+          >
+            <span className="relative pb-1">
+              Explore The Collection
+              <span className="absolute bottom-0 left-0 w-full h-px bg-white transform origin-right scale-x-100 transition-transform duration-500 group-hover:scale-x-0"></span>
+            </span>
+            <svg className="w-4 h-4 ml-4 transform transition-transform duration-500 group-hover:translate-x-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+          </Link>
+        </div>
+      </header>
+
+      <main className="relative z-20">
+        
+        {/* Editor's Featured Pick - Asymmetrical Split Section */}
+        <section id="featured-spotlight" className="w-full flex flex-col lg:flex-row min-h-[90svh] scroll-mt-20">
+          {/* Image Side (Left) */}
+          <div className="w-full lg:w-1/2 relative h-[60svh] lg:h-auto">
+            <Image 
+              src="/images/kitesurf-moledo-portugal.jpg" 
+              alt="North Wind Kitesurf & Wingfoil School" 
+              fill 
+              className="object-cover" 
+            />
+          </div>
+          
+          {/* Content Side (Right) */}
+          <div className="w-full lg:w-1/2 flex items-center p-12 md:p-24 lg:p-32 bg-[#FDFBF7]">
+            <div className="max-w-xl">
+              <span className="text-[#1A365D] text-xs font-light uppercase tracking-[0.15em] block mb-8">
+                Featured Location
+              </span>
+              <h2 className="font-serif text-5xl md:text-6xl text-[#171717] leading-tight mb-8">
+                North Wind <br/>Kitesurf & Wingfoil
+              </h2>
+              <div className="flex items-center text-sm text-[#171717]/60 uppercase tracking-widest font-light mb-10">
+                Moledo, Portugal
+              </div>
+              <p className="text-[#171717]/80 text-lg md:text-xl font-light leading-relaxed mb-12">
+                Highlighted as our <Link href="/best-kitesurf-schools-portugal" className="underline hover:text-[#319795] transition-colors">top rated school in Portugal</Link>, North Wind offers an unmatched boutique experience. Capitalizing on fiercely reliable thermal winds off the uncrowded northern coast, they embody the absolute pinnacle of high-end, tailored progression.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-8 items-start">
+                <a href="https://northwindkiteportugal.com" target="_blank" rel="noopener noreferrer" className="relative group text-[#171717] text-sm tracking-[0.1em] uppercase font-medium">
+                  <span className="pb-1">Book Lessons</span>
+                  <span className="absolute bottom-0 left-0 w-full h-[1px] bg-[#1A365D] transform origin-left scale-x-0 transition-transform duration-500 group-hover:scale-x-100"></span>
+                </a>
+                <Link href="/kitesurf-portugal" className="relative group text-[#171717]/60 text-sm tracking-[0.1em] uppercase font-light">
+                  <span className="pb-1">Read The Review</span>
+                  <span className="absolute bottom-0 left-0 w-full h-[1px] bg-[#171717] transform origin-left scale-x-0 transition-transform duration-500 group-hover:scale-x-100"></span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Global Directory Grid Component */}
+        <SchoolGrid standardSchools={standardSchools} />
+        
+        {/* Editorial Footer Navigation */}
+        <section className="w-full pt-32 pb-20 px-6 md:px-16 lg:px-24 bg-[#171717] text-[#FDFBF7]">
+           <div className="max-w-[1400px] mx-auto border-t border-white/20 pt-16">
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-12 lg:gap-24">
+                 <div className="md:col-span-2">
+                    <h3 className="font-serif text-4xl mb-6">BestKitesurfSchools.</h3>
+                    <p className="text-white/50 font-light max-w-sm leading-relaxed">
+                      A curated editorial deep dive into the world's most elite watersport academies. Uncompromising standards.
+                    </p>
+                 </div>
+                 <div>
+                    <h5 className="text-xs font-light uppercase tracking-[0.15em] mb-8 text-white/40">Portugal Guides</h5>
+                    <ul className="space-y-4 text-sm font-light text-white/80">
+                       <li><Link href="/best-kitesurf-schools-portugal" className="hover:text-white transition-colors relative group"><span className="pb-1">Top Schools</span><span className="absolute bottom-0 left-0 w-0 h-px bg-white transition-all group-hover:w-full"></span></Link></li>
+                       <li><Link href="/kitesurf-portugal" className="hover:text-white transition-colors relative group"><span className="pb-1">Kite Portugal</span><span className="absolute bottom-0 left-0 w-0 h-px bg-white transition-all group-hover:w-full"></span></Link></li>
+                       <li><Link href="/kitesurf-moledo" className="hover:text-white transition-colors relative group"><span className="pb-1">Moledo Guide</span><span className="absolute bottom-0 left-0 w-0 h-px bg-white transition-all group-hover:w-full"></span></Link></li>
+                       <li><Link href="/wingfoil-beginner-guide" className="hover:text-white transition-colors relative group"><span className="pb-1">Wingfoil Tips</span><span className="absolute bottom-0 left-0 w-0 h-px bg-white transition-all group-hover:w-full"></span></Link></li>
+                    </ul>
+                 </div>
+                 <div>
+                    <h5 className="text-xs font-light uppercase tracking-[0.15em] mb-8 text-white/40">Global</h5>
+                    <ul className="space-y-4 text-sm font-light text-white/80">
+                       <li><span className="opacity-50 cursor-not-allowed">Americas</span></li>
+                       <li><span className="opacity-50 cursor-not-allowed">Africa</span></li>
+                       <li><span className="opacity-50 cursor-not-allowed">Asia</span></li>
+                    </ul>
+                 </div>
+              </div>
+           </div>
+        </section>
+      </main>
+    </>
+  );
+}
+
+
+=======================================================
+// FILE: src\app\schools\[id]\page.tsx
+=======================================================
+
+import Image from "next/image";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import { schools } from "@/data/schools";
+import { Navigation } from "@/components/Navigation";
+
+export function generateStaticParams() {
+  return schools.map((school) => ({
+    id: school.id,
+  }));
+}
+
+export default async function SchoolPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const resolvedParams = await params;
+  const school = schools.find((s) => s.id === resolvedParams.id);
+
+  if (!school) {
+    notFound();
+  }
+
+  return (
+    <>
+      <Navigation />
+      
+      {/* Editorial Hero */}
+      <header className="relative min-h-[65svh] w-full flex flex-col justify-end pt-40 pb-20 px-6 md:px-16 lg:px-24 bg-[#171717]">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src={school.image || "/images/hero.png"}
+            alt={school.name}
+            fill
+            className="object-cover opacity-80 mix-blend-overlay"
+            priority
+          />
+          <div className="absolute inset-0 bg-black/40"></div>
+        </div>
+
+        <div className="relative z-10 w-full max-w-[1400px] mx-auto flex flex-col md:flex-row md:items-end justify-between gap-12">
+          <div className="max-w-4xl">
+            <div className="mb-8 flex items-center space-x-3 text-white text-[10px] tracking-[0.2em] uppercase font-medium">
+              <Link href="/#locations" className="hover:opacity-60 transition-opacity">Directory</Link>
+              <span className="opacity-40">/</span>
+              <span className="opacity-80">{school.country}</span>
+            </div>
+            <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl text-white leading-[0.9] tracking-tight mb-8">
+              {school.name}
+            </h1>
+            <div className="text-white/60 text-lg md:text-xl font-light tracking-wide uppercase">
+              {school.city}, {school.country}
+            </div>
+          </div>
+          
+          <div className="md:w-64 pb-2">
+            <a
+              href={school.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="relative text-white text-xs tracking-[0.15em] uppercase font-medium group inline-flex items-center"
+            >
+              <span className="pb-1 border-b border-white/30 group-hover:border-white transition-colors">Visit Official Website</span>
+              <svg className="w-4 h-4 ml-3 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main className="relative z-20 bg-[#FDFBF7] text-[#171717]">
+        {/* Layout Shift: Text left, info right */}
+        <div className="w-full px-6 md:px-16 lg:px-24 py-32 max-w-[1600px] mx-auto">
+          <div className="flex flex-col lg:flex-row gap-24">
+            
+            {/* Editorial Content */}
+            <div className="lg:w-3/5">
+              <p className="text-xl md:text-3xl text-[#171717] leading-relaxed font-light mb-16 tracking-tight">
+                {school.description}
+              </p>
+              
+              <div className="w-full h-px bg-[#171717]/10 mb-16"></div>
+              
+              <h2 className="font-serif text-4xl mb-8">The Philosophy</h2>
+              <p className="text-base md:text-lg text-[#171717]/70 leading-[1.8] font-light mb-16 whitespace-pre-wrap">
+                {school.longDescription || "A dedication to the purity of the sport and an uncompromising relationship with the local elements."}
+              </p>
+
+              {school.gallery && school.gallery.length > 0 && (
+                <div className="mt-24">
+                  <div className="w-full h-px bg-[#171717]/10 mb-12"></div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    {school.gallery.map((img, i) => (
+                      <div key={i} className="relative h-80 md:h-[500px]">
+                        <Image src={img} alt={`${school.name} view ${i}`} fill className="object-cover" />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Sidebar Data */}
+            <aside className="lg:w-2/5">
+              <div className="sticky top-32">
+                
+                <div className="border-t border-[#171717]/10 pt-12 mb-16">
+                  <h3 className="text-xs font-medium uppercase tracking-[0.2em] mb-8 text-[#171717]/50">Essential Detail</h3>
+                  
+                  <div className="space-y-8">
+                    <div className="flex flex-col">
+                      <span className="text-[10px] tracking-[0.1em] uppercase text-[#171717]/40 mb-2">Season</span>
+                      <span className="font-serif text-2xl text-[#1A365D]">{school.season}</span>
+                    </div>
+                    
+                    <div className="flex flex-col">
+                      <span className="text-[10px] tracking-[0.1em] uppercase text-[#171717]/40 mb-2">Investment</span>
+                      <span className="font-serif text-2xl">{school.pricing}</span>
+                    </div>
+
+                    <div className="flex flex-col">
+                      <span className="text-[10px] tracking-[0.1em] uppercase text-[#171717]/40 mb-2">Direct Contact</span>
+                      <a href={`mailto:${school.contact}`} className="font-serif text-xl hover:text-[#319795] transition-colors">{school.contact}</a>
+                    </div>
+                  </div>
+                </div>
+
+                {school.tags.length > 0 && (
+                  <div className="border-t border-[#171717]/10 pt-12 mb-16">
+                    <h3 className="text-xs font-medium uppercase tracking-[0.2em] mb-8 text-[#171717]/50">Characteristics</h3>
+                    <div className="flex flex-col space-y-4">
+                      {school.tags.map((tag) => (
+                        <span key={tag} className="font-light text-[#171717]/80 flex items-center">
+                          <span className="w-6 h-px bg-[#171717]/20 mr-4"></span>
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
+                
+              </div>
+            </aside>
+
+          </div>
+        </div>
+      </main>
+      
+      <footer className="w-full bg-[#171717] text-[#FDFBF7] py-20 px-6 md:px-16 text-center">
+        <Link href="/#locations" className="inline-flex flex-col items-center group relative">
+          <span className="text-xs tracking-[0.15em] uppercase font-light pb-2">Return to Directory</span>
+          <span className="w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full"></span>
+        </Link>
+      </footer>
+    </>
+  );
+}
+
+
+=======================================================
+// FILE: src\app\wingfoil-beginner-guide\page.tsx
+=======================================================
+
+
+import Image from "next/image";
+import Link from "next/link";
+import { Navigation } from "@/components/Navigation";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Wingfoil Beginner Guide: Taking Flight | Best Kitesurf Schools",
+  description: "Comprehensive guide to wingfoil beginner guide: taking flight.",
+  openGraph: {
+    title: "Wingfoil Beginner Guide: Taking Flight",
+    description: "Read our comprehensive guide to wingfoil beginner guide: taking flight on BestKitesurfSchools.",
+    url: "https://bestkitesurfschools.com/wingfoil-beginner-guide",
+    images: [{ url: "https://bestkitesurfschools.com/images/hero.png", width: 1200, height: 630, alt: "Wingfoil Beginner Guide: Taking Flight" }],
+    type: "article",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Wingfoil Beginner Guide: Taking Flight | Best Kitesurf Schools",
+    description: "Read our comprehensive guide to wingfoil beginner guide: taking flight.",
+    images: ["https://bestkitesurfschools.com/images/hero.png"],
+  }
+};
+
+export default function GuidePage() {
+  return (
+    <>
+      <Navigation />
+      
+      {/* Editorial Hero */}
+      <header className="relative min-h-[65svh] w-full flex flex-col justify-end pt-40 pb-20 px-6 md:px-16 lg:px-24 bg-[#171717]">
+        <div className="absolute inset-0 z-0">
+          <div className="absolute inset-0 bg-[#171717]"></div>
+          <Image
+            src="/images/hero.png"
+            alt="Wingfoil Beginner Guide: Taking Flight"
+            fill
+            className="object-cover opacity-50 mix-blend-overlay grayscale"
+            priority
+          />
+        </div>
+
+        <div className="relative z-10 w-full max-w-[1000px] mx-auto">
+          <div className="mb-8 flex items-center space-x-3 text-white text-[10px] tracking-[0.2em] uppercase font-medium">
+            <Link href="/" className="hover:opacity-60 transition-opacity">Home</Link>
+            <span className="opacity-40">/</span>
+            <span className="opacity-80">Knowledge Hub</span>
+          </div>
+          <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-[0.9] tracking-tight mb-8">
+            Wingfoil Beginner Guide: Taking Flight
+          </h1>
+        </div>
+      </header>
+
+      <main className="relative z-20 bg-[#FDFBF7] text-[#171717]">
+        <div className="w-full px-6 md:px-16 lg:px-24 py-24 max-w-[1200px] mx-auto">
+          <div className="flex flex-col lg:flex-row gap-24">
+            
+            {/* Main Content Column */}
+            <div className="lg:w-2/3 editorial-content">
+              
+      <h2 className="font-serif text-4xl mb-6 mt-12">The Magic of Foiling</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        Wingfoiling is the fastest-growing watersport globally. It requires holding an unattached inflatable wing and riding a board mounted on a hydrofoil mast.
+      </p>
+
+      <h2 className="font-serif text-4xl mb-6 mt-12">First Steps</h2>
+      <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+        Beginners start on very large, voluminous boards. The first goal is simply 'taxiing' on your knees, holding the wing up to catch the wind. Once steady, you stand. As you build speed, the hydrofoil generates lift, pulling the board entirely out of the water. <Link href="/kitesurf-portugal" className="underline hover:text-[#319795]">Portugal</Link> is currently the epicenter for wingfoil learning in Europe!
+      </p>
+    
+              
+              
+                <div className="my-16 aspect-video w-full rounded-2xl overflow-hidden border border-[#171717]/10 bg-[#171717]">
+                   <iframe 
+                      src="https://www.youtube.com/embed/N2-k-B6GUpc" 
+                      title="YouTube video player" 
+                      frameBorder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                      referrerPolicy="strict-origin-when-cross-origin" 
+                      allowFullScreen
+                      className="w-full h-full"
+                   ></iframe>
+                </div>
+              
+
+              <div className="mt-24 p-8 border border-[#171717]/10 bg-[#FDFBF7]">
+                 <h4 className="font-serif text-2xl mb-4">The ultimate progression secret? Professional instruction.</h4>
+                 <p className="text-[#171717]/70 font-light leading-relaxed mb-6">
+                   While self-study is valuable, nothing replaces time on the water with certified experts. Looking for lessons in Europe? Portugal offers legendary thermal winds and spectacular uncrowded beaches if you know where to look.
+                 </p>
+                 <a href="https://northwindkiteportugal.com" target="_blank" rel="noopener noreferrer" className="inline-block border-b border-[#1A365D] text-[#1A365D] font-medium uppercase tracking-widest text-xs pb-1 hover:opacity-70 transition-opacity">
+                   View Kitesurf School in Moledo
+                 </a>
+              </div>
+            </div>
+
+            {/* Sidebar Column */}
+            <aside className="lg:w-1/3">
+              <div className="sticky top-32">
+                <div className="border-t border-[#171717]/10 pt-12 mb-16">
+                  <h3 className="text-xs font-medium uppercase tracking-[0.2em] mb-8 text-[#171717]/50">Trending Guides</h3>
+                  <ul className="space-y-4 text-sm font-light text-[#171717]/80">
+                     <li><Link href="/kitesurf-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Kitesurf Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/best-kitesurf-schools-portugal" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Best Schools in Portugal</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurfing-for-beginners" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Beginner's Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                     <li><Link href="/kitesurf-moledo" className="hover:text-[#319795] transition-colors relative group"><span className="pb-1">Moledo Spot Guide</span><span className="absolute bottom-0 left-0 w-0 h-[1px] bg-[#319795] transition-all group-hover:w-full"></span></Link></li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+
+          </div>
+        </div>
+      </main>
+    </>
+  );
+}
+
+
+=======================================================
+// FILE: src\app\wingfoil-portugal\page.tsx
+=======================================================
+
+import Image from "next/image";
+import Link from "next/link";
+import { Navigation } from "@/components/Navigation";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Wingfoil Portugal | The Complete Guide to Foiling the Coast",
+  description: "Learn where to wingfoil in Portugal. Discover the best spots, conditions, and the premier wingfoil school in northern Portugal.",
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "North Wind Kitesurf & Wingfoil School",
+  "image": "https://bestkitesurfschools.com/images/wingfoil-portugal-action.jpg",
+  "url": "https://northwindkiteportugal.com/",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "124"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Moledo",
+    "addressRegion": "Northern Portugal",
+    "addressCountry": "PT"
+  },
+  "priceRange": "$$"
+};
+
+export default function WingfoilPortugalPage() {
+  return (
+    <>
+      <Navigation />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      
+      {/* Editorial Hero */}
+      <header className="relative h-[80svh] w-full flex items-end pb-24 px-6 md:px-16 lg:px-24 bg-[#171717]">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/wingfoil-portugal-action.jpg"
+            alt="Wingfoil Portugal Ocean Action"
+            fill
+            className="object-cover opacity-80 mix-blend-overlay"
+            priority
+          />
+          <div className="absolute inset-0 bg-black/40"></div>
+        </div>
+
+        <div className="relative z-10 w-full max-w-[1400px] mx-auto">
+          <div className="mb-8 flex items-center space-x-3 text-white text-[10px] tracking-[0.2em] uppercase font-medium">
+            <Link href="/" className="hover:opacity-60 transition-opacity">Directory</Link>
+            <span className="opacity-40">/</span>
+            <span className="opacity-80">Guides</span>
+          </div>
+          <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl text-white leading-[0.9] tracking-tight mb-8">
+            Wingfoil Portugal
+          </h1>
+        </div>
+      </header>
+
+      <main className="relative z-20 bg-[#FDFBF7] text-[#171717]">
+        <div className="w-full px-6 md:px-16 lg:px-24 py-32 max-w-[1600px] mx-auto">
+          <div className="flex flex-col lg:flex-row gap-24">
+            
+            {/* Main Content Column */}
+            <div className="lg:w-3/5">
+              <h2 className="font-serif text-4xl mb-8">The Foiling Revolution</h2>
+              <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-8">
+                Over the last five years, wingfoiling has fundamentally altered the landscape of wind sports across Europe. Portugal, already a legendary kite and surf destination, has rapidly emerged as the absolute mecca for <Link href="/portugal/kitesurf-school" className="underline hover:text-[#319795]">wingfoil Portugal</Link> enthusiasts. Its vast stretches of Atlantic coast afford something for everyone.
+              </p>
+              
+              <div className="w-full h-px bg-[#171717]/10 mb-16"></div>
+
+              <h2 className="font-serif text-4xl mb-8">Ideal Conditions & Locations</h2>
+              <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-16">
+                While southern spots can be extremely crowded, presenting a serious hazard when mixing dozens of beginners with sharp hydrofoils, the northern coast acts as the perfect sanctuary. The combination of consistent afternoon thermals and wide-open stretches of water allows for safe, unhindered learning.
+              </p>
+
+              <h3 className="font-serif text-3xl mb-6">Our Recommended Center: North Wind</h3>
+              <p className="text-lg text-[#171717]/70 leading-[1.8] font-light mb-16">
+                Based in Moledo in northern Portugal, <strong><Link href="/portugal/moledo" className="underline hover:text-[#319795]">North Wind</Link></strong> has pioneered the adoption of wingfoiling instruction in the region. They offer a pristine environment: launching from beautiful uncrowded beaches backed by the Spanish mountains.
+              </p>
+            </div>
+
+            {/* Sidebar Column */}
+            <aside className="lg:w-2/5">
+              <div className="sticky top-32">
+                <div className="border-t border-[#171717]/10 pt-12 mb-16">
+                  <h3 className="text-xs font-medium uppercase tracking-[0.2em] mb-8 text-[#171717]/50">Book Your Clinic</h3>
+                  <a
+                    href="https://northwindkiteportugal.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="relative text-[#171717] text-xs tracking-[0.1em] uppercase font-medium inline-block overflow-hidden pb-1 mb-6 group"
+                  >
+                    Learn To Foil
+                    <span className="absolute bottom-0 left-0 w-full h-[1px] bg-[#171717] transform origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></span>
+                  </a>
+                </div>
+                
+                <div className="border-t border-[#171717]/10 pt-12">
+                  <h3 className="text-xs font-medium uppercase tracking-[0.2em] mb-8 text-[#171717]/50">Wind Requirements</h3>
+                  <div className="space-y-8">
+                     <div className="flex flex-col">
+                       <span className="text-[10px] tracking-[0.1em] uppercase text-[#171717]/40 mb-2">Beginners</span>
+                       <span className="font-serif text-2xl text-[#1A365D]">12-15 knots</span>
+                     </div>
+                     <div className="flex flex-col">
+                       <span className="text-[10px] tracking-[0.1em] uppercase text-[#171717]/40 mb-2">Intermediate</span>
+                       <span className="font-serif text-2xl text-[#1A365D]">15-20 knots</span>
+                     </div>
+                  </div>
+                </div>
+              </div>
+            </aside>
+
+          </div>
+        </div>
+      </main>
+
+      {/* Sticky Bottom CTA */}
+      <div className="fixed bottom-0 left-0 right-0 p-4 bg-[#FDFBF7]/95 backdrop-blur-md border-t border-[#171717]/10 z-50 flex justify-between items-center sm:hidden">
+         <span className="text-[#171717] font-serif font-bold text-lg">Wingfoil Pt</span>
+         <a href="https://northwindkiteportugal.com/" className="text-xs uppercase tracking-widest font-medium border-b border-[#171717]">Book Clinics</a>
+      </div>
+    </>
+  );
+}
+
+
+=======================================================
+// FILE: src\components\Navigation.tsx
+=======================================================
+
+"use client";
+import { useState, useEffect } from "react";
+import Link from "next/link";
+
+export function Navigation() {
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 80);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <>
+      <nav
+        className={`fixed w-full z-50 transition-all duration-500 px-6 md:px-16 ${
+          scrolled || menuOpen
+            ? "glass-nav py-5"
+            : "text-white py-8 border-b border-transparent bg-transparent"
+        }`}
+      >
+        <div className="max-w-[1400px] mx-auto flex justify-between items-center">
+          <Link
+            href="/"
+            className="font-serif text-2xl tracking-[0.05em] z-50 group hover:opacity-70 transition-opacity"
+          >
+            BestKitesurfSchools
+          </Link>
+
+          <ul className="hidden lg:flex space-x-10 text-[10px] uppercase tracking-[0.2em] font-medium">
+            <li>
+              <Link href="/" className="relative group">
+                <span className="pb-1">Home</span>
+                <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-current transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+            </li>
+            <li>
+              <Link href="/#locations" className="relative group">
+                <span className="pb-1">Directory</span>
+                <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-current transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+            </li>
+            <li>
+              <Link href="/academy" className="relative group flex items-center">
+                <span className="pb-1">The Academy & Guides</span>
+                <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-current transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+            </li>
+            <li>
+              <Link href="/best-kitesurf-schools-portugal" className="relative group text-[#319795]">
+                <span className="pb-1">Portugal Review</span>
+                <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-current transition-all duration-300 group-hover:w-full"></span>
+              </Link>
+            </li>
+          </ul>
+
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="lg:hidden z-50 focus:outline-none text-current transition-colors hover:opacity-50"
+          >
+            <div className="flex flex-col space-y-1.5 w-6">
+              <span className={`h-px bg-current transition-all ${menuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
+              <span className={`h-px bg-current transition-all ${menuOpen ? 'opacity-0' : ''}`}></span>
+              <span className={`h-px bg-current transition-all ${menuOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
+            </div>
+          </button>
+        </div>
+      </nav>
+
+      {/* Mobile Menu */}
+      <div
+        className={`fixed inset-0 bg-[#FDFBF7] z-40 flex justify-center items-center overflow-y-auto transition-opacity duration-500 lg:hidden text-[#171717] ${
+          menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        }`}
+        aria-hidden="true"
+      >
+        <ul className="w-full px-6 py-24 flex flex-col space-y-8">
+          <li>
+            <Link
+              href="/"
+              onClick={() => setMenuOpen(false)}
+              className="text-4xl font-serif hover:opacity-50 transition-opacity tracking-tight"
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/#locations"
+              onClick={() => setMenuOpen(false)}
+              className="text-4xl font-serif hover:opacity-50 transition-opacity tracking-tight"
+            >
+              Directory
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/academy"
+              onClick={() => setMenuOpen(false)}
+              className="text-4xl font-serif hover:opacity-50 transition-opacity tracking-tight"
+            >
+              The Academy
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/best-kitesurf-schools-portugal"
+              onClick={() => setMenuOpen(false)}
+              className="text-4xl font-serif text-[#1A365D] hover:opacity-50 transition-opacity tracking-tight"
+            >
+              Portugal Review
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </>
+  );
+}
+
+
+=======================================================
+// FILE: src\components\SchoolGrid.tsx
+=======================================================
+
+"use client";
+import { useState } from "react";
+import Link from "next/link";
+import { School } from "@/data/schools";
+
+export function SchoolGrid({ standardSchools }: { standardSchools: School[] }) {
+  const [filter, setFilter] = useState("all");
+
+  const filteredSchools =
+    filter === "all"
+      ? standardSchools
+      : standardSchools.filter((s) => s.region === filter);
+
+  const filters = [
+    { id: "all", label: "Global" },
+    { id: "europe", label: "Europe" },
+    { id: "americas", label: "Americas" },
+    { id: "asia-pacific", label: "Asia & Pacific" },
+    { id: "africa-middle-east", label: "Africa & Middle East" },
+  ];
+
+  return (
+    <section id="locations" className="w-full pt-32 pb-40 px-6 md:px-16 lg:px-24 bg-[#FDFBF7]">
+      <div className="max-w-[1400px] mx-auto scroll-mt-24">
+        
+        {/* Header & Filters */}
+        <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-24 gap-8">
+          <div className="max-w-2xl">
+            <h2 className="font-serif text-5xl md:text-7xl text-[#171717] leading-none tracking-tight mb-8">
+              The Directory
+            </h2>
+            <p className="text-[#171717]/60 text-lg md:text-xl font-light leading-relaxed">
+              An uncompromised selection. Exquisite locations, elite instruction, and authentic watersport heritage.
+            </p>
+          </div>
+          
+          <div className="flex flex-wrap gap-6 pt-4">
+            {filters.map((f) => (
+              <button
+                key={f.id}
+                onClick={() => setFilter(f.id)}
+                className={`relative text-xs uppercase tracking-[0.15em] font-light pb-1 group transition-colors ${
+                  filter === f.id
+                    ? "text-[#1A365D] font-medium"
+                    : "text-[#171717]/50 hover:text-[#171717]"
+                }`}
+              >
+                {f.label}
+                <span className={`absolute bottom-0 left-0 h-[1px] bg-current transition-all duration-500 ${filter === f.id ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Editorial List (No Cards, No Grid) */}
+        <div className="border-t border-[#171717]/10">
+          {filteredSchools.length === 0 ? (
+            <div className="py-32 text-[#171717]/40 font-serif text-3xl italic">
+              No results discovered.
+            </div>
+          ) : (
+            filteredSchools.map((school) => (
+              <article
+                key={school.id}
+                className="group relative flex flex-col md:flex-row md:items-center justify-between py-12 md:py-16 border-b border-[#171717]/10 school-item-hover"
+              >
+                {/* Info Column */}
+                <div className="md:w-5/12 flex flex-col pr-8 mb-6 md:mb-0">
+                  <div className="text-[10px] uppercase tracking-[0.2em] text-[#171717]/40 font-medium mb-4">
+                    {school.city}, {school.country}
+                  </div>
+                  <Link href={`/schools/${school.id}`} className="font-serif text-3xl md:text-4xl text-[#171717] hover:text-[#1A365D] transition-colors leading-[1.1]">
+                    {school.name}
+                  </Link>
+                </div>
+
+                {/* Description Column */}
+                <div className="md:w-5/12 text-sm md:text-base text-[#171717]/60 font-light leading-relaxed pr-8 mb-8 md:mb-0">
+                  {school.description}
+                </div>
+
+                {/* Micro Info & CTA Column */}
+                <div className="md:w-2/12 flex md:justify-end items-center md:items-end flex-col">
+                  <Link
+                    href={`/schools/${school.id}`}
+                    className="relative text-xs uppercase tracking-[0.1em] text-[#171717] font-medium inline-block overflow-hidden pb-1"
+                  >
+                    View Details
+                    <span className="absolute bottom-0 left-0 w-full h-[1px] bg-[#171717] hover-line-target"></span>
+                  </Link>
+                </div>
+              </article>
+            ))
+          )}
+        </div>
+
+      </div>
+    </section>
+  );
+}
+
+
+=======================================================
+// FILE: src\data\schools.ts
+=======================================================
+
+export interface School {
+  id: string;
+  name: string;
+  city: string;
+  country: string;
+  region: string;
+  description: string;
+  longDescription: string;
+  website: string;
+  contact: string;
+  tags: string[];
+  pricing: string;
+  season: string;
+  featured: boolean;
+  image: string;
+  gallery?: string[];
+  equipment?: string[];
+  certification?: string;
+  amenities?: string[];
+}
+
+export const schools: School[] = [
+  {
+    id: "north-wind",
+    name: "North Wind Kitesurf & Wingfoil School",
+    city: "Moledo, Caminha",
+    country: "Portugal",
+    region: "europe",
+    description: "Small-scale, personalized instruction kitesurf and wingfoil school setting itself apart as a quieter alternative to southern Portugal.",
+    longDescription: "Located in Moledo, Caminha, North Wind Kitesurf & Wingfoil School is the only kitesurf and wingfoil school in the Moledo area. Set on the beautiful Atlantic coast, it experiences a mix of wave and variable conditions, coupled with highly reliable thermal winds right through the spring and summer season. The school heavily focuses on small-scale, highly personalized instruction directly from expert coaches. Whether you are aiming to master kitesurfing or dive into wingfoiling, the pristine and uncrowded nature of this northern Portuguese gem provides a profound learning environment, free from the heavy crowds of the Algarve.",
+    website: "https://northwindkiteportugal.com/",
+    contact: "booking@northwindkiteportugal.com",
+    tags: ["Kitesurf", "Wingfoil", "Atlantic Ocean", "Thermal Winds", "Personalized"],
+    pricing: "Contact for pricing",
+    season: "Spring to early autumn (peak summer)",
+    featured: true,
+    image: "/images/hero.png",
+    gallery: ["/images/hero.png", "/images/feature1.png", "/images/feature2.png"]
+  },
+  {
+    id: "ion-club-tarifa",
+    name: "ION CLUB Tarifa",
+    city: "Tarifa",
+    country: "Spain",
+    region: "europe",
+    description: "Located at the convergence of the Atlantic and Mediterranean, offering top-tier kitesurfing and wingfoiling.",
+    longDescription: "ION CLUB Tarifa operates in the legendary wind capital of Europe. Tarifa is famous for the convergence of the Atlantic Ocean and the Mediterranean Sea, which funnels the iconic Levante (strong offshore) and Poniente (onshore) winds. Offering year-round sessions with a peak from spring to autumn, ION CLUB provides an exceptional environment for kite and wingfoil enthusiasts of all levels to progress.",
+    website: "https://www.ion-club.net/",
+    contact: "tarifa@ion-club.net",
+    tags: ["Levante Wind", "Poniente Wind", "Kitesurf", "Wingfoil", "Year-round"],
+    pricing: "From €60 / session",
+    season: "Year-round (peak spring–autumn)",
+    featured: true,
+    image: "/images/feature1.png",
+    gallery: ["/images/feature1.png"]
+  },
+  {
+    id: "kite-beach-center-el-gouna",
+    name: "Kite Beach Center",
+    city: "El Gouna",
+    country: "Egypt",
+    region: "africa-middle-east",
+    description: "Ride the shallow, expansive lagoons of El Gouna powered by consistent Red Sea thermal winds.",
+    longDescription: "Kite Beach Center is positioned on a vast, shallow lagoon in El Gouna, Egypt. This spot is renowned worldwide for its incredibly consistent thermal winds blowing across flat, waist-deep waters, creating an absolutely perfect playground for absolute beginners learning water starts, and advanced riders mastering unhooked freestyle moves alike.",
+    website: "https://kbc-elgouna.com/",
+    contact: "info@kbc-elgouna.com",
+    tags: ["Shallow Lagoon", "Thermal Winds", "Flat Water", "Freestyle"],
+    pricing: "Contact for packages",
+    season: "Year-round (best Mar–Nov)",
+    featured: true,
+    image: "/images/feature2.png",
+    gallery: ["/images/feature2.png"]
+  },
+  {
+    id: "soma-bay-kite-house",
+    name: "Soma Bay Kite House",
+    city: "Soma Bay",
+    country: "Egypt",
+    region: "africa-middle-east",
+    description: "Experience premium Egyptian winds on a pristine, flat shallow lagoon.",
+    longDescription: "Operating in Soma Bay, this school boasts access to one of the most sublime flat, shallow lagoons in the world. The consistent winds afford kiters of all capabilities the opportunity to train relentlessly year-round in warm, crystal clear waters.",
+    website: "https://somabaykitehouse.com/",
+    contact: "info@somabaykitehouse.com",
+    tags: ["Flat Water", "Consistent Wind", "Warm Water"],
+    pricing: "Contact for pricing",
+    season: "Year-round",
+    featured: false,
+    image: "/images/hero.png"
+  },
+  {
+    id: "planet-allsports-cape-town",
+    name: "Planet Allsports Cape Town",
+    city: "Cape Town",
+    country: "South Africa",
+    region: "africa-middle-east",
+    description: "Challenge yourself with the infamous Cape Doctor winds and intense Atlantic ocean waves.",
+    longDescription: "Planet Allsports caters to riders looking to take on extreme conditions. Situated in Cape Town, the school operates during the summer months when the famous 'Cape Doctor' wind blows fiercely. Known for ocean and wave riding, it's a destination for kiters aspiring to giant airs and serious wave riding.",
+    website: "https://planetallsports.com/",
+    contact: "info@planetallsports.com",
+    tags: ["Cape Doctor", "Wave Riding", "Big Air", "Ocean"],
+    pricing: "Contact for pricing",
+    season: "Nov–Mar",
+    featured: false,
+    image: "/images/feature1.png"
+  },
+  {
+    id: "kitexcite-essaouira",
+    name: "Kitexcite",
+    city: "Essaouira",
+    country: "Morocco",
+    region: "africa-middle-east",
+    description: "Ride the varied Moroccan bay featuring a mix of flat sections and waves, powered by strong trade winds.",
+    longDescription: "Kitexcite focuses on capitalizing on the strong Moroccan trade winds that channel into the bay of Essaouira. Offering a unique mix of flat water sections and solid waves rolling in from the Atlantic, the location is highly versatile. It operates primarily from April to September.",
+    website: "https://www.kitexcite.com/",
+    contact: "info@kitexcite.com",
+    tags: ["Bay Riding", "Trade Winds", "Mixed Conditions"],
+    pricing: "Contact for pricing",
+    season: "Apr–Sep",
+    featured: false,
+    image: "/images/feature2.png"
+  },
+  {
+    id: "prokite-brazil",
+    name: "ProKite Brazil (Alby Rondina)",
+    city: "Jericoacoara",
+    country: "Brazil",
+    region: "americas",
+    description: "Enjoy incredibly relentless trade winds and warm waters in this famed Brazilian kite haven.",
+    longDescription: "Founded in Jericoacoara, Brazil, ProKite Brazil offers direct access to the legendary Brazilian trade winds. The environment consists of mixed flat water and small kicker waves. It is an extremely consistent location, perfect for logging hours of uninterrupted practice.",
+    website: "https://www.prokitebrasil.com/",
+    contact: "info@prokitebrasil.com",
+    tags: ["Trade Winds", "Warm Water", "Consistent"],
+    pricing: "Contact for pricing",
+    season: "Jul–Jan",
+    featured: false,
+    image: "/images/hero.png"
+  },
+  {
+    id: "kbc-el-yaque",
+    name: "Kiteboarding Club El Yaque",
+    city: "El Yaque",
+    country: "Venezuela",
+    region: "americas",
+    description: "A timeless Venezuelan destination offering year-round consistent wind and shallow flat waters.",
+    longDescription: "Situated at El Yaque, long considered one of the classic global wind-sport spots, KBC El Yaque provides access to a huge expanse of shallow, flat water. The wind here is remarkably consistent year-round, ideal for novices and pros.",
+    website: "https://kiteboarding-club.com/",
+    contact: "elyaquet@kiteboarding-club.com",
+    tags: ["Shallow Water", "Flat Water", "Consistent Wind"],
+    pricing: "Contact for pricing",
+    season: "Year-round",
+    featured: false,
+    image: "/images/feature1.png"
+  },
+  {
+    id: "good-breeze-cabarete",
+    name: "Good Breeze Kiteboarding",
+    city: "Cabarete",
+    country: "Dominican Republic",
+    region: "americas",
+    description: "Thrive in the Caribbean's premier kite town, offering ocean riding and reef-protected lagoons.",
+    longDescription: "Good Breeze Kiteboarding is in the heart of Cabarete, mixing ocean waves with reef-protected flatter areas. Thermal winds dominate here all year long, peaking in the summer months and providing a dynamic, energetic Caribbean vibe.",
+    website: "https://goodbreeze.com/",
+    contact: "info@goodbreeze.com",
+    tags: ["Reef Protected", "Thermal Winds", "Caribbean"],
+    pricing: "Contact for pricing",
+    season: "Year-round (best Jun–Aug)",
+    featured: false,
+    image: "/images/feature2.png"
+  },
+  {
+    id: "nitro-city-panama",
+    name: "Nitro City Panama",
+    city: "Punta Chame",
+    country: "Panama",
+    region: "americas",
+    description: "An action-sports paradise set against flat, shallow Panamanian waters with strong seasonal winds.",
+    longDescription: "Located at Punta Chame, Nitro City Panama caters to high-energy riding utilizing a massive expanse of flat, shallow water. From December to April, seasonal strong winds blow across the peninsula, allowing for incredible progression.",
+    website: "https://nitrocitypanama.com/",
+    contact: "reservations@nitrocitypanama.com",
+    tags: ["Flat Water", "Shallow", "Seasonal Wind"],
+    pricing: "Contact for pricing",
+    season: "Dec–Apr",
+    featured: false,
+    image: "/images/hero.png"
+  },
+  {
+    id: "kiteworldwide-dakhla",
+    name: "KiteWorldWide Dakhla",
+    city: "Dakhla",
+    country: "Morocco",
+    region: "africa-middle-east",
+    description: "Experience the monumental Dakhla lagoon, powered by relentless year-round Moroccan winds.",
+    longDescription: "Set on the sprawling edges of the Dakhla lagoon, KiteWorldWide offers a premier desert kitesurfing experience. The lagoon provides miles of smooth water backed by dunes, acting as a phenomenal wind funnel.",
+    website: "https://www.kiteworldwide.com/",
+    contact: "info@kiteworldwide.com",
+    tags: ["Large Lagoon", "Desert Riding", "Consistent Wind"],
+    pricing: "Contact for pricing",
+    season: "Year-round",
+    featured: false,
+    image: "/images/feature1.png"
+  },
+  {
+    id: "kite-club-hatteras",
+    name: "Kite Club Hatteras",
+    city: "North Carolina",
+    country: "USA",
+    region: "americas",
+    description: "Ride the legendary shallow sounds of Cape Hatteras on the Outer Banks.",
+    longDescription: "Kite Club Hatteras gives you access to the famed Cape Hatteras sound. The shallow water spans for miles, offering moderate, consistent winds from Spring to Autumn in an iconic East Coast setting.",
+    website: "https://kiteclubhatteras.com/",
+    contact: "info@kiteclubhatteras.com",
+    tags: ["Sound Riding", "Shallow Water", "Outer Banks"],
+    pricing: "Contact for pricing",
+    season: "Apr–Oct",
+    featured: false,
+    image: "/images/feature2.png"
+  },
+  {
+    id: "real-watersports",
+    name: "REAL Watersports",
+    city: "North Carolina",
+    country: "USA",
+    region: "americas",
+    description: "One of the world's most recognizable kite centers, positioned purely on the phenomenal Hatteras sound.",
+    longDescription: "REAL Watersports operates out of Cape Hatteras with massive infrastructure dedicated purely to progression. With limitless shallow sound water and consistent seasonal winds, it remains an epicenter for kitesurfing in America.",
+    website: "https://realwatersports.com/",
+    contact: "pro@realwatersports.com",
+    tags: ["Mega Center", "Shallow Sound", "Consistent Wind"],
+    pricing: "Contact for pricing",
+    season: "Spring–fall",
+    featured: false,
+    image: "/images/hero.png"
+  },
+  {
+    id: "air-padre",
+    name: "Air Padre Kiteboarding",
+    city: "Texas",
+    country: "USA",
+    region: "americas",
+    description: "Explore the expansive, reliable flat-water bays of South Padre Island, Texas.",
+    longDescription: "Air Padre utilizes the Laguna Madre bay in South Padre Island, offering some of the best, most reliable flat shallow bay conditions in the United States, operating strongly from March through November.",
+    website: "https://airpadrekiteboarding.com/",
+    contact: "info@airpadrekiteboarding.com",
+    tags: ["Flat Bay", "Reliable Wind", "South Padre"],
+    pricing: "Contact for pricing",
+    season: "Mar–Nov",
+    featured: false,
+    image: "/images/feature1.png"
+  },
+  {
+    id: "kba-boracay",
+    name: "Kiteboarding Asia",
+    city: "Boracay",
+    country: "Philippines",
+    region: "asia-pacific",
+    description: "Kite along the legendary Bulabog Beach, driven by intense seasonal trade winds.",
+    longDescription: "KBA in Boracay dominates Bulabog Beach, taking advantage of the famed Amihan season. With strong trade winds creating flat and choppy sections, it’s a heavily favored destination in Asia.",
+    website: "https://kiteboardingasia.com/",
+    contact: "boracay@kiteboardingasia.com",
+    tags: ["Trade Winds", "Flat Water", "Bulabog Beach"],
+    pricing: "Contact for pricing",
+    season: "Nov–Apr",
+    featured: false,
+    image: "/images/feature2.png"
+  },
+  {
+    id: "phuket-kiteboarding",
+    name: "Phuket Kiteboarding",
+    city: "Phuket",
+    country: "Thailand",
+    region: "asia-pacific",
+    description: "A relaxed school suitable for light wind conditions and stunning beach locations in Thailand.",
+    longDescription: "For riders searching for warm water and beautiful tropical aesthetics, Phuket Kiteboarding offers lessons adapted to lighter, seasonal breezes, perfect for hydro-foiling and wide kite relaxed riding.",
+    website: "https://phuketkiteboarding.com/",
+    contact: "info@phuketkiteboarding.com",
+    tags: ["Light Wind", "Beach Riding", "Tropical"],
+    pricing: "Contact for pricing",
+    season: "Seasonal (Nov–Apr best)",
+    featured: false,
+    image: "/images/hero.png"
+  },
+  {
+    id: "kiteboarding-lanka",
+    name: "Kiteboarding Lanka",
+    city: "Kalpitiya",
+    country: "Sri Lanka",
+    region: "asia-pacific",
+    description: "An incredible Sri Lankan lagoon paradise renowned for twin seasons of intense, howling wind.",
+    longDescription: "Kiteboarding Lanka operates inside Kalpitiya’s immense lagoon system. Benefiting from two distinct wind periods, riders come from all over for the intense, flat-water conditions and the vibrant community feel.",
+    website: "https://kiteboardinglanka.com/",
+    contact: "info@kiteboardinglanka.com",
+    tags: ["Lagoon", "Strong Wind", "Dual Seasons"],
+    pricing: "Contact for pricing",
+    season: "May–Oct, Dec–Mar",
+    featured: false,
+    image: "/images/feature1.png"
+  },
+  {
+    id: "kiteschool-aruba",
+    name: "Kite School Aruba",
+    city: "Palm Beach",
+    country: "Aruba",
+    region: "americas",
+    description: "Enjoy luxurious flat water riding inside Aruba's reliable trade-wind zones.",
+    longDescription: "Situated on Palm Beach in Aruba, Kite School Aruba harnesses the incredibly consistent Caribbean trade winds, teaching inside protected, flat water spots that make learning highly efficient and safe.",
+    website: "https://kiteschoolaruba.com/",
+    contact: "info@kiteschoolaruba.com",
+    tags: ["Trade Winds", "Flat Water", "Caribbean"],
+    pricing: "Contact for pricing",
+    season: "Year-round",
+    featured: false,
+    image: "/images/feature2.png"
+  },
+  {
+    id: "kite-control-australia",
+    name: "Kite Control Australia",
+    city: "Perth",
+    country: "Australia",
+    region: "asia-pacific",
+    description: "Capitalize on the legendary 'Fremantle Doctor' sea breeze for ocean and flat water rides.",
+    longDescription: "Based out of Perth, Kite Control handles intense summer sea breezes, offering a dynamic mix of ocean swell and flat sections inside the safety of the bays, providing world-class coaching.",
+    website: "https://kitecontrol.com.au/",
+    contact: "hello@kitecontrol.com.au",
+    tags: ["Sea Breeze", "Ocean", "Flat Sections"],
+    pricing: "Contact for pricing",
+    season: "Nov–Mar",
+    featured: false,
+    image: "/images/hero.png"
+  },
+  {
+    id: "kitesurfari-zanzibar",
+    name: "Kite Surfari",
+    city: "Zanzibar",
+    country: "Tanzania",
+    region: "africa-middle-east",
+    description: "Kite the impossibly turquoise lagoons of Zanzibar under steady trade winds.",
+    longDescription: "Kite Surfari gives you direct access to the famous reef-protected lagoons of Zanzibar. With warm water and two distinct trade wind seasons, it blends exotic travel with exceptional riding.",
+    website: "https://kitesurfari.com/",
+    contact: "info@kitesurfari.com",
+    tags: ["Lagoon", "Turquoise Water", "Trade Winds"],
+    pricing: "Contact for pricing",
+    season: "Jun–Oct, Dec–Mar",
+    featured: false,
+    image: "/images/feature1.png"
+  },
+  {
+    id: "flag-beach-fuerteventura",
+    name: "Flag Beach Watersports",
+    city: "Fuerteventura",
+    country: "Spain",
+    region: "europe",
+    description: "A Canary Island classic featuring strong trades, open ocean, and dynamic lagoons.",
+    longDescription: "Flag Beach Watersports is a staple on the island of Fuerteventura. Capitalizing on the consistently strong trade winds, the area features striking ocean breaks and tidal lagoons, challenging but rewarding riders of all levels.",
+    website: "https://flagbeach.com/",
+    contact: "info@flagbeach.com",
+    tags: ["Ocean", "Lagoons", "Trade Winds"],
+    pricing: "Contact for pricing",
+    season: "Year-round",
+    featured: false,
+    image: "/images/feature2.png"
+  },
+  {
+    id: "kiteboarding-maui",
+    name: "Kiteboarding Maui",
+    city: "Hawaii",
+    country: "USA",
+    region: "americas",
+    description: "Test yourself in the legendary waves and fierce trade winds of the Hawaiian islands.",
+    longDescription: "Operating out of Maui, this school places you in the veritable birthplace of extreme kitesurfing. The powerful ocean swells and steadfast trade winds create a demanding playground designed for elevating your skills.",
+    website: "https://kiteboardingmaui.com/",
+    contact: "info@kiteboardingmaui.com",
+    tags: ["Wave Riding", "Ocean", "Strong Trades"],
+    pricing: "Contact for pricing",
+    season: "Apr–Oct",
+    featured: false,
+    image: "/images/hero.png"
+  },
+  {
+    id: "kite-beach-center-dubai",
+    name: "Kite Beach Center Dubai",
+    city: "Dubai",
+    country: "UAE",
+    region: "africa-middle-east",
+    description: "Ride the warm shores of Dubai's famous Kite Beach under gentle thermal breezes.",
+    longDescription: "Located on Dubai's open beaches, the Kite Beach Center focuses on providing exceptional coaching in light to moderate wind conditions, utilizing high-end gear to maximize efficiency on the Persian Gulf.",
+    website: "https://kitebeachcenter.com/",
+    contact: "info@kitebeachcenter.com",
+    tags: ["Open Beach", "Light Wind", "Persian Gulf"],
+    pricing: "Contact for pricing",
+    season: "Nov–May",
+    featured: false,
+    image: "/images/feature1.png"
+  },
+  {
+    id: "kite-center-roquetas",
+    name: "Kite Center Roquetas",
+    city: "Almería",
+    country: "Spain",
+    region: "europe",
+    description: "Soak up Mediterranean conditions along the beautiful coast of Almería.",
+    longDescription: "Kite Center Roquetas is positioned perfectly to catch the moderate, reliable seasonal winds along the Mediterranean coast of Spain, providing a quieter and deeply engaging learning environment.",
+    website: "https://kitecenteroquetas.com/",
+    contact: "info@kitecenteroquetas.com",
+    tags: ["Mediterranean", "Moderate Wind", "Coastal"],
+    pricing: "Contact for pricing",
+    season: "Spring–autumn",
+    featured: false,
+    image: "/images/feature2.png"
+  },
+  {
+    id: "kbn-workum",
+    name: "Kiteboarding Netherlands",
+    city: "Workum",
+    country: "Netherlands",
+    region: "europe",
+    description: "Master kite control in the expansive, shallow inland waters of the IJsselmeer.",
+    longDescription: "Kiteboarding Netherlands acts as the premier center on the IJsselmeer. The large, shallow inland water systems provide a safe, highly controlled environment characterized by variable weather and moderate winds.",
+    website: "https://kiteboarding.nl/",
+    contact: "info@kiteboarding.nl",
+    tags: ["Inland Water", "Shallow", "IJsselmeer"],
+    pricing: "Contact for pricing",
+    season: "Apr–Oct",
+    featured: false,
+    image: "/images/hero.png"
+  }
+];
+
+
+=======================================================
+// FILE: package.json
+=======================================================
+
+{
+  "name": "bestkitesurfschools",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "next": "16.2.4",
+    "react": "19.2.4",
+    "react-dom": "19.2.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.4",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
+
+
+=======================================================
+// FILE: tsconfig.json
+=======================================================
+
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "**/*.mts"
+  ],
+  "exclude": ["node_modules"]
+}

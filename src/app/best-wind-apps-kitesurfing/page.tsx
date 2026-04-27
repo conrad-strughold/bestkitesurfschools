@@ -6,7 +6,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "The Best Wind Apps For Kitesurfing | Best Kitesurf Schools",
-  description: "Comprehensive guide to the best wind apps for kitesurfing.",
+  description: "The best wind apps for kitesurfing in 2026, ranked. Windguru vs Windy vs Kiteapp — which gives the most accurate forecasts for your sessions?",
   openGraph: {
     title: "The Best Wind Apps For Kitesurfing",
     description: "Read our comprehensive guide to the best wind apps for kitesurfing on BestKitesurfSchools.",

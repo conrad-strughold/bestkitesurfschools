@@ -6,7 +6,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Kitesurf Wind Guide: Reading The Elements | Best Kitesurf Schools",
-  description: "Comprehensive guide to kitesurf wind guide: reading the elements.",
+  description: "Learn to read the wind like a pro. Our kitesurf wind guide covers Beaufort scale, thermal vs. sea breeze, and how to use forecasts to plan sessions.",
   openGraph: {
     title: "Kitesurf Wind Guide: Reading The Elements",
     description: "Read our comprehensive guide to kitesurf wind guide: reading the elements on BestKitesurfSchools.",

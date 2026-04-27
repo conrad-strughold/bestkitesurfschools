@@ -6,7 +6,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Kitesurf Portugal: The Ultimate Destination | Best Kitesurf Schools",
-  description: "Comprehensive guide to kitesurf portugal: the ultimate destination.",
+  description: "Kitesurfing in Portugal: the complete 2026 guide to spots, schools, conditions, and seasons. Find out why northern Portugal beats the Algarve for serious kiters.",
   openGraph: {
     title: "Kitesurf Portugal: The Ultimate Destination",
     description: "Read our comprehensive guide to kitesurf portugal: the ultimate destination on BestKitesurfSchools.",

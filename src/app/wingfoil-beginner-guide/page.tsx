@@ -6,7 +6,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Wingfoil Beginner Guide: Taking Flight | Best Kitesurf Schools",
-  description: "Comprehensive guide to wingfoil beginner guide: taking flight.",
+  description: "Wingfoiling for beginners: how to get up on foil, what gear you need, and how long it takes. The complete guide to taking flight in 2026.",
   openGraph: {
     title: "Wingfoil Beginner Guide: Taking Flight",
     description: "Read our comprehensive guide to wingfoil beginner guide: taking flight on BestKitesurfSchools.",

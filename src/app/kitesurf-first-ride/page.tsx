@@ -6,7 +6,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Your First Kitesurf Ride: Staying Up | Best Kitesurf Schools",
-  description: "Comprehensive guide to your first kitesurf ride: staying up.",
+  description: "Your first kitesurf ride starts here. Learn the exact body position, kite placement, and board technique to stay upwind and riding from day one.",
   openGraph: {
     title: "Your First Kitesurf Ride: Staying Up",
     description: "Read our comprehensive guide to your first kitesurf ride: staying up on BestKitesurfSchools.",

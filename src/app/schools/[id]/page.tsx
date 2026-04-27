@@ -10,6 +10,25 @@ export function generateStaticParams() {
   }));
 }
 
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
+  const resolvedParams = await params;
+  const school = schools.find((s) => s.id === resolvedParams.id);
+  
+  if (!school) return {};
+  
+  const desc = school.longDescription ? school.longDescription.slice(0, 155) : school.description.slice(0, 155);
+  
+  return {
+    title: `${school.name} — Kitesurf School Review | BestKitesurfSchools`,
+    description: desc,
+    openGraph: {
+      title: school.name,
+      description: desc,
+      images: [{ url: `https://bestkitesurfschools.com${school.image || '/images/hero.png'}`, width: 1200, height: 630 }],
+    }
+  };
+}
+
 export default async function SchoolPage({
   params,
 }: {

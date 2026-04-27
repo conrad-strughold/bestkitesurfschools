@@ -6,7 +6,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "How To Control A Kitesurfing Kite | Best Kitesurf Schools",
-  description: "Comprehensive guide to how to control a kitesurfing kite.",
+  description: "How to control a kitesurfing kite: bar pressure, steering inputs, and the power zone explained simply for beginners — with clear diagrams and tips.",
   openGraph: {
     title: "How To Control A Kitesurfing Kite",
     description: "Read our comprehensive guide to how to control a kitesurfing kite on BestKitesurfSchools.",

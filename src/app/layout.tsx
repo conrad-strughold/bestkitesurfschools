@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import JsonLd from "@/components/JsonLd";
 
 const playfair = Playfair_Display({
   variable: "--font-serif",
@@ -54,6 +55,17 @@ export default function RootLayout({
       <body
         className={`${playfair.variable} ${inter.variable} antialiased font-sans min-h-screen selection:bg-[#1A365D] selection:text-white`}
       >
+        <JsonLd data={{
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "BestKitesurfSchools",
+          "url": "https://bestkitesurfschools.com/",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://bestkitesurfschools.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }} />
         {children}
       </body>
     </html>

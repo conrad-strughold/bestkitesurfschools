@@ -6,7 +6,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Kitesurf Body Dragging: The Essential Skill | Best Kitesurf Schools",
-  description: "Comprehensive guide to kitesurf body dragging: the essential skill.",
+  description: "How to body drag in kitesurfing: the essential skill every beginner must master before getting on a board. Step-by-step technique breakdown.",
   openGraph: {
     title: "Kitesurf Body Dragging: The Essential Skill",
     description: "Read our comprehensive guide to kitesurf body dragging: the essential skill on BestKitesurfSchools.",
