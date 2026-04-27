@@ -34,7 +34,7 @@ export default function Home() {
           <p className="text-white text-xs tracking-[0.2em] uppercase font-light mb-6">
             The Definitive Global Directory
           </p>
-          <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl text-white leading-[0.95] tracking-tight max-w-5xl mb-8">
+          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl text-white leading-[1.0] tracking-tight max-w-4xl mb-8">
             The World's Best Kitesurf Schools — Curated & Reviewed.
           </h1>
           {/* Trust stats strip */}
